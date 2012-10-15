@@ -10,8 +10,8 @@ class dbConnect {
 
     public function __construct( 
 		$host		= 'localhost', 
-		$user		= 'alfabrad',
-		$password	= '_Asukal01_',
+		$user		= 'user',
+		$password	= 'password',
 		$dbname		= 'queryTestIntranet'
     ) {
           $this->_host      = $host;
