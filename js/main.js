@@ -1,8 +1,67 @@
 (function ( $ ) {
+    myTabs  = null;
     var queryTestIntranet   = {
         //  Contructor inicialice tabs
         QueryTestIntranet:  function () {
-            $("ul.tabs").tabs("div.panes > div");
+            myTabs  = $("ul.tabs").tabs("div.panes > div");
+        }, 
+        //  Send comission at the page loads
+        sendComission:  function ( ) {
+		      //  Send information and retrieve server response for comission
+			jQuery.ajax( 'snippets/sendComission.php', { 
+				async:			true, 
+				beforeSend: 	function ( XMLHttpRequest ) {
+				  this;
+		        }, 
+				cache:			false, 
+				complete:		function ( XMLHttpRequest, textStatus ) { 
+				  this; 
+		        }, 
+				contentType:	'application/x-www-form-urlencoded', 
+				dataType:		'html', 
+				error:			function ( XMLHttpRequest, textStatus, errorThrow ) { 
+				    $( '#result' ).append( '<p>Hubo un error. Intenta nuevamente.</p>' );
+				}, 
+				success:		function ( data, textStatus ) { 
+				    var resultOptions   = jQuery.parseJSON( data );
+				    for ( var i = 1; i <= resultOptions.registros; i++ ) {
+    				    $('#comision_form select').append('<option value="comision_'+i+'">'+resultOptions.comision[i]+'</option>');
+				    }
+				}, 
+				type:			'POST'
+			} );
+        }, 
+        //  Send area when page loads
+        sendArea:  function ( ) {
+		      //  Send information and retrieve server response for comission
+			jQuery.ajax( 'snippets/sendArea.php', { 
+				async:			true, 
+				beforeSend: 	function ( XMLHttpRequest ) {
+				  this;
+		        }, 
+				cache:			false, 
+				complete:		function ( XMLHttpRequest, textStatus ) { 
+				  this; 
+		        }, 
+				contentType:	'application/x-www-form-urlencoded', 
+				dataType:		'html', 
+				error:			function ( XMLHttpRequest, textStatus, errorThrow ) { 
+				    $( '#result' ).append( '<p>Hubo un error. Intenta nuevamente.</p>' );
+				}, 
+				success:		function ( data, textStatus ) { 
+				    var resultOptions   = jQuery.parseJSON( data );
+				    for ( var i = 1; i <= resultOptions.registros; i++ ) {
+    				    $('#area_form fieldset').append('<div class="inputRadio"></div>');
+    				    if( i == 1 ) {
+        				    $('#area_form div.inputRadio').last().append('<input type="radio" name="area" id="area_' + i + '" value="area_' + i + '" checked="checked">');
+    				    } else {
+        				    $('#area_form div.inputRadio').last().append('<input type="radio" name="area" id="area_' + i + '" value="area_' + i + '" >');
+    				    }
+        				$('#area_form div.inputRadio').last().append('<label for="area_' + i + '">' + resultOptions.area[ i ] + '</label>');
+				    }
+				}, 
+				type:			'POST'
+			} );
         }, 
         //  Process the information user inputs with a custom message and sended
         //  via ajax. Retrieve a response from server.
@@ -25,9 +84,15 @@
     			myValue = value.value;
     			myValue = myValue.trim();
 
-    			var noValid = inputSelector.eq(referenceIndex);			
-    			 if(!noValid.hasClass('validate')){
-    				if (!myValue || myValue == '' || myValue == null || myValue == 'escoge_una_opcion' ) { 
+    			var noValid = inputSelector.eq(referenceIndex);
+    			if ( inputSelector.attr('type="radio"') ) {
+        			if ( !inputSelector.attr('checked="checked"') ) {
+            			resultadoValidate    = false;	
+        			} else {
+            			resultadoValidate    = true;
+        			}
+    			}else if(!noValid.hasClass('validate')){
+    			    if (!myValue || myValue == '' || myValue == null || myValue == 'escoge_una_opcion' ) { 
     					noValid.parent(this).append(jQuery('<label class="error">'+message+'</label>'));
     					resultadoValidate = false;
     
@@ -74,6 +139,10 @@
         		}
         		return false;
         	});
+        }, 
+        getTabs:    function () {
+            myTabs  = $("ul.tabs").data("tabs");
+            return myTabs;
         }
     }
     
@@ -81,7 +150,9 @@
     $("Document").ready( function ( e ) {
     
         //  Inicialice the tabs behavior
-        queryTestIntranet.QueryTestIntranet();
+        queryTestIntranet.QueryTestIntranet( );
+        queryTestIntranet.sendComission( );
+        queryTestIntranet.sendArea( );
         
         //  Event handlers for each tab criteria
         $("#persona_submit").on( "click", function ( e ) {
@@ -99,10 +170,15 @@
             e.stopPropagation();
             queryTestIntranet.processForm( $('#estado_form select'), 'Por favor, escribe un área válida.' ); 
         } );
-        $("#area_submit").on("click", function ( e ) {
+        $('#area_form').delegate( "input", "change", function ( e ) {
             e.preventDefault();
             e.stopPropagation();
-            queryTestIntranet.processForm( $('#area_form input[type="text"]'), 'Por favor, escribe un estado válido.' );
+            queryTestIntranet.processForm( $('#area_form input[type="radio"]'), 'Por favor, escribe un estado válido.' );
         } );
+        var theTabs = queryTestIntranet.getTabs();
+        theTabs.onClick( function ( e ) {
+            $('input[type="text"], select').val("");
+            $('#result').empty();
+        });
     });
 })( jQuery, null );

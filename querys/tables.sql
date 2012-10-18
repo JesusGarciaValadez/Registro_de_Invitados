@@ -191,15 +191,15 @@ INSERT INTO `queryTestIntranet`.`comision` (
     `comision`
 )
 VALUES (
-    NULL , 'cargo1'
+    NULL , 'Comisión 1'
 ), (
-    NULL , 'cargo2'
+    NULL , 'Comisión 2'
 ), ( 
-    NULL , 'cargo3'
+    NULL , 'Comisión 3'
 ), ( 
-    NULL , 'cargo4' 
+    NULL , 'Comisión 4' 
 ), ( 
-    NULL , 'cargo5' 
+    NULL , 'Comisión 5' 
 );
 
 
@@ -208,13 +208,13 @@ INSERT INTO `queryTestIntranet`.`area` (
     `area`
 )
 VALUES (
-    NULL , 'area1'
+    NULL , 'Area_1'
 ), (
-    NULL , 'area2'
+    NULL , 'Area_2'
 ), (
-    NULL , 'area3'
+    NULL , 'Area_3'
 ), (
-    NULL , 'area4'
+    NULL , 'Area_4'
 ), (
-    NULL , 'area5'
+    NULL , 'Area_5'
 );

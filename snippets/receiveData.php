@@ -32,14 +32,10 @@
 			     if( strlen ( trim ( $value ) ) == 0 ) {
 			         die('Debe escribir una opción válido.');
 			     }
-			     if ( $value == "mesa_directiva" ) {
-    			     $value  = ucwords( str_replace( '_', ' ', $value ) );
-			         $query  = "WHERE car.`cargo` LIKE '%{$value}%' 
-			                   ORDER BY p.`id_persona` ";
-                 } else if ( $value == "integrante" ) {
-                     $value  = ucwords( str_replace( '_', ' ', $value ) );
-			         $query  = "WHERE car.`cargo` LIKE '%{$value}%'  
-                               ORDER BY p.`id_persona` ";
+			     if ( stripos( $value, "comision") !== false ) {
+                     $value  = ucwords( str_replace( 'comision_', '', $value ) ) - 1;
+			         $query  = "WHERE o.`comision` LIKE '%{$value}%'  
+                               ORDER BY o.`id_comision` ";
                  } else {
                      die('Debe elegir una opción válida.');
                  }
@@ -59,7 +55,7 @@
 			     break;
 			     
 			case 'area':
-			     if( strlen ( trim ( $value ) ) == 0 ) {
+			     if( strlen ( trim ( $value ) ) == 0 && ( stripos( $value, "area") !== false ) ) {
 			         die('Debe escribir su área válida.');
 			     }
 			     $query  = "WHERE a.`area` LIKE '%{$value}%' 
@@ -148,7 +144,7 @@
     	           continue;
     	       }
     	       if ( $key == 'nombre' || $key == 'apellido_pat' || $key == 'apellido_mat' ) { 
-        	       $template  .= '                                <td><a href="persona.phtml?id='.$id.'" target="_blank" title="'.$value.'">'.$value.'</a></td>';
+        	       $template  .= '                                <td><a href="snippets/persona.php?id='.$id.'" target="_blank" title="'.$value.'">'.$value.'</a></td>';
     	       } else {
         	       $template  .= "                                <td>{$value}</td>";
     	       }
