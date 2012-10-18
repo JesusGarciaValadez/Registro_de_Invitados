@@ -19,7 +19,7 @@
                         ORDER BY a.`id_area` ';
     $completeQuery      = $principalQuery;
 
-    //  Do the query and obtain the results putting into an JSON
+    //  Do the query and obtain the results putting into a JSON
 	$dbConnector	= new DBQueries ( );
 	$dbConnector->executeQuery( $completeQuery );
 
