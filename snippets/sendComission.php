@@ -17,7 +17,7 @@
                         o.`comision` 
                         FROM `comision` o 
                         ORDER BY o.`id_comision` ';
-    $completeQuery      = $principalQuery . $query;
+    $completeQuery      = $principalQuery;
 
     //  Do the query and obtain the results putting into an JSON
 	$dbConnector	= new DBQueries ( );

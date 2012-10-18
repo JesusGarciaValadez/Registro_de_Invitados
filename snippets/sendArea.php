@@ -17,7 +17,7 @@
                         a.`area` 
                         FROM `area` a 
                         ORDER BY a.`id_area` ';
-    $completeQuery      = $principalQuery . $query;
+    $completeQuery      = $principalQuery;
 
     //  Do the query and obtain the results putting into an JSON
 	$dbConnector	= new DBQueries ( );
