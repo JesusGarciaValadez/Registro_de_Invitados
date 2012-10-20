@@ -32,13 +32,16 @@
 			     if( strlen ( trim ( $value ) ) == 0 ) {
 			         die('Debe escribir una opción válido.');
 			     }
-			     if ( stripos( $value, "comision") !== false ) {
+			     /*if ( stripos( $value, "comision") !== false ) {
                      $value  = ucwords( str_replace( 'comision_', '', $value ) ) - 1;
-			         $query  = "WHERE o.`comision` LIKE '%{$value}%'  
+			         $query  = "WHERE o.`id_comision` LIKE '%{$value}%'  
                                ORDER BY o.`id_comision` ";
                  } else {
                      die('Debe elegir una opción válida.');
-                 }
+                 }*/
+		         $query  = "WHERE o.`id_comision` LIKE '%{$value}%'
+                           ORDER BY o.`id_comision` ";                 
+			     
 			     break;
 			     
 			case 'estado':
@@ -55,7 +58,7 @@
 			     break;
 			     
 			case 'area':
-			     if( strlen ( trim ( $value ) ) == 0 && ( stripos( $value, "area") !== false ) ) {
+			     if( strlen ( trim ( $value ) ) == 0 ) {
 			         die('Debe escribir su área válida.');
 			     }
 			     $query  = "WHERE a.`area` LIKE '%{$value}%' 
@@ -99,7 +102,7 @@
                         LEFT OUTER JOIN `comision` o 
                             ON p.`id_comision`	= o.`id_comision` 
                         LEFT OUTER JOIN `area` a 
-                            ON p.`id_area`		= a.`id_area` ';
+                            ON p.`id_area`      = a.`id_area` ';
     $completeQuery      = $principalQuery . $query;
 
     //  Do the query and obtain the results put them into a table
@@ -107,7 +110,7 @@
 	$dbConnector->executeQuery( $completeQuery );
 
 	if ( $dbConnector->getRow( $completeQuery ) ) {
-	    $container = $dbConnector->getRows( $completeQuery );
+    	$container = $dbConnector->getRows( $completeQuery );
 
 	    $template  = '<table>
                         <thead>

@@ -10,9 +10,9 @@ class dbConnect {
 
     public function __construct( 
 		$host		= 'localhost', 
-		$user		= '',
-		$password	= '',
-		$dbname		= 'queryTestIntranet'
+		$user		= 'u213243_Alfabrad',
+		$password	= '_Asukal01_',
+		$dbname		= 'u213243_queryTestIntranet'
     ) {
           $this->_host      = $host;
           $this->_user      = $user;
@@ -22,10 +22,15 @@ class dbConnect {
 
     public function connect(){
          $this->_link = mysql_connect($this->_host, $this->_user, $this->_password) ;
-         if(!$this->_link )
+         if(!$this->_link ) {
              throw new Exception(mysql_error());
-         else
-             mysql_select_db($this->_dbname,$this->_link);
+         } else {
+             if( mysql_select_db($this->_dbname,$this->_link) ) {
+                 return;
+             } else {
+                 die ( "No se conecta a la DB" . mysql_error($this->_link) );
+             }
+         }
          
     }
 
@@ -38,7 +43,7 @@ class dbConnect {
     }
 
     public function executeQuery($query){
-        $result = mysql_query($query);
+        $result = mysql_query($query, $this->_link);
         if(!$result) {
              $mysqlError = mysql_errno($this->_link)." : " . mysql_error($this->_link) ;
              throw new Exception( "Surgió un error al tratar de realizar la consulta '{$query}'.\n {$mysqlError}\n" );
@@ -51,12 +56,12 @@ class dbConnect {
 
 			while ( $row = mysql_fetch_assoc( $result ) ) {
 
-                              while( list ($key,$value) = each($row) ){
-                                  $data [utf8_encode($key)] = utf8_encode($value);
-                              }
+    			while( list ($key,$value) = each($row) ){
+                    $data [utf8_encode($key)] = utf8_encode($value);
+                }
                               
-		              array_push( $arrayResultSet, $data );
-		        }
+                array_push( $arrayResultSet, $data );
+            }
 
 		}
 

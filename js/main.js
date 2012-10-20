@@ -23,9 +23,10 @@
 				    $( '#result' ).append( '<p>Hubo un error. Intenta nuevamente.</p>' );
 				}, 
 				success:		function ( data, textStatus ) { 
+				    //  If JSON is received put option tags on Select combo box with id and name of value from DB
 				    var resultOptions   = jQuery.parseJSON( data );
 				    for ( var i = 1; i <= resultOptions.registros; i++ ) {
-    				    $('#comision_form select').append('<option value="comision_'+i+'">'+resultOptions.comision[i]+'</option>');
+    				    $('#comision_form select').append('<option value="' + resultOptions.id_comision[i] + '">'+resultOptions.comision[i]+'</option>');
 				    }
 				}, 
 				type:			'POST'
@@ -49,13 +50,14 @@
 				    $( '#result' ).append( '<p>Hubo un error. Intenta nuevamente.</p>' );
 				}, 
 				success:		function ( data, textStatus ) { 
+				    //  If JSON is received put radio button tags name of value from DB				
 				    var resultOptions   = jQuery.parseJSON( data );
 				    for ( var i = 1; i <= resultOptions.registros; i++ ) {
     				    $('#area_form fieldset').append('<div class="inputRadio"></div>');
     				    if( i == 1 ) {
-        				    $('#area_form div.inputRadio').last().append('<input type="radio" name="area" id="area_' + i + '" value="area_' + i + '" checked="checked">');
+        				    $('#area_form div.inputRadio').last().append('<input type="radio" name="area" id="area_' + i + '" value="' + resultOptions.area[ i ] + '" checked="checked">');
     				    } else {
-        				    $('#area_form div.inputRadio').last().append('<input type="radio" name="area" id="area_' + i + '" value="area_' + i + '" >');
+        				    $('#area_form div.inputRadio').last().append('<input type="radio" name="area" id="area_' + i + '" value="' + resultOptions.area[ i ] + '" >');
     				    }
         				$('#area_form div.inputRadio').last().append('<label for="area_' + i + '">' + resultOptions.area[ i ] + '</label>');
 				    }

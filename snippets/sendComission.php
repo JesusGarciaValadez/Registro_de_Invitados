@@ -30,9 +30,10 @@
     	foreach ( $container as $index => $array ) { 
 
     	   foreach ( $array as $key => $value ) {
-    	       if ( $key != "id_comision" ) {
+    	       /*if ( $key != "id_comision" ) {
     	           $template[$key][$index + 1] = $value;
-    	       }
+    	       }*/
+    	       $template[$key][$index + 1] = $value;
     	       $template['registros']  = $index + 1;
 
            } 

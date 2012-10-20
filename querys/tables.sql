@@ -1,4 +1,4 @@
-CREATE DATABASE `queryTestIntranet` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+/*CREATE DATABASE `u213243_queryTestIntranet` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;*/
 
 CREATE TABLE IF NOT EXISTS `queryTestIntranet`.`persona` (
     `id_persona`    INT( 10 ) NOT NULL AUTO_INCREMENT,
