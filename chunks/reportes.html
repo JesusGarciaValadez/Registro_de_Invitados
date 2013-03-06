@@ -1,0 +1,35 @@
+<div id="wrapper_reports" class="container">
+                    <form action="reportes.php" method="post" accept-charset="utf-8" id="reports_form">
+                    	<fieldset>
+                    	   <div id="wrapper_business">
+                    	       <label for="id_empresa">Empresa:</label>
+                    	       <select name="id_empresa" id="id_empresa">
+                    	           <option value="">Escoja una Opci&oacute;n</option>
+                                   {option_empresa}
+                    	       </select>
+                    	   </div>
+                    	   <div id="wrapper_saler">
+                    	       <label for="id_vendedor">Vendedor:</label>
+                    	       <select id="id_vendedor" name="id_vendedor">
+                    	           <option value="todos">Todos</option>
+                                   {option_vendedores}
+                    	       </select>
+                    	   </div>
+                    	   <div id="microsoft_products_choicer">
+                    	       <p>Productos Microsoft</p>
+                        	   <div id="include_officeOEM">
+                        	       <label for="incluye_officeOEM">Incluye Office 2010 OEM</label>
+                        	       <input id="incluye_officeOEM" type="checkbox" name="incluye_officeOEM" value="1" class="ignore" autocomplete="off" />
+                        	   </div>
+                        	   <div id="include_windowsOEM">
+                        	       <label for="incluye_windowsOEM">Incluye Windows Server 2008 OEM</label>
+                        	       <input id="incluye_windowsOEM" type="checkbox" name="incluye_windowsOEM" value="1" class="ignore" autocomplete="off" />
+                        	   </div>
+                    	   </div>
+                    	   <input id="init_register" type="submit" name="init_login" value="Buscar" />
+                    	</fieldset>
+                    </form>
+                    <div id="summary"></div>
+                    {table}
+                    {option_download}
+                </div>

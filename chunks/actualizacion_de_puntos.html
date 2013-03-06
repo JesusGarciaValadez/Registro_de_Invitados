@@ -1,0 +1,25 @@
+                <div id="wrapper_reports" class="container">
+                    <form action="../snippets/control.php?action=actualizarPuntaje" method="post" accept-charset="utf-8" id="update_form">
+                    	<fieldset>
+                    	   <div id="wrapper_business">
+                    	       <label for="id_empresa">Empresa:</label>
+                    	       <select name="id_empresa" id="id_empresa">
+                    	           <option value="">Escoja una Opci&oacute;n</option>
+                                   {option_empresa}
+                    	       </select>
+                    	   </div>
+                    	   <div id="wrapper_employee">
+                    	       <label for="id_empleado">Empleado:</label>
+                    	       <select id="id_empleado" name="id_empleado">
+                    	           <option value="">Escoja una Opci&oacute;n</option>
+                    	       </select>
+                    	   </div>
+                            <div class="lefty">
+                                <label for="puntaje">Nuevo Puntaje</label>
+                                <input id="puntaje" type="text" name="puntaje" value="" autocomplete="off" />
+                            </div>
+                    	   <input id="init_actualizar_puntaje" type="submit" name="init_actualizar_puntaje" value="Actualizar" />
+                    	</fieldset>
+                    </form>
+                    <div id="summary"></div>
+                </div>

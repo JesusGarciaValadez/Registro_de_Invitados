@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="es"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Editar Usuario</title>
+        <meta name="keywords" content="" />
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link rel="shortcut icon" href="favicon.ico" />
+
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.6.1-respond-1.1.0.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+        <![endif]-->
+
+        <article>
+            <div id="edit_user" class="wrapper">
+            	<div class="container">
+                	<form action="edit_user.html" method="" accept-charset="utf-8">
+                    	<fieldset class="left">
+                            <div class="edit_input">
+                                <label for="user_edit_name">Nombre:</label>
+                                <input id="user_edit_name" type="text" name="user_edit_name" value="" autocomplete="off" />
+                            </div>
+                            <div class="edit_input">
+                            	<label for="user_edit_first_name">Apellido Paterno:</label>
+                            	<input id="user_edit_first_name" type="text" name="user_edit_first_name" value="" autocomplete="off" />
+                            </div>
+                            <div class="edit_input">
+                            	<label for="user_edit_last_name">Apellido Materno:</label>
+                            	<input id="user_edit_last_name" type="text" name="user_edit_last_name" value="" autocomplete="off" />
+                            </div>
+                            <div class="edit_input">
+                            	<label for="user_edit_email">Correo:</label>
+                            	<input id="user_edit_email" type="text" name="user_edit_email" value="" autocomplete="off" />
+                            </div>
+                            <div class="edit_input">
+                            	<label for="user_edit_gender">Género:</label>
+                            	<select name="user_edit_gender" id="user_edit_gender">
+                            		<option value="masculino">Masculino</option>
+                            		<option value="femenino">Femenino</option>
+                            	</select>
+                            </div>
+                            <div class="edit_input">
+                            	<label for="user_edit_age">Edad:</label>
+                            	<input id="user_edit_age" type="text" name="user_edit_age" value="" autocomplete="off" />
+                            </div>
+                            <div class="edit_input">
+                            	<label for="user_edit_district">Distrito:</label>
+                            	<select name="user_edit_district" id="user_edit_district">
+                            		<option value="1">1</option>
+                            		<option value="2">2</option>
+                            		<option value="3">3</option>
+                            	</select>
+                            </div>
+                            <div class="edit_input">
+                            	<label for="user_edit_estate">Estado:</label>
+                            	<select name="user_edit_estate" id="user_edit_estate">
+                            		<option value="DF">DF</option>
+                            	</select>
+                            </div>
+                        </fieldset>
+                        <fieldset class="center">
+                        	<div class="edit_input">
+                            	<label for="user_edit_election">Nombre:</label>
+                            	<select name="user_edit_election" id="user_edit_election">
+                            		<option value="mayor_relativa">Mayor Relativa</option>
+                            		<option value="lista_nacional">Lista Nacional</option>
+                            		<option value="primera_minoria">Primera Minoría</option>
+                            		<option value="representacion_proporcional">Representación Proporcional</option>
+                            	</select>
+                        	</div>
+                        	<div class="edit_input">
+                        		<label for="user_edit_ocupation">Ocupación:</label>
+                        		<textarea id="user_edit_ocupation" name="user_edit_ocupation" value=""></textarea>
+                        	</div>
+                        	<div class="edit_input">
+                        		<label for="user_edit_schooling">Escolaridad:</label>
+                        		<textarea id="user_edit_schooling" name="user_edit_schooling" value=""></textarea>
+                        	</div>
+                        	<div class="edit_input">
+                        		<label for="user_edit_substitute">Suplente:</label>
+                        		<input id="user_edit_substitute" type="text" name="user_edit_substitute" value="" autocomplete="off" />
+                        	</div>
+                        </fieldset>
+                        <fieldset class="right">
+                        	<div class="edit_input_file">
+                        		<label for="edit_area_input">Área:</label>
+                        		<input id="edit_area_input" type="file" name="edit_area_input" value="" />
+                        		<img src="" alt="Área Actual" width="" height="" />
+                        	</div>
+                        	<div class="edit_input_file">
+                        		<label for="edit_photo_file">Foto:</label>
+                        		<input id="edit_photo_file" type="file" name="edit_photo_file" value="" />
+                        		<img src="" alt="Foto Actual" width="" height="" />
+                        	</div>
+                        </fieldset>
+                        <fieldset>
+                            <div class="edit_conmission_row">
+                            	<div id="">
+                            		
+                            	</div>
+                            </div>
+                        </fieldset>
+                        <div class="edit_submit_wrapper">
+                        	<input id="edit_submit" type="submit" name="edit_submit" value="Guardar" />
+                        </div>
+                	</form>
+            	</div>
+            </div>
+        </article>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.2.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

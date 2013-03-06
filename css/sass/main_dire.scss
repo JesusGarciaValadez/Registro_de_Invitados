@@ -1,0 +1,437 @@
+@import "bourbon";
+/* ==========================================================================
+   HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+html, body{
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+article{
+    display: block;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    .wrapper{
+        display: block;
+        height: 100%;
+        width: 100%;
+    }
+    #login{
+        
+        .container{
+            display: block;
+            margin: 0 auto;
+            position: relative;
+            width: 350px;
+            #login_form{
+                border: 1px solid #DFDFDF;
+                display: block;
+                padding: 20px 15px;
+                width: 318px;
+                fieldset{
+                    position: relative;
+                    div{
+                        clear: both;
+                        display: block;
+                        padding: 15px 0;
+                        width: 100%;
+                        .error{
+                            clear: both;
+                            color: red;
+                            display: block !important;
+                            text-align: left  !important;
+                            padding: 5px 0  !important;
+                            width: 100% !important;
+                        }
+                    }
+                    .input_separator{
+
+                        label{
+                            display: block;
+                            float: left;
+                            padding: 0 10px 0 0;
+                            text-align: right;
+                            width: 143px;
+                        }
+                        input{
+                            width: 50%;
+                        }
+                        #login_user{
+                            
+                        }
+                        #login_password{
+                            
+                        }
+                    }
+                    #wrapper_captcha{
+                        padding: 15px 0;
+                        label{
+                            text-align: center;
+                        }
+                        p{
+                            
+                        }
+                        #captcha{
+                            
+                        }
+                        img{
+                            
+                        }
+                    }
+                    #login_submit_separator{
+                        
+                        #login_submit{
+                            border-radius: 5px;
+                            border: 1px solid orange;
+                            background-color: rgba(252,234,187,1);
+                            display: block;
+                            font: normal 1em/1.5em Helvetica,Arial,'sans-serif';
+                            @include linear-gradient(#fceabb, #fbdf93, vertical);
+                            @include background-image(linear-gradient( top, rgba(252,234,187,1) 0%, rgba(252,205,77,1) 50%, rgba(248,181,0,1) 51%, rgba(251,223,147,1) 100%));
+                            height: 30px;
+                            margin: 0 auto;
+                            padding: 5px 0 0;
+                            text-shadow: 1px 1px 2px #fff;
+                            vertical-align: middle;
+                        }
+                    }
+                    #login_status_message{
+                        
+                    }
+                }
+            }
+        }
+    }
+    #results{
+        
+        .dataTables_wrapper{
+        
+        }
+        #DataTables_Table_0_wrapper{
+            
+            .top{
+                
+                .dataTables_filter{
+                
+                }
+                #DataTables_Table_0_filter{
+                    
+                    label{
+                    
+                        input{
+                            
+                        }
+                    }
+                }
+            }
+            #DataTables_Table_0{
+            
+            }
+            .dataTable{
+                
+                caption{
+                    
+                }
+                thead{
+                    
+                    tr{
+                        
+                        th.sorting_asc{
+                            
+                        }
+                        th.sorting{
+                            
+                        }
+                    }
+                }
+                tfoot{
+                    
+                    tr{
+                        
+                        td{
+                            
+                        }
+                    }
+                }
+                tbody{
+                    
+                    tr.odd{
+                        
+                        td.sorting_1{
+                            
+                        }
+                        td{
+                            
+                        }
+                    }
+                    tr.even{
+                        
+                        td.sorting_1{
+                            
+                        }
+                        td{
+                            
+                        }
+                    }
+                }
+            }
+            .bottom{
+                
+                .dataTables_paginate{
+                
+                }
+                .paging_full_numbers{
+                
+                }
+                #DataTables_Table_0_paginate{
+                    
+                    .first{
+                    
+                    }
+                    .previous{
+                    
+                    }
+                    .paginate_button{
+                    
+                    }
+                    .paginate_button_disabled{
+                        
+                    }
+                    span{
+                        
+                        .paginate_active{
+                            
+                        }
+                        .paginate_button{
+                            
+                        }
+                    }
+                    .next{
+                        
+                    }
+                    .last{
+                    
+                    }
+                    #DataTables_Table_0_first{
+                        
+                    }
+                    #DataTables_Table_0_previous{
+                        
+                    }
+                    #DataTables_Table_0_next{
+                        
+                    }
+                    #DataTables_Table_0_last{
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (min-resolution: 144dpi) {
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow:none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

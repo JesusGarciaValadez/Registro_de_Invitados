@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Programa de Incentivos Dell - Registro de Ventas</title>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta name="viewport" content="width=device-width" />
+        
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+        <link rel="shortcut icon" href="favicon.png" type="image/png" />
+
+        <link rel="stylesheet" href="css/normalize.css" type="text/css" media="screen" charset="utf-8" />
+        <link rel="stylesheet" href="css/main.css" type="text/css" media="screen" charset="utf-8" />
+
+        <!--[if IE 7]>
+        	<link rel="stylesheet" href="css/IE7.css" type="text/css" media="screen" charset="utf-8" />
+        <![endif]-->
+        <!--[if IE 8]>
+        	<link rel="stylesheet" href="css/IE8.css" type="text/css" media="screen" charset="utf-8" />
+        <![endif]-->
+
+        <script src="js/vendor/modernizr-2.6.2.min.js" type="text/javascript"></script>
+
+    </head>
+    <body>
+        <div id="wrapper_change_pass" class="wrapper_template_general">
+            <!-- !Header -->
+            <div id="wrapper_header">
+            	<div id="header">
+            		<a id="website_languaje" href="#" title="Idioma Español">M&eacute;xico</a>
+            		<a id="dell_logo" href="top_ten.php" title="Programa de Incentivos Dell">
+                		<img src="css/img/dell_logo_final.jpg" alt="Dell Portal de Partners" width="69" height="69" />
+            		</a>
+            		<ul>
+                		<li><a href="http://partnerdirect.dell.com/sites/channel/es_mx/pages/pp_default.aspx" title="Partner Direct">Partner Direct</a></li>
+                		<li><a href="http://partnerdirect.dell.com/sites/channel/es_mx/Partner-Support/Pages/PartnerSupport.aspx" title="Soporte">Soporte</a></li>  
+                		<li><a href="http://spanish.direct2dell.com/?~ck=mn" title="Comunidad">Comunidad</a></li>
+            		</ul>
+            		<p>Portal de Incentivos para PartnerDirect</p>
+            		<h2>Bienvenid@ {full_name}</h2>
+            	</div>
+            </div>
+            <!-- !Sales Register Body -->
+            <div id="wrapper_sales_register_body" class="template_general">
+                <h1>Registro de Ventas</h1>
+                {menu_usuario}
+                <div id="wrapper_sales_register" class="container">
+                    <p><sup>*</sup> Campos obligatorios</p>
+                    <form action="../snippets/control.php?action=registrarOrdenVenta" method="post" accept-charset="utf-8" id="sales_register_form">
+                        <fieldset>
+                        	<div class="lefty">
+                        		<label for="no_orden">N&uacute;mero de Orden:<sup>*</sup></label>
+                        		<input id="no_orden" type="text" name="no_orden" value="" autocomplete="no" />
+                        	</div>
+                        	<div class="righty">
+                        		<label for="fecha_fact">Fecha:<sup>*</sup></label>
+                        		<input id="fecha_fact" type="text" name="fecha_fact" value="" autocomplete="no" />
+                        	</div>
+                        	<div class="lefty">
+                        		<label for="id_empresa">Empresa en la que se gener&oacute; la Orden:<sup>*</sup></label>
+                        		<select name="id_empresa" id="id_empresa">
+                            		<option value="">Escoja una opción</option>
+                                        {option_empresa}
+                        		</select>
+                        	</div>
+                        	<div class="righty">
+                        		<label for="id_estado">Estado:<sup>*</sup></label>
+                        		<select name="id_estado" id="id_estado">
+                            		<option value="">Escoja una opción</option>
+                                        <option value="{id_estado}" selected="selected">{name_estado}</option>
+                        		</select>
+                        	</div>
+                        	<div id="wrapper_city" class="righty">
+                        		<label for="id_ciudad">Ciudad:<sup>*</sup></label>
+                        		<select name="id_ciudad" id="id_ciudad">
+                            		<option value="">Escoja una opción</option>
+                                        <option value="{id_ciudad}" selected="selected">{name_ciudad}</option>                                        
+                        		</select>
+                        	</div>
+                        	<div class="lefty">
+                        		<label for="id_isr">I.S.R. (Inside Sales Representative):<sup>*</sup></label>
+                        		<select name="id_isr" id="id_isr">
+                            		<option value="">Escoja una opción</option>
+                        		</select>
+                        	</div>
+                        	<div class="righty">
+                        		<label for="cliente">Cliente:<sup>*</sup></label>
+                        		<input id="cliente" type="text" name="cliente" value="" autocomplete="no" />
+                        	</div>
+                        	<div class="wrapper_sales">
+                            	<div class="product">
+                            		<label for="id_productos[]">Producto:<sup>*</sup></label>
+                            		<select name="id_productos[]" class="required {validate:{required:true,messages:{required:'Escoja una opción'}}}">
+                                		<option value="">Escoja una opción</option>
+                            		</select>
+                            	</div>
+                            	<div class="quantity">
+                            		<label for="cantidad_prod[]">Cantidad:<sup>*</sup></label>
+                            		<input type="text" name="cantidad_prod[]" value="" autocomplete="off" class="required digits number {validate:{required:true,number:true,digits:true,messages:{required:'Escoja una opción',number:'Escriba solo números,digits:'Escriba sólo dígitos'}}}" />
+                            	</div>
+                            	<div class="includes">
+                            		<label for="incluye[]">¿Incluye algún producto Microsoft?</label>
+                            		<input type="checkbox" name="incluye[]" value="1" />
+                            	</div>
+                            	<div class="quantity_includes">
+                            		<label for="cantidad_micro[]">Cantidad</label>
+                            		<input type="text" name="cantidad_micro[]" value="0" class="required digits number {validate:{number:true,digits:true,messages:{number:'Escriba solo números,digits:'Escriba sólo dígitos'}}}" />
+                            	</div>
+                            	<button type="button" class="add_product" value="+">+</button>
+                        	</div>
+                        	<div id="summary"></div>
+                        	<input id="init_register" type="submit" name="init_register" value="Registrar" />
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/vendor/jquery-1.8.2.min.js" type="text/javascript"></script>
+        <script src="js/plugins-ck.js" type="text/javascript"></script>
+        <script src="js/main-ck.js" type="text/javascript"></script>
+
+        <script type="text/javascript">
+            var _gaq=[['_setAccount','UA-35905340-1'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)})(document,'script');
+        </script>
+    </body>
+</html>

@@ -148,39 +148,40 @@
         }
     }
     
-    //  Executes when page loads completely.
-    $("Document").ready( function ( e ) {
-    
-        //  Inicialice the tabs behavior
-        queryTestIntranet.QueryTestIntranet( );
-        queryTestIntranet.sendComission( );
-        queryTestIntranet.sendArea( );
-        
-        //  Event handlers for each tab criteria
-        $("#persona_submit").on( "click", function ( e ) {
-            e.preventDefault();
-            e.stopPropagation();
-            queryTestIntranet.processForm( $('#persona_form input[type="text"]'), 'Por favor, escribe un nombre válido.' );
-        } );
-        $("#comision").on( "change", function ( e ) {
-            e.preventDefault();
-            e.stopPropagation();
-            queryTestIntranet.processForm( $('#comision_form select'), 'Por favor, escoje una opción.' ); 
-        } );
-        $("#estado").on("change", function ( e ) {
-            e.preventDefault();
-            e.stopPropagation();
-            queryTestIntranet.processForm( $('#estado_form select'), 'Por favor, escribe un área válida.' ); 
-        } );
-        $('#area_form').delegate( "input", "change", function ( e ) {
-            e.preventDefault();
-            e.stopPropagation();
-            queryTestIntranet.processForm( $('#area_form input[type="radio"]'), 'Por favor, escribe un estado válido.' );
-        } );
-        var theTabs = queryTestIntranet.getTabs();
-        theTabs.onClick( function ( e ) {
-            $('input[type="text"], select').val("");
-            $('#result').empty();
-        });
-    });
 })( jQuery, null );
+
+//  Executes when page loads completely.
+$("Document").ready( function ( e ) {
+
+    //  Inicialice the tabs behavior
+    queryTestIntranet.QueryTestIntranet( );
+    queryTestIntranet.sendComission( );
+    queryTestIntranet.sendArea( );
+    
+    //  Event handlers for each tab criteria
+    $("#persona_submit").on( "click", function ( e ) {
+        e.preventDefault();
+        e.stopPropagation();
+        queryTestIntranet.processForm( $('#persona_form input[type="text"]'), 'Por favor, escribe un nombre válido.' );
+    } );
+    $("#comision").on( "change", function ( e ) {
+        e.preventDefault();
+        e.stopPropagation();
+        queryTestIntranet.processForm( $('#comision_form select'), 'Por favor, escoje una opción.' ); 
+    } );
+    $("#estado").on("change", function ( e ) {
+        e.preventDefault();
+        e.stopPropagation();
+        queryTestIntranet.processForm( $('#estado_form select'), 'Por favor, escribe un área válida.' ); 
+    } );
+    $('#area_form').delegate( "input", "change", function ( e ) {
+        e.preventDefault();
+        e.stopPropagation();
+        queryTestIntranet.processForm( $('#area_form input[type="radio"]'), 'Por favor, escribe un estado válido.' );
+    } );
+    var theTabs = queryTestIntranet.getTabs();
+    theTabs.onClick( function ( e ) {
+        $('input[type="text"], select').val("");
+        $('#result').empty();
+    });
+});
