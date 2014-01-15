@@ -78,10 +78,9 @@ abstract class Model{
      * @see     self::_throwModelException()
      */
 
-    public function setMysqlConn($conn = NULL)
-    {
-       if ( !self::isValidResource($conn) ){
-           exit('$conn no es objeto PDO valido.');
+    public function setMysqlConn( $conn = NULL ) {
+       if ( !self::isValidResource( $conn ) ) {
+           exit( '$conn no es objeto PDO valido.' );
        }
        $this->_PDOmySQLConn = $conn;
     }
@@ -95,12 +94,11 @@ abstract class Model{
      * @see     self::_throwModelException()
      */
     
-    public function setTableName ( $tableName )
-    {
-        if ( !empty ($tableName) && is_string($tableName)){
+    public function setTableName ( $tableName ) {
+        if ( !empty ( $tableName ) && is_string( $tableName ) ) {
             $this->_tableName = $tableName;
-        }else{
-            exit('$tableName no es un nombre de tabla o vista valido.');
+        } else {
+            exit( '$tableName no es un nombre de tabla o vista valido.' );
         }
     }
     
@@ -111,8 +109,7 @@ abstract class Model{
      * @return  String    
      */
     
-    public function getTableName()
-    {
+    public function getTableName( ) {
         return (string) $this->_tableName;
     }
     
@@ -125,12 +122,11 @@ abstract class Model{
      * @see     self::_throwModelException()
      */
     
-    public function setPrimaryKey ($primaryKey='')
-    {
-        if (!empty ($primaryKey) && (is_string($primaryKey) || is_array($primaryKey))){
+    public function setPrimaryKey ( $primaryKey = '' ) {
+        if ( !empty ( $primaryKey ) && ( is_string( $primaryKey ) || is_array( $primaryKey ) ) ) {
             $this->_primaryKey = $primaryKey;
-        }else{
-            exit('$primaryKey no es un nombre de llave valido.');
+        } else {
+            exit( '$primaryKey no es un nombre de llave valido.' );
         }
     }
     
@@ -141,8 +137,7 @@ abstract class Model{
      * @desc    Obtiene el nombre de los campos que se utilizan como llave primaria.
      */
     
-    public function getPrimaryKey()
-    {
+    public function getPrimaryKey( ) {
         return $this->_primaryKey;
     }
     
@@ -156,12 +151,11 @@ abstract class Model{
      * @see     self::_throwModelException()
      */
     
-    public function setSqlQuery ( $sql='')
-    {
-        if(!empty ($sql) && is_string($sql)){
-            $this->_sqlQuery = $sql;
-        }else{
-            exit('$sql no es una consulta valida.');
+    public function setSqlQuery ( $sql  ='' ) {
+        if ( !empty ( $sql ) && is_string( $sql ) ) {
+            $this->_sqlQuery    = $sql;
+        } else {
+            exit( '$sql no es una consulta valida.' );
         }
         return $this;            
     }
@@ -173,9 +167,8 @@ abstract class Model{
      * @return  String
      */
     
-    public function getSqlQuery()
-    {
-        return (string) $this->_sqlQuery;
+    public function getSqlQuery( ) {
+        return ( string ) $this->_sqlQuery;
     }
     
     /**
@@ -185,9 +178,8 @@ abstract class Model{
      * @return  array
      */
     
-    public function getResultSet()
-    {
-        return (array) $this->_resultSet;
+    public function getResultSet( ) {
+        return ( array ) $this->_resultSet;
     }
     
     /**
@@ -197,9 +189,8 @@ abstract class Model{
      * @return  int
      */
     
-    public function getNumRows ()
-    {
-        return (int) $this->_numRows;
+    public function getNumRows( ) {
+        return ( int ) $this->_numRows;
     }
 
     /**
@@ -211,15 +202,14 @@ abstract class Model{
      * @see     self::_throwModelException(), self::isValidConnResource(), self::_parseResults()
      */
     
-    public function execQuery()
-    {
-        if (!empty ($this->_sqlQuery) && !is_string($this->_sqlQuery)){
-            exit('$sql no es una consulta valida.');
+    public function execQuery( ) {
+        if ( !empty ( $this->_sqlQuery ) && !is_string( $this->_sqlQuery ) ) {
+            exit( '$sql no es una consulta valida.' );
         }
         
-        $this->_resource = $this->_PDOmySQLConn->query($this->_sqlQuery);
+        $this->_resource = $this->_PDOmySQLConn->query( $this->_sqlQuery );
         
-        $this->_parseResults();
+        $this->_parseResults( );
     }
     
     /**
@@ -230,25 +220,24 @@ abstract class Model{
      * @see     self::_throwModelException()
      */
     
-    private function _parseResults()
-    {
-        $this->_resultSet = array();
-        $statementWords = explode(' ', $this->_sqlQuery);
+    private function _parseResults( ) {
+        $this->_resultSet = array( );
+        $statementWords = explode( ' ', $this->_sqlQuery );
         
-        if ( preg_match( '/SELECT/', strtoupper( $statementWords[0] ) ) ){
+        if ( preg_match( '/SELECT/', strtoupper( $statementWords[ 0 ] ) ) ) {
             
-            $statement = $this->_PDOmySQLConn->prepare($this->_sqlQuery);
+            $statement = $this->_PDOmySQLConn->prepare( $this->_sqlQuery );
             $statement->execute();
-            $this->_numRows = $statement->rowCount();
+            $this->_numRows = $statement->rowCount( );
             
-            if ( (int) $this->_numRows > 0 ){
-                while ( $row = $this->_resource->fetch(PDO::FETCH_ASSOC)){
-                    array_push($this->_resultSet,$row);
+            if ( ( int ) $this->_numRows > 0 ) {
+                while ( $row = $this->_resource->fetch( PDO::FETCH_ASSOC ) ) {
+                    array_push( $this->_resultSet, $row );
                 }
             }
             
         }else{
-            $this->_numRows = $this->_resource->rowCount();            
+            $this->_numRows = $this->_resource->rowCount( );            
         }        
     }
     
@@ -259,9 +248,8 @@ abstract class Model{
      * @return array
      */   
     
-    public function fetchAll()
-    {
-        $this->setSqlQuery("SELECT * FROM {$this->_tableName};")->execQuery();
+    public function fetchAll( ) {
+        $this->setSqlQuery( "SELECT * FROM {$this->_tableName};" )->execQuery( );
         return $this->_resultSet;
     }
     
@@ -273,8 +261,7 @@ abstract class Model{
      * @return mixed $resultSet
      */
     
-    public function select ( array $fields = array(), array $conditions = array() )
-    {
+    public function select ( array $fields = array( ), array $conditions = array( ) ) {
         $fields = ( !empty( $fields ) ) ? implode( ', ', $fields ) : '*';
         $where = ( isset( $conditions['where'] ) ) ? " WHERE {$conditions['where']}" : '';
         $order = ( isset( $conditions['order'] ) ) ? " ORDER BY {$conditions['order']} {$conditions['orderSense']}" : '';
@@ -285,8 +272,7 @@ abstract class Model{
     }
     
     
-    public function insert ( array $data )
-    {
+    public function insert ( array $data ) {
         self::prepareDataToSave( $data );
         
         $lastInsertId = 0;
@@ -308,23 +294,21 @@ abstract class Model{
      * @return boolean
      */
     
-    public function update ( array $data , $where = '' )
-    {
-        self::prepareDataToSave($data);
+    public function update ( array $data , $where   = '' ) {
+        self::prepareDataToSave( $data );
+
+        $id     = ( int ) $data[ $this->_primaryKey ];
+        $where  = ( !empty ( $where ) ) ? ( string ) $where : "{$this->_primaryKey}={$id}";
+        $fields = array( );
         
-        $id = (int) $data[$this->_primaryKey];        
-        $where = ( !empty ($where) )? (string) $where : "{$this->_primaryKey}={$id}";
-        $fields = array();
-        
-        foreach ( $data as $field => $value){
+        foreach ( $data as $field => $value ) {
             if( $field != $this->_primaryKey ) {
                 array_push( $fields, "`{$field}` = {$value}" );
             }
         }
         
         $fields = implode( ', ', $fields );
-        return ( $this->setSqlQuery( "UPDATE {$this->_tableName} SET {$fields} WHERE {$where};" )->execQuery() ) ? true : false;
-        
+        return ( $this->setSqlQuery( "UPDATE {$this->_tableName} SET {$fields} WHERE {$where};" )->execQuery( ) ) ? true : false;
     }
     
     /**
@@ -335,8 +319,7 @@ abstract class Model{
      * @return array
      */
     
-    public function find ( $id = 0 )
-    {
+    public function find ( $id  = 0 ) {
         $id = (int) $id;
         
         $this->setSqlQuery( "SELECT * FROM {$this->_tableName} WHERE {$this->_primaryKey} = {$id};" )->execQuery();
@@ -354,25 +337,23 @@ abstract class Model{
      * @desc    Verifica que el parámetro de entrada representa un recurso.
      */
     
-    public static function isValidResource($resource=NULL)
-    {
+    public static function isValidResource( $resource    = NULL ) {
         return ( !empty ($resource) && is_object($resource));
     }
     
     /**
      * Prepara por referencia la información a ser salvada de
      * acuerdo al tipo de dato almacenado en cada elemento del
-     * arreglo recivido.
+     * arreglo recibido.
      * @method prepareDataToSave
      * @access public
      * @static
      * @param array $data 
      */
     
-    public static function prepareDataToSave ( array &$data )
-    {
-        foreach ($data as $key => $value) {
-            $data[$key] = ( is_numeric( $value ) ) ? $value : "'{$value}'";
+    public static function prepareDataToSave ( array &$data ) {
+        foreach ( $data as $key => $value ) {
+            $data[ $key ] = ( is_numeric( $value ) ) ? $value : "'{$value}'";
         }
     }
     

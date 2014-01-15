@@ -1,0 +1,16 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Jesús Antonio García Valadez -- Fron End & Back End -- @_Chucho_
+    <name> -- <role> -- <twitter>
+
+# THANKS
+
+    To Viridiana for the job. ;)
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    jQuery, Modernizr

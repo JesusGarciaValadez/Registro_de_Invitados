@@ -15,7 +15,14 @@
         <link rel="shortcut icon" href="favicon.ico" />
 
         <link rel="stylesheet" href="css/normalize.min.css">
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/main_dire.css">
+        <!--[if gte IE 9]
+        <style type="text/css"
+            .gradient {
+                filter: none;
+            }
+        </style>
+        <![endif]-->
 
         <script src="js/vendor/modernizr-2.6.1-respond-1.1.0.min.js"></script>
     </head>
@@ -27,95 +34,143 @@
         <article>
             <div id="edit_user" class="wrapper">
             	<div class="container">
-                	<form action="edit_user.html" method="" accept-charset="utf-8">
+                	<form action="snippets/control.php?action=save&id={id}" method="post" accept-charset="utf-8" enctype="multipart/form-data" id="edit_user_form">
                     	<fieldset class="left">
                             <div class="edit_input">
                                 <label for="user_edit_name">Nombre:</label>
-                                <input id="user_edit_name" type="text" name="user_edit_name" value="" autocomplete="off" />
+                                <input id="user_edit_name" type="text" name="user_edit_name" value="{nombre}" autocomplete="off" />
                             </div>
                             <div class="edit_input">
                             	<label for="user_edit_first_name">Apellido Paterno:</label>
-                            	<input id="user_edit_first_name" type="text" name="user_edit_first_name" value="" autocomplete="off" />
+                            	<input id="user_edit_first_name" type="text" name="user_edit_first_name" value="{apellido_paterno}" autocomplete="off" />
                             </div>
                             <div class="edit_input">
                             	<label for="user_edit_last_name">Apellido Materno:</label>
-                            	<input id="user_edit_last_name" type="text" name="user_edit_last_name" value="" autocomplete="off" />
+                            	<input id="user_edit_last_name" type="text" name="user_edit_last_name" value="{apellido_materno}" autocomplete="off" />
                             </div>
                             <div class="edit_input">
                             	<label for="user_edit_email">Correo:</label>
-                            	<input id="user_edit_email" type="text" name="user_edit_email" value="" autocomplete="off" />
+                            	<input id="user_edit_email" type="text" name="user_edit_email" value="{email}" autocomplete="off" />
                             </div>
                             <div class="edit_input">
                             	<label for="user_edit_gender">Género:</label>
                             	<select name="user_edit_gender" id="user_edit_gender">
-                            		<option value="masculino">Masculino</option>
-                            		<option value="femenino">Femenino</option>
+                            		{genero}
                             	</select>
                             </div>
                             <div class="edit_input">
                             	<label for="user_edit_age">Edad:</label>
-                            	<input id="user_edit_age" type="text" name="user_edit_age" value="" autocomplete="off" />
+                            	<input id="user_edit_age" type="text" name="user_edit_age" value="{edad}" autocomplete="off" />
                             </div>
                             <div class="edit_input">
                             	<label for="user_edit_district">Distrito:</label>
                             	<select name="user_edit_district" id="user_edit_district">
-                            		<option value="1">1</option>
-                            		<option value="2">2</option>
-                            		<option value="3">3</option>
+                                	{distritos}
                             	</select>
                             </div>
                             <div class="edit_input">
                             	<label for="user_edit_estate">Estado:</label>
                             	<select name="user_edit_estate" id="user_edit_estate">
-                            		<option value="DF">DF</option>
+                            		{estado}
                             	</select>
                             </div>
                         </fieldset>
                         <fieldset class="center">
                         	<div class="edit_input">
-                            	<label for="user_edit_election">Nombre:</label>
+                            	<label for="user_edit_election">Eleccion:</label>
                             	<select name="user_edit_election" id="user_edit_election">
-                            		<option value="mayor_relativa">Mayor Relativa</option>
-                            		<option value="lista_nacional">Lista Nacional</option>
-                            		<option value="primera_minoria">Primera Minoría</option>
-                            		<option value="representacion_proporcional">Representación Proporcional</option>
+                                	{eleccion}
                             	</select>
                         	</div>
                         	<div class="edit_input">
                         		<label for="user_edit_ocupation">Ocupación:</label>
-                        		<textarea id="user_edit_ocupation" name="user_edit_ocupation" value=""></textarea>
+                        		<textarea id="user_edit_ocupation" name="user_edit_ocupation" value="{ocupacion}"></textarea>
                         	</div>
                         	<div class="edit_input">
                         		<label for="user_edit_schooling">Escolaridad:</label>
-                        		<textarea id="user_edit_schooling" name="user_edit_schooling" value=""></textarea>
+                        		<textarea id="user_edit_schooling" name="user_edit_schooling" value="{escolaridad}"></textarea>
                         	</div>
                         	<div class="edit_input">
                         		<label for="user_edit_substitute">Suplente:</label>
-                        		<input id="user_edit_substitute" type="text" name="user_edit_substitute" value="" autocomplete="off" />
+                        		<input id="user_edit_substitute" type="text" name="user_edit_substitute" value="{suplente}" autocomplete="off" />
                         	</div>
                         </fieldset>
                         <fieldset class="right">
                         	<div class="edit_input_file">
                         		<label for="edit_area_input">Área:</label>
+                        		<img src="{area}" alt="Área Actual" />
                         		<input id="edit_area_input" type="file" name="edit_area_input" value="" />
-                        		<img src="" alt="Área Actual" width="" height="" />
                         	</div>
                         	<div class="edit_input_file">
                         		<label for="edit_photo_file">Foto:</label>
+                        		<img src="{foto}" alt="Foto Actual" />
                         		<input id="edit_photo_file" type="file" name="edit_photo_file" value="" />
-                        		<img src="" alt="Foto Actual" width="" height="" />
                         	</div>
                         </fieldset>
-                        <fieldset>
-                            <div class="edit_conmission_row">
-                            	<div id="">
-                            		
-                            	</div>
+                        <fieldset class="comissions_wrapper left">
+                            <table class="delete_comission_row">
+                            	<caption></caption>
+                            	<thead>
+                            		<tr>
+                            			<th>Comisión</th>
+                            			<th>Cargo</th>
+                            			<th>Eliminar</th>
+                            		</tr>
+                            	</thead>
+                            	<tfoot>
+                            		<tr>
+                            			<td></td>
+                            		</tr>
+                            	</tfoot>
+                            	<tbody>
+                                	{comisionesCargos}
+                            	</tbody>
+                            </table>
+                        </fieldset>
+                        <fieldset class="comissions_wrapper right">
+                            <table class="edit_comission_row">
+                            	<caption></caption>
+                            	<thead>
+                            		<tr>
+                            			<th>Comisión</th>
+                            			<th>Cargo</th>
+                            			<th>Eliminar</th>
+                            			<th>Agregar</th>
+                            		</tr>
+                            	</thead>
+                            	<tfoot>
+                            		<tr>
+                            			<td></td>
+                            		</tr>
+                            	</tfoot>
+                            	<tbody>
+                            		<tr>
+                            			<td class="comission">
+                                			<select name="comission[]" class="digits number {validate:{number:true,digits:true,messages:{number:'Escriba solo números,digits:'Escriba sólo dígitos'}}}">
+                                    			{comisiones}
+                                			</select>
+                            			</td>
+                            			<td class="job">
+                                			<select name="job[]" class="digits number {validate:{number:true,digits:true,messages:{number:'Escriba solo números,digits:'Escriba sólo dígitos'}}}">
+                                    			{cargos}
+                                			</select>
+                            			</td>
+                            			<td class="erase">
+                                			
+                            			</td>
+                            			<td class="add_one">
+                                			<a href="#" title="Agregar" class="add">Agregar</a>
+                            			</td>
+                            		</tr>
+                            	</tbody>
+                            </table>
+                            <div class="edit_submit_wrapper">
+                            	<input id="edit_submit" type="submit" name="edit_submit" value="Guardar" />
+                            </div>
+                            <div id="message">
+                            	
                             </div>
                         </fieldset>
-                        <div class="edit_submit_wrapper">
-                        	<input id="edit_submit" type="submit" name="edit_submit" value="Guardar" />
-                        </div>
                 	</form>
             	</div>
             </div>
@@ -123,7 +178,7 @@
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.2.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+        <script src="js/plugins-ck.js"></script>
+        <script src="js/dispatcher.js"></script>
     </body>
 </html>

@@ -1,0 +1,328 @@
+/* ==========================================================================
+   HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
+   ========================================================================== */
+html,
+button,
+input,
+select,
+textarea {
+  color: #222; }
+
+body {
+  font-size: 1em;
+  line-height: 1.4; }
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0; }
+
+img {
+  vertical-align: middle; }
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0; }
+
+textarea {
+  resize: vertical; }
+
+.chromeframe {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0; }
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+html, body {
+  display: block;
+  height: 100%;
+  width: 100%; }
+
+article {
+  display: block;
+  height: 100%;
+  position: relative;
+  width: 100%; }
+  article .wrapper {
+    display: block;
+    height: 100%;
+    width: 100%; }
+  article #login .container {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    width: 350px; }
+    article #login .container #login_form {
+      border: 1px solid #dfdfdf;
+      display: block;
+      padding: 20px 15px;
+      width: 318px; }
+      article #login .container #login_form fieldset {
+        position: relative; }
+        article #login .container #login_form fieldset div {
+          clear: both;
+          display: block;
+          padding: 15px 0;
+          width: 100%; }
+          article #login .container #login_form fieldset div .error {
+            clear: both;
+            color: red;
+            display: block !important;
+            text-align: left !important;
+            padding: 5px 0 !important;
+            width: 100% !important; }
+        article #login .container #login_form fieldset .input_separator label {
+          display: block;
+          float: left;
+          padding: 0 10px 0 0;
+          text-align: right;
+          width: 143px; }
+        article #login .container #login_form fieldset .input_separator input {
+          width: 50%; }
+        article #login .container #login_form fieldset #wrapper_captcha {
+          padding: 15px 0; }
+          article #login .container #login_form fieldset #wrapper_captcha label {
+            text-align: center; }
+        article #login .container #login_form fieldset #login_submit_separator #login_submit {
+          border-radius: 5px;
+          border: 1px solid orange;
+          background-color: #fceabb;
+          display: block;
+          font: normal 1em/1.5em Helvetica, Arial, "sans-serif";
+          background-color: #fceabb;
+          background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fceabb), color-stop(50%, #fbdf93), color-stop(100%, vertical));
+          background-image: -webkit-linear-gradient(top, #fceabb, #fbdf93, vertical);
+          background-image: -moz-linear-gradient(top, #fceabb, #fbdf93, vertical);
+          background-image: -ms-linear-gradient(top, #fceabb, #fbdf93, vertical);
+          background-image: -o-linear-gradient(top, #fceabb, #fbdf93, vertical);
+          background-image: linear-gradient(top, #fceabb, #fbdf93, vertical);
+          background-image: -webkit-linear-gradient(top, #fceabb 0%, #fccd4d 50%, #f8b500 51%, #fbdf93 100%);
+          background-image: -moz-linear-gradient(top, #fceabb 0%, #fccd4d 50%, #f8b500 51%, #fbdf93 100%);
+          background-image: -ms-linear-gradient(top, #fceabb 0%, #fccd4d 50%, #f8b500 51%, #fbdf93 100%);
+          background-image: -o-linear-gradient(top, #fceabb 0%, #fccd4d 50%, #f8b500 51%, #fbdf93 100%);
+          background-image: linear-gradient(top, #fceabb 0%, #fccd4d 50%, #f8b500 51%, #fbdf93 100%);
+          height: 30px;
+          margin: 0 auto;
+          padding: 5px 0 0;
+          text-shadow: 1px 1px 2px white;
+          vertical-align: middle; }
+  article #edit_user {
+    background: #FFF; }
+    article #edit_user .container form {
+      border: 1px dashed #dedede;
+      display: block;
+      padding: 30px;
+      width: 900px; }
+      article #edit_user .container form fieldset {
+        float: left;
+        height: 100%; }
+        article #edit_user .container form fieldset .edit_input {
+          padding: 10px 0; }
+          article #edit_user .container form fieldset .edit_input label {
+            clear: both;
+            display: block;
+            font: 0.75em/1em Helvetica, Arial, "sans-serif";
+            padding: 5px 0; }
+          article #edit_user .container form fieldset .edit_input input {
+            background: none repeat scroll 0 0 white;
+            border: 1px solid #dedede;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px #dedede inset;
+            font: 0.75em/1em Helvetica, Arial, "sans-serif";
+            height: 35px;
+            padding: 5px;
+            width: 200px; }
+          article #edit_user .container form fieldset .edit_input select {
+            font: 0.75em/1em Helvetica, Arial, "sans-serif"; }
+      article #edit_user .container form .left {
+        width: 30%; }
+      article #edit_user .container form .center {
+        width: 30%; }
+      article #edit_user .container form .right {
+        width: 30%; }
+      article #edit_user .container form .comissions_wrapper.left {
+        clear: left;
+        display: block;
+        float: left;
+        padding: 30px 0 0;
+        position: relative;
+        width: 45%; }
+        article #edit_user .container form .comissions_wrapper.left .delete_comission_row thead tr th {
+          font: 0.75em/1em Helvetica, Arial, "sans-serif"; }
+        article #edit_user .container form .comissions_wrapper.left .delete_comission_row tbody tr td {
+          font: 0.75em/1em Helvetica, Arial, "sans-serif"; }
+          article #edit_user .container form .comissions_wrapper.left .delete_comission_row tbody tr td a.del_button {
+            color: red;
+            font: 0.75em/1em Helvetica, Arial, "sans-serif"; }
+      article #edit_user .container form .comissions_wrapper.right {
+        clear: right;
+        display: block;
+        float: left;
+        padding: 30px 0 0;
+        position: relative;
+        width: 45%; }
+        article #edit_user .container form .comissions_wrapper.right .edit_comission_row {
+          width: 50%; }
+          article #edit_user .container form .comissions_wrapper.right .edit_comission_row thead tr th {
+            font: 0.75em/1em Helvetica, Arial, "sans-serif"; }
+          article #edit_user .container form .comissions_wrapper.right .edit_comission_row tbody tr td select {
+            font: 0.75em/1em Helvetica, Arial, "sans-serif";
+            width: 175px; }
+          article #edit_user .container form .comissions_wrapper.right .edit_comission_row tbody tr td a {
+            font: 0.75em/1em Helvetica, Arial, "sans-serif"; }
+          article #edit_user .container form .comissions_wrapper.right .edit_comission_row tbody tr td .delete {
+            color: red; }
+          article #edit_user .container form .comissions_wrapper.right .edit_comission_row tbody tr td .add {
+            color: blue; }
+        article #edit_user .container form .comissions_wrapper.right .edit_submit_wrapper {
+          bottom: 0;
+          clear: both;
+          position: relative;
+          right: 0; }
+          article #edit_user .container form .comissions_wrapper.right .edit_submit_wrapper #edit_submit {
+            background: #b7deed;
+            background: -moz-linear-gradient(top, #b7deed 0%, #71ceef 50%, #21b4e2 51%, #b7deed 100%);
+            background: -webkit-gradient(left top, left bottom, color-stop(0%, #b7deed), color-stop(50%, #71ceef), color-stop(51%, #21b4e2), color-stop(100%, #b7deed));
+            background: -webkit-linear-gradient(top, #b7deed 0%, #71ceef 50%, #21b4e2 51%, #b7deed 100%);
+            background: -o-linear-gradient(top, #b7deed 0%, #71ceef 50%, #21b4e2 51%, #b7deed 100%);
+            background: -ms-linear-gradient(top, #b7deed 0%, #71ceef 50%, #21b4e2 51%, #b7deed 100%);
+            background: linear, to bottom, #b7deed 0%, #71ceef 50%, #21b4e2 51%, #b7deed 100%;
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b7deed', endColorstr='#b7deed', GradientType=0 );
+            border: 0 solid transparent;
+            border-radius: 5px;
+            clear: both;
+            display: block;
+            font: 0.75em/1em Helvetica, Arial, "sans-serif";
+            height: 35px;
+            margin: 20px auto;
+            text-shadow: 1px 1px 2px white;
+            width: 100px; }
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+.ir {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  *text-indent: -9999px; }
+
+.ir:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 100%; }
+
+.hidden {
+  display: none !important;
+  visibility: hidden; }
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto; }
+
+.invisible {
+  visibility: hidden; }
+
+.clearfix:before, article #edit_user .container form:before,
+.clearfix:after,
+article #edit_user .container form:after {
+  content: " ";
+  display: table; }
+
+.clearfix:after, article #edit_user .container form:after {
+  clear: both; }
+
+.clearfix, article #edit_user .container form {
+  *zoom: 1; }
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+@media print {
+  * {
+    background: transparent !important;
+    color: black !important;
+    /* Black prints faster: h5bp.com/s */
+    box-shadow: none !important;
+    text-shadow: none !important; }
+
+  a,
+  a:visited {
+    text-decoration: underline; }
+
+  a[href]:after {
+    content: " (" attr(href) ")"; }
+
+  abbr[title]:after {
+    content: " (" attr(title) ")"; }
+
+  /*
+   * Don't show links for images, or javascript/internal links
+   */
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: ""; }
+
+  pre,
+  blockquote {
+    border: 1px solid #999999;
+    page-break-inside: avoid; }
+
+  thead {
+    display: table-header-group;
+    /* h5bp.com/t */ }
+
+  tr,
+  img {
+    page-break-inside: avoid; }
+
+  img {
+    max-width: 100% !important; }
+
+  @page {
+    margin: 0.5cm; }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3; }
+
+  h2,
+  h3 {
+    page-break-after: avoid; } }
