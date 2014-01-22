@@ -7,7 +7,7 @@ class DBQueries {
     
     public function  __construct() {
        $this->_connection = new dbConnect();
-       $this->_connection->connect();               
+       $this->_connection->connect();
     }
 
     public function  __destruct() {

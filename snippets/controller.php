@@ -26,22 +26,18 @@ require_once SNIPPETS_PATH . '/db/connection.php';
 
 $action = $_GET['action'];
 switch ($action) {
-    case 'ingresar':
-        header('Content-Type: application/json');
-        $usuario = new Usuarios($dbh);
-        $success = $usuario->login($_POST);
-        break;  
     case 'save':
         $edit    = new Usuarios( $dbh );
         $success = $edit->guardarUsuario( $_POST );
         $success = json_encode( $success );
         break;
-    case 'deleteComision': 
+    case 'edit': 
         $delete    = new Usuarios( $dbh );
         $success = $delete->eliminarComision( $_POST );
         $success = json_encode( $success );
         break;
     default:
+        
         break;
 }
 

@@ -4,7 +4,7 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="es"> <!--<![endif]-->
     <head>
-        <title>..:: Editar Invitado ::..</title>
+        <title>..:: Crear Invitado ::..</title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=11,IE=edge,chrome=1" />
         <meta http-equiv="pragma" content="no-cache" />
@@ -34,49 +34,50 @@
         <![endif]-->
         
         <section>
-            <div id="edit_user" class="wrapper">
+            <div id="create_user" class="wrapper">
                 <div class="container">
                     <form action="../snippets/controller.php?action=save&id={id}" method="post" accept-charset="utf-8" id="edit_user_form">
                         <fieldset class="left"><!-- Formulario -->
                             <legend>Registro de Invitados</legend>
                             <div class="edit_input"><!-- Correo -->
-                                <p>{main}</p>
+                                <label for="user_edit_mail">Correo:</label>
+                                <input id="user_edit_mail" type="text" name="user_edit_mail" value="" placeholder="Correo" autocomplete="off" />
                             </div><!-- Correo -->
                             <div class="edit_input"><!-- Apellido Paterno -->
                                 <label for="user_edit_first_name">Apellido Paterno:</label>
-                                <input id="user_edit_first_name" type="text" name="user_edit_first_name" value="{first_name}" placeholder="Apellido Materno" autocomplete="off" />
+                                <input id="user_edit_first_name" type="text" name="user_edit_first_name" value="" placeholder="Apellido Materno" autocomplete="off" />
                             </div><!-- Apellido Paterno -->
                             <div class="edit_input"><!-- Apellido Materno -->
                                 <label for="user_edit_last_name">Apellido Materno:</label>
-                                <input id="user_edit_last_name" type="text" name="user_edit_last_name" value="{last_name}" placeholder="Apellido Paterno" autocomplete="off" />
+                                <input id="user_edit_last_name" type="text" name="user_edit_last_name" value="" placeholder="Apellido Paterno" autocomplete="off" />
                             </div><!-- Apellido Materno -->
                             <div class="edit_input"><!-- Nombre -->
                                 <label for="user_edit_name">Nombre:</label>
-                                <input id="user_edit_name" type="text" name="user_edit_name" value="{name}" placeholder="Nombre" autocomplete="off" />
+                                <input id="user_edit_name" type="text" name="user_edit_name" value="" placeholder="Nombre" autocomplete="off" />
                             </div><!-- Nombre -->
                             <div class="edit_input"><!-- Cargo -->
                                 <label for="user_edit_job">Cargo:</label>
-                                <input id="user_edit_job" type="text" name="user_edit_job" value="{job}" placeholder="Cargo:" autocomplete="off" />
+                                <input id="user_edit_job" type="text" name="user_edit_job" value="" placeholder="Cargo:" autocomplete="off" />
                             </div><!-- Cargo -->
                             <div class="edit_input"><!-- Institución y/o Empresa -->
                                 <label for="user_edit_where">Institución y/o Empresa:</label>
-                                <input id="user_edit_where" type="text" name="user_edit_where" value="{where_are}" placeholder="Institución y/o Empresa" autocomplete="off" />
+                                <input id="user_edit_where" type="text" name="user_edit_where" value="" placeholder="Institución y/o Empresa" autocomplete="off" />
                             </div><!-- Institución y/o Empresa -->
                             <div class="edit_input"><!-- LADA -->
                                 <label for="user_edit_lada">Lada:</label>
-                                <input id="user_edit_lada" type="text" name="user_edit_lada" value="{lada}" placeholder="Lada" autocomplete="off" />
+                                <input id="user_edit_lada" type="text" name="user_edit_lada" value="" placeholder="Lada" autocomplete="off" />
                             </div><!-- LADA -->
                             <div class="edit_input"><!-- Teléfono -->
                                 <label for="user_edit_phone">Teléfono:</label>
-                                <input id="user_edit_phone" type="text" name="user_edit_phone" value="{phone}" placeholder="Teléfono" autocomplete="off" />
+                                <input id="user_edit_phone" type="text" name="user_edit_phone" value="" placeholder="Teléfono" autocomplete="off" />
                             </div><!-- Teléfono -->
                             <div class="edit_input"><!-- Ext. -->
                                 <label for="user_edit_ext">Ext:</label>
-                                <input id="user_edit_ext" type="text" name="user_edit_ext" value="{ext}" placeholder="Extensión" autocomplete="off" />
+                                <input id="user_edit_ext" type="text" name="user_edit_ext" value="" placeholder="Extensión" autocomplete="off" />
                             </div><!-- Ext. -->
                             <div class="edit_input"><!-- Dependencia -->
                                 <label for="user_edit_dependency">Dependencia:</label>
-                                <input id="user_edit_dependency" type="text" name="user_edit_dependency" value="{dependency}" placeholder="Dependencia" autocomplete="off" />
+                                <input id="user_edit_dependency" type="text" name="user_edit_dependency" value="" placeholder="Dependencia" autocomplete="off" />
                             </div><!-- Dependencia -->
                         </fieldset>
                         <fieldset class="center">
@@ -104,7 +105,7 @@
                             </div><!-- Estado -->
                             <div class="edit_input"><!-- Ciudad -->
                                 <label for="user_edit_city">Ciudad:</label>
-                                <input id="user_edit_city" type="text" name="user_edit_city" value="{city}" placeholder="Ciudad" autocomplete="off" />
+                                <input id="user_edit_city" type="text" name="user_edit_city" value="" placeholder="Ciudad" autocomplete="off" />
                             </div><!-- Ciudad -->
                             <div class="edit_input"><!-- Enviar -->
                                 <input id="user_edit_submit" type="submit" name="user_edit_submit" value="Enviar" />

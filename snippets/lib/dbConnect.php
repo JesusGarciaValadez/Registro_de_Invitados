@@ -12,7 +12,7 @@ class dbConnect {
 		$host		= 'localhost', 
 		$user		= 'alfabrad',
 		$password	= '_Asukal01_',
-		$dbname		= 'dire'
+		$dbname		= 'registry_guess'
     ) {
           $this->_host      = $host;
           $this->_user      = $user;

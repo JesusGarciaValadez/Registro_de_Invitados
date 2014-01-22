@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="es" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="es" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="es" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="es" class="no-js"> <!--<![endif]-->
+    <head>
+        <title>..:: Búsqueda ::..</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=11,IE=edge,chrome=1" />
+        <meta http-equiv="pragma" content="no-cache" />
+        <meta name="description" content="" />
+        <meta name="robots" content="all" />
+        
+        <meta name="viewport" content="width=device-width, initial-scale=0.8, user-scalable=yes" />
+        
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+        <link rel="shortcut icon" href="favicon.png" type="image/png" />
+        
+        <link rel="stylesheet" href="css/main.css" type="text/css" media="screen" />
+        
+        <script type="text/javascript" src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body id="search">
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+        <![endif]-->
+        
+        <div id="wrapper">
+            <form action="../snippets/controller.php" method="post" accept-charset="utf-8">
+                <fieldset>
+                    <legend>Correo</legend>
+                    <h1>Buscador</h1>
+                    <div>
+                        <label for="mail">
+                            <img src="path_to_magnifier/magnifier.png" width="1" height="1" alt="Buscar" />
+                        </label>
+                        <input id="mail" type="text" name="mail" value="hola@gmail.com" placeholder="hola@gmail.com" />
+                    </div>
+                    <div>
+                        <input id="submit_button" type="submit" name="submit_button" value="Siguiente" />
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.3.min.js"><\/script>')</script>
+        <script type="text/javascript" src="js/plugins-ck.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+    </body>
+</html>
