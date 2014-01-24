@@ -228,16 +228,10 @@
         if ( $( '#search' ).exists() ) {
             
             Registry.toggleValue( $( '#mail' ), "hola@gmail.com" );
-        }
-    } );
-    
-    $( document ).ready( function ( e ) {
-        
-        if ( $( '#search' ).exists() ) {
             
             var rules       = { 
                     mail :   {
-                        required    :   false,
+                        required    :   true,
                         email       :   true
                     }
                 };
@@ -251,7 +245,79 @@
                     digits      :   "Escriba solo números"
                 };
             
-            Registry.validateForm( rules, messages );
+            Registry.validateForm( rules, messages, function () {
+                
+                if ( $( '#mail' ).val( 'hola@gmail.com' ) ) {
+                    
+                    return false;
+                }
+            } );
+        }
+        
+        if ( $( '#create' ).exists() ) {
+            
+            Registry.toggleValue( $( '#mail' ), "hola@gmail.com" );
+            
+            #user_edit_mail Correo
+            #user_edit_first_name Apellido Materno
+            #user_edit_last_name Apellido Paterno
+            #user_edit_name Nombre
+            #user_edit_job Cargo
+            #user_edit_where Institución y/o Empresa
+            #user_edit_lada Lada
+            #user_edit_phone Teléfono
+            #user_edit_ext Extensión
+            #user_edit_dependency Dependencia
+            #user_edit_title
+            #user_edit_estate
+            #user_edit_city Ciudad
+            
+            var rules       = { 
+                    user_edit_mail          :   {
+                        required    :   true,
+                        email       :   true
+                    },
+                    user_edit_first_name    :   { required  : true },
+                    user_edit_last_name     :   { required  : true },
+                    user_edit_name          :   { required  : true },
+                    user_edit_job           :   { required  : true },
+                    user_edit_where         :   { required  : true },
+                    user_edit_lada          :   { 
+                        required    : true, 
+                        number      : true, 
+                        digits      : true, 
+                        mink  
+                    },
+                    user_edit_phone         :   { required  : true },
+                    user_edit_ext           :   { required  : true },
+                    user_edit_dependency    :   { required  : true },
+                    user_edit_title         :   { required  : true },
+                    user_edit_estate        :   { required  : true },
+                    user_edit_city          :   { required  : true },
+                };
+            var messages    = {
+                    mail        :   "Por favor, introduce una dirección de correo", 
+                    required    :   "Por favor, selecciona una opción", 
+                    minlength   :   "Por favor, haga su respuesta más amplia.", 
+                    maxlength   :   "Por favor, acorte su respuesta", 
+                    email       :   "Escriba un email válido",
+                    number      :   "Escriba solo números", 
+                    digits      :   "Escriba solo números"
+                };
+            
+            Registry.validateForm( rules, messages, function () {
+                
+                if ( $( '#mail' ).val( 'hola@gmail.com' ) ) {
+                    
+                    return false;
+                }
+            } );
+        }
+    } );
+    
+    $( document ).ready( function ( e ) {
+        
+        if ( $( '#search' ).exists() ) {
             
             if ( $( 'form' ).attr( 'novalidate' ) == 'novalidate' ) {
                 
