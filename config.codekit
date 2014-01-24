@@ -1,0 +1,2366 @@
+{
+  "CodeKitInfo" : "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
+  "settingsFileVersion" : "2",
+  "projectSettings" : {
+    "externalServerAddress" : "http:\/\/localhost\/Registro_de_Invitados\/templates\/",
+    "autoprefixerBrowserString" : "> 1%, last 2 versions, ff 17, opera 12.1",
+    "uglifyFlags2" : {
+      "drop_debugger" : {
+        "flagValue" : -1,
+        "active" : 1
+      },
+      "booleans" : {
+        "flagValue" : -1,
+        "active" : 1
+      },
+      "bracketize" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "inline-script" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "hoist_vars" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "loops" : {
+        "flagValue" : -1,
+        "active" : 1
+      },
+      "toplevel" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "mangle" : {
+        "flagValue" : -1,
+        "active" : 1
+      },
+      "sequences" : {
+        "flagValue" : -1,
+        "active" : 1
+      },
+      "comments" : {
+        "flagValue" : -1,
+        "active" : 1
+      },
+      "space-colon" : {
+        "flagValue" : -1,
+        "active" : 1
+      },
+      "sort" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "cascade" : {
+        "flagValue" : -1,
+        "active" : 1
+      },
+      "unused" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "dead_code" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "indent-start" : {
+        "flagValue" : 0,
+        "active" : 0
+      },
+      "compress" : {
+        "flagValue" : -1,
+        "active" : 1
+      },
+      "conditionals" : {
+        "flagValue" : -1,
+        "active" : 1
+      },
+      "ascii-only" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "evaluate" : {
+        "flagValue" : -1,
+        "active" : 1
+      },
+      "comparisons" : {
+        "flagValue" : -1,
+        "active" : 1
+      },
+      "quote-keys" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "warnings" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "join_vars" : {
+        "flagValue" : -1,
+        "active" : 1
+      },
+      "properties" : {
+        "flagValue" : -1,
+        "active" : 1
+      },
+      "screw-ie8" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "indent-level" : {
+        "flagValue" : 4,
+        "active" : 0
+      },
+      "if_return" : {
+        "flagValue" : -1,
+        "active" : 1
+      },
+      "unsafe" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "max-line-len" : {
+        "flagValue" : 32000,
+        "active" : 1
+      },
+      "eval" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "hoist_funs" : {
+        "flagValue" : -1,
+        "active" : 1
+      },
+      "width" : {
+        "flagValue" : 80,
+        "active" : 1
+      },
+      "semicolons" : {
+        "flagValue" : -1,
+        "active" : 1
+      }
+    },
+    "coffeeAutoOutputPathStyle" : 0,
+    "javascriptCreateSourceMap" : 1,
+    "javascriptOutputSuffix" : "-ck",
+    "typescriptDisallowBool" : 0,
+    "jsLintFlags2" : {
+      "white" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "unparam" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "sloppy" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "regexp" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "sub" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "vars" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "stupid" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "bitwise" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "continue" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "newcap" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "nomen" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "maxlen" : {
+        "flagValue" : 150,
+        "active" : 0
+      },
+      "closure" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "browser" : {
+        "flagValue" : -1,
+        "active" : 1
+      },
+      "properties" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "forin" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "plusplus" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "debug" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "eqeq" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "evil" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "node" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "rhino" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "ass" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "devel" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "indent" : {
+        "flagValue" : 4,
+        "active" : 0
+      }
+    },
+    "hamlOutputFormat" : 2,
+    "slimAutoOutputPathStyle" : 0,
+    "kitAutoOutputPathReplace1" : "",
+    "kitAutoOutputPathReplace2" : "",
+    "lessDisableJavascript" : 0,
+    "jadeCompileDebug" : 1,
+    "markdownAutoOutputPathRelativePath" : "",
+    "reloadFileURLs" : 1,
+    "stylusImportCSS" : 0,
+    "sassUseLibsass" : 0,
+    "coffeeLintFlags2" : {
+      "no_tabs" : {
+        "flagValue" : -1,
+        "active" : 1
+      },
+      "no_empty_param_list" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "no_stand_alone_at" : {
+        "flagValue" : -1,
+        "active" : 1
+      },
+      "no_trailing_whitespace" : {
+        "flagValue" : -1,
+        "active" : 1
+      },
+      "no_backticks" : {
+        "flagValue" : -1,
+        "active" : 1
+      },
+      "no_implicit_parens" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "empty_constructor_needs_parens" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "max_line_length" : {
+        "flagValue" : 150,
+        "active" : 0
+      },
+      "no_implicit_braces" : {
+        "flagValue" : -1,
+        "active" : 1
+      },
+      "no_throwing_strings" : {
+        "flagValue" : -1,
+        "active" : 1
+      },
+      "arrow_spacing" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "camel_case_classes" : {
+        "flagValue" : -1,
+        "active" : 1
+      },
+      "duplicate_key" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "line_endings" : {
+        "flagValue" : 0,
+        "active" : 0
+      },
+      "cyclomatic_complexity" : {
+        "flagValue" : 10,
+        "active" : 0
+      },
+      "space_operators" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "newlines_after_classes" : {
+        "flagValue" : 3,
+        "active" : 0
+      },
+      "non_empty_constructor_needs_parens" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "no_plusplus" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "indentation" : {
+        "flagValue" : 2,
+        "active" : 1
+      },
+      "no_trailing_semicolons" : {
+        "flagValue" : -1,
+        "active" : 1
+      }
+    },
+    "kitAutoOutputPathRelativePath" : "",
+    "coffeeCreateSourceMap" : 0,
+    "markdownAutoOutputPathReplace2" : "",
+    "markdownAutoOutputPathStyle" : 0,
+    "lessAutoOutputPathReplace2" : "css",
+    "lessAutoOutputPathReplace1" : "less",
+    "stylusResolveRelativeURLS" : 0,
+    "hamlUseCDATA" : 0,
+    "hamlUseUnixNewlines" : 0,
+    "typescriptCreateSourceMap" : 0,
+    "typescriptAutoOutputPathRelativePath" : "\/js",
+    "typescriptMinifyOutput" : 0,
+    "hamlOutputStyle" : 0,
+    "hamlNoEscapeInAttributes" : 0,
+    "typescriptEmitComments" : 0,
+    "sassCreateSourceMap" : 0,
+    "typescriptModuleType" : 0,
+    "coffeeAutoOutputPathReplace2" : "",
+    "typescriptAutoOutputPathStyle" : 2,
+    "hamlAutoOutputPathStyle" : 0,
+    "hamlAutoOutputPathReplace1" : "",
+    "hamlAutoOutputPathReplace2" : "",
+    "slimAutoOutputPathRelativePath" : "",
+    "markdownAutoOutputPathReplace1" : "",
+    "coffeeAutoOutputPathReplace1" : "",
+    "jadeOutputStyle" : 0,
+    "stylusDebugStyle" : 0,
+    "uglifyReservedNamesString" : "$",
+    "typescriptDisallowImportModule" : 0,
+    "lessOutputStyle" : 0,
+    "stylusAutoOutputPathReplace2" : "css",
+    "externalServerPort" : 80,
+    "sassDebugStyle" : 0,
+    "stylusAutoOutputPathReplace1" : "stylus",
+    "sassOutputStyle" : 3,
+    "slimLogicless" : 0,
+    "lessIeCompatibility" : 1,
+    "typescriptTargetECMAVersion" : 0,
+    "slimOutputStyle" : 1,
+    "jadeAutoOutputPathReplace2" : "",
+    "jadeAutoOutputPathReplace1" : "",
+    "kitAutoOutputPathStyle" : 0,
+    "animateCSSInjections" : 1,
+    "sassDecimalPrecision" : 2,
+    "skippedItemsString" : ".svn, .git, .hg, log",
+    "genericWebpageFileExtensionsString" : "html, htm, shtml, shtm, xhtml, php, jsp, asp, aspx, erb, ctp",
+    "coffeeSyntaxCheckerStyle" : 1,
+    "stylusAutoOutputPathStyle" : 2,
+    "hamlAutoOutputPathRelativePath" : "",
+    "slimCompileOnly" : 0,
+    "alwaysUseExternalServer" : 1,
+    "lessStrictUnits" : 0,
+    "coffeeMinifyOutput" : 1,
+    "jadeAutoOutputPathStyle" : 0,
+    "stylusOutputStyle" : 0,
+    "javascriptOutputStyle" : 1,
+    "lessCreateSourceMap" : 0,
+    "slimRailsCompatible" : 0,
+    "sassAutoOutputPathStyle" : 2,
+    "sassAutoOutputPathRelativePath" : "..\/",
+    "lessStrictImports" : 0,
+    "lessStrictMath" : 0,
+    "jsHintFlags2" : {
+      "latedef" : {
+        "flagValue" : -1,
+        "active" : 1
+      },
+      "newcap" : {
+        "flagValue" : -1,
+        "active" : 1
+      },
+      "curly" : {
+        "flagValue" : -1,
+        "active" : 1
+      },
+      "trailing" : {
+        "flagValue" : -1,
+        "active" : 1
+      },
+      "nonew" : {
+        "flagValue" : -1,
+        "active" : 1
+      },
+      "es3" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "freeze" : {
+        "flagValue" : -1,
+        "active" : 1
+      },
+      "maxlen" : {
+        "flagValue" : 150,
+        "active" : 0
+      },
+      "mootools" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "yui" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "proto" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "boss" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "funcscope" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "esnext" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "jquery" : {
+        "flagValue" : -1,
+        "active" : 1
+      },
+      "maxstatements" : {
+        "flagValue" : 4,
+        "active" : 0
+      },
+      "camelcase" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "dojo" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "strict" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "maxparams" : {
+        "flagValue" : 3,
+        "active" : 0
+      },
+      "devel" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "onecase" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "wsh" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "nonstandard" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "asi" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "moz" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "noempty" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "smarttabs" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "lastsemic" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "rhino" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "maxcomplexity" : {
+        "flagValue" : 10,
+        "active" : 0
+      },
+      "eqnull" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "eqeqeq" : {
+        "flagValue" : -1,
+        "active" : 1
+      },
+      "couch" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "evil" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "expr" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "immed" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "globalstrict" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "undef" : {
+        "flagValue" : -1,
+        "active" : 1
+      },
+      "iterator" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "prototypejs" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "noarg" : {
+        "flagValue" : -1,
+        "active" : 1
+      },
+      "supernew" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "node" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "unused" : {
+        "flagValue" : -1,
+        "active" : 1
+      },
+      "debug" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "bitwise" : {
+        "flagValue" : -1,
+        "active" : 1
+      },
+      "notypeof" : {
+        "flagValue" : -1,
+        "active" : 1
+      },
+      "white" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "browser" : {
+        "flagValue" : -1,
+        "active" : 1
+      },
+      "maxdepth" : {
+        "flagValue" : 3,
+        "active" : 0
+      },
+      "worker" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "laxcomma" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "multistr" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "sub" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "shadow" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "regexp" : {
+        "flagValue" : -1,
+        "active" : 1
+      },
+      "scripturl" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "forin" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "loopfunc" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "laxbreak" : {
+        "flagValue" : -1,
+        "active" : 0
+      },
+      "indent" : {
+        "flagValue" : 4,
+        "active" : 0
+      },
+      "plusplus" : {
+        "flagValue" : -1,
+        "active" : 0
+      }
+    },
+    "coffeeOutputStyle" : 0,
+    "autoApplyPSLanguageSettingsStyle" : 0,
+    "jsCheckerReservedNamesString" : "jQuery,$,_",
+    "lessAutoOutputPathRelativePath" : "..\/css",
+    "stylusAutoOutputPathRelativePath" : "..\/css",
+    "javascriptAutoOutputPathRelativePath" : "\/min",
+    "javascriptSyntaxCheckerStyle" : 1,
+    "javascriptAutoOutputPathReplace1" : "",
+    "javascriptAutoOutputPathReplace2" : "",
+    "websiteRelativeRoot" : "",
+    "coffeeAutoOutputPathRelativePath" : "",
+    "typescriptCreateDeclarationFile" : 0,
+    "hamlUseDoubleQuotes" : 0,
+    "lessAllowInsecureImports" : 0,
+    "slimAutoOutputPathReplace1" : "",
+    "slimAutoOutputPathReplace2" : "",
+    "markdownExpandTabs" : 1,
+    "typescriptAutoOutputPathReplace1" : "",
+    "browserRefreshDelay" : 0,
+    "typescriptAutoOutputPathReplace2" : "",
+    "autoSyncProjectSettingsFile" : 1,
+    "javascriptAutoOutputPathStyle" : 0,
+    "lessAutoOutputPathStyle" : 2,
+    "shouldRunBless" : 0,
+    "markdownEnableFootnotes" : 0,
+    "sassAutoOutputPathReplace2" : "css",
+    "sassAutoOutputPathReplace1" : "sass",
+    "jadeAutoOutputPathRelativePath" : "",
+    "shouldRunAutoprefixer" : 1,
+    "uglifyDefinesString" : "",
+    "markdownEnableSmartyPants" : 1,
+    "lessRelativeURLS" : 0,
+    "hamlEscapeHTMLCharacters" : 0
+  },
+  "lastSavedByUser" : "Jesús Antonio García Valadez",
+  "creatorBuild" : "16142",
+  "manualImportLinks" : {
+    "\/templates\/js\/plugins.js" : [
+      {
+        "position" : 0,
+        "linkedFileAbbreviatedPath" : "\/templates\/js\/vendor\/jquery.form.js",
+        "type" : 1,
+        "followForSyntaxChecking" : 1
+      },
+      {
+        "position" : 1,
+        "linkedFileAbbreviatedPath" : "\/templates\/js\/vendor\/jquery.validate.js",
+        "type" : 1,
+        "followForSyntaxChecking" : 1
+      },
+      {
+        "position" : 2,
+        "linkedFileAbbreviatedPath" : "\/templates\/js\/vendor\/additional-methods.js",
+        "type" : 1,
+        "followForSyntaxChecking" : 1
+      }
+    ]
+  },
+  "projectAttributes" : {
+    "displayValueWasSetByUser" : 1,
+    "displayValue" : "Registro de Invitados",
+    "bowerAbbreviatedPath" : "",
+    "iconImageName" : "meme-girlfriend"
+  },
+  "hooks" : [
+
+  ],
+  "files" : {
+    "\/templates\/css\/bourbon\/bourbon\/bourbon\/css3\/_image-rendering.scss" : {
+      "inputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/bourbon\/css3\/_image-rendering.scss",
+      "outputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/bourbon\/_image-rendering.css",
+      "outputPathIsSetByUser" : 0,
+      "shouldRunAutoprefixer" : 1,
+      "ignore" : 1,
+      "createSourceMap" : 0,
+      "decimalPrecision" : 2,
+      "ignoreWasSetByUser" : 0,
+      "debugStyle" : 0,
+      "fileType" : 4,
+      "shouldRunBless" : 0,
+      "outputStyle" : 3,
+      "useLibsass" : 0
+    },
+    "\/templates\/css\/bourbon\/bourbon\/css3\/_hidpi-media-query.scss" : {
+      "inputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/css3\/_hidpi-media-query.scss",
+      "outputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/_hidpi-media-query.css",
+      "outputPathIsSetByUser" : 0,
+      "shouldRunAutoprefixer" : 1,
+      "ignore" : 1,
+      "createSourceMap" : 0,
+      "decimalPrecision" : 2,
+      "ignoreWasSetByUser" : 0,
+      "debugStyle" : 0,
+      "fileType" : 4,
+      "shouldRunBless" : 0,
+      "outputStyle" : 3,
+      "useLibsass" : 0
+    },
+    "\/snippets\/classes\/libs\/VistaVendedores.php" : {
+      "inputAbbreviatedPath" : "\/snippets\/classes\/libs\/VistaVendedores.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 0,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 8192
+    },
+    "\/templates\/js\/plugins.js" : {
+      "syntaxCheckerStyle" : 1,
+      "inputAbbreviatedPath" : "\/templates\/js\/plugins.js",
+      "outputAbbreviatedPath" : "\/templates\/js\/plugins-ck.js",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 0,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 64,
+      "outputStyle" : 1
+    },
+    "\/templates\/css\/bourbon\/bourbon\/bourbon\/css3\/_inline-block.scss" : {
+      "inputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/bourbon\/css3\/_inline-block.scss",
+      "outputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/bourbon\/_inline-block.css",
+      "outputPathIsSetByUser" : 0,
+      "shouldRunAutoprefixer" : 1,
+      "ignore" : 1,
+      "createSourceMap" : 0,
+      "decimalPrecision" : 2,
+      "ignoreWasSetByUser" : 0,
+      "debugStyle" : 0,
+      "fileType" : 4,
+      "shouldRunBless" : 0,
+      "outputStyle" : 3,
+      "useLibsass" : 0
+    },
+    "\/templates\/css\/bourbon\/bourbon\/bourbon\/css3\/_background-image.scss" : {
+      "inputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/bourbon\/css3\/_background-image.scss",
+      "outputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/bourbon\/_background-image.css",
+      "outputPathIsSetByUser" : 0,
+      "shouldRunAutoprefixer" : 1,
+      "ignore" : 1,
+      "createSourceMap" : 0,
+      "decimalPrecision" : 2,
+      "ignoreWasSetByUser" : 0,
+      "debugStyle" : 0,
+      "fileType" : 4,
+      "shouldRunBless" : 0,
+      "outputStyle" : 3,
+      "useLibsass" : 0
+    },
+    "\/templates\/css\/bourbon\/bourbon\/bourbon\/css3\/_border-radius.scss" : {
+      "inputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/bourbon\/css3\/_border-radius.scss",
+      "outputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/bourbon\/_border-radius.css",
+      "outputPathIsSetByUser" : 0,
+      "shouldRunAutoprefixer" : 1,
+      "ignore" : 1,
+      "createSourceMap" : 0,
+      "decimalPrecision" : 2,
+      "ignoreWasSetByUser" : 0,
+      "debugStyle" : 0,
+      "fileType" : 4,
+      "shouldRunBless" : 0,
+      "outputStyle" : 3,
+      "useLibsass" : 0
+    },
+    "\/templates\/css\/normalize.min.css" : {
+      "inputAbbreviatedPath" : "\/templates\/css\/normalize.min.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 0,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 16
+    },
+    "\/templates\/css\/bourbon\/bourbon\/bourbon\/css3\/_animation.scss" : {
+      "inputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/bourbon\/css3\/_animation.scss",
+      "outputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/bourbon\/_animation.css",
+      "outputPathIsSetByUser" : 0,
+      "shouldRunAutoprefixer" : 1,
+      "ignore" : 1,
+      "createSourceMap" : 0,
+      "decimalPrecision" : 2,
+      "ignoreWasSetByUser" : 0,
+      "debugStyle" : 0,
+      "fileType" : 4,
+      "shouldRunBless" : 0,
+      "outputStyle" : 3,
+      "useLibsass" : 0
+    },
+    "\/templates\/apple-touch-icon-precomposed.png" : {
+      "inputAbbreviatedPath" : "\/templates\/apple-touch-icon-precomposed.png",
+      "outputAbbreviatedPath" : "\/Applications\/XAMPP\/xamppfiles\/htdocs\/Registro_de_Invitados\/templates\/apple-touch-icon-precomposed.png",
+      "outputPathIsSetByUser" : 0,
+      "processed" : 0,
+      "ignore" : 0,
+      "initialSize" : 1144,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 32768
+    },
+    "\/templates\/css\/bourbon\/bourbon\/bourbon\/addons\/_prefixer.scss" : {
+      "inputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/bourbon\/addons\/_prefixer.scss",
+      "outputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/bourbon\/_prefixer.css",
+      "outputPathIsSetByUser" : 0,
+      "shouldRunAutoprefixer" : 1,
+      "ignore" : 1,
+      "createSourceMap" : 0,
+      "decimalPrecision" : 2,
+      "ignoreWasSetByUser" : 0,
+      "debugStyle" : 0,
+      "fileType" : 4,
+      "shouldRunBless" : 0,
+      "outputStyle" : 3,
+      "useLibsass" : 0
+    },
+    "\/templates\/apple-touch-icon.png" : {
+      "inputAbbreviatedPath" : "\/templates\/apple-touch-icon.png",
+      "outputAbbreviatedPath" : "\/Applications\/XAMPP\/xamppfiles\/htdocs\/Registro_de_Invitados\/templates\/apple-touch-icon.png",
+      "outputPathIsSetByUser" : 0,
+      "processed" : 0,
+      "ignore" : 0,
+      "initialSize" : 1144,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 32768
+    },
+    "\/templates\/css\/bourbon\/bourbon\/functions\/_modular-scale.scss" : {
+      "inputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/functions\/_modular-scale.scss",
+      "outputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/_modular-scale.css",
+      "outputPathIsSetByUser" : 0,
+      "shouldRunAutoprefixer" : 1,
+      "ignore" : 1,
+      "createSourceMap" : 0,
+      "decimalPrecision" : 2,
+      "ignoreWasSetByUser" : 0,
+      "debugStyle" : 0,
+      "fileType" : 4,
+      "shouldRunBless" : 0,
+      "outputStyle" : 3,
+      "useLibsass" : 0
+    },
+    "\/templates\/css\/bourbon\/bourbon\/addons\/_font-family.scss" : {
+      "inputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/addons\/_font-family.scss",
+      "outputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/_font-family.css",
+      "outputPathIsSetByUser" : 0,
+      "shouldRunAutoprefixer" : 1,
+      "ignore" : 1,
+      "createSourceMap" : 0,
+      "decimalPrecision" : 2,
+      "ignoreWasSetByUser" : 0,
+      "debugStyle" : 0,
+      "fileType" : 4,
+      "shouldRunBless" : 0,
+      "outputStyle" : 3,
+      "useLibsass" : 0
+    },
+    "\/snippets\/config\/config.php" : {
+      "inputAbbreviatedPath" : "\/snippets\/config\/config.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 0,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 8192
+    },
+    "\/templates\/css\/bourbon\/bourbon\/bourbon\/css3\/_user-select.scss" : {
+      "inputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/bourbon\/css3\/_user-select.scss",
+      "outputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/bourbon\/_user-select.css",
+      "outputPathIsSetByUser" : 0,
+      "shouldRunAutoprefixer" : 1,
+      "ignore" : 1,
+      "createSourceMap" : 0,
+      "decimalPrecision" : 2,
+      "ignoreWasSetByUser" : 0,
+      "debugStyle" : 0,
+      "fileType" : 4,
+      "shouldRunBless" : 0,
+      "outputStyle" : 3,
+      "useLibsass" : 0
+    },
+    "\/templates\/css\/bourbon\/bourbon\/css3\/_appearance.scss" : {
+      "inputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/css3\/_appearance.scss",
+      "outputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/_appearance.css",
+      "outputPathIsSetByUser" : 0,
+      "shouldRunAutoprefixer" : 1,
+      "ignore" : 1,
+      "createSourceMap" : 0,
+      "decimalPrecision" : 2,
+      "ignoreWasSetByUser" : 0,
+      "debugStyle" : 0,
+      "fileType" : 4,
+      "shouldRunBless" : 0,
+      "outputStyle" : 3,
+      "useLibsass" : 0
+    },
+    "\/templates\/css\/bourbon\/bourbon\/css3\/_background.scss" : {
+      "inputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/css3\/_background.scss",
+      "outputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/_background.css",
+      "outputPathIsSetByUser" : 0,
+      "shouldRunAutoprefixer" : 1,
+      "ignore" : 1,
+      "createSourceMap" : 0,
+      "decimalPrecision" : 2,
+      "ignoreWasSetByUser" : 0,
+      "debugStyle" : 0,
+      "fileType" : 4,
+      "shouldRunBless" : 0,
+      "outputStyle" : 3,
+      "useLibsass" : 0
+    },
+    "\/templates\/css\/bourbon\/bourbon\/addons\/_prefixer.scss" : {
+      "inputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/addons\/_prefixer.scss",
+      "outputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/_prefixer.css",
+      "outputPathIsSetByUser" : 0,
+      "shouldRunAutoprefixer" : 1,
+      "ignore" : 1,
+      "createSourceMap" : 0,
+      "decimalPrecision" : 2,
+      "ignoreWasSetByUser" : 0,
+      "debugStyle" : 0,
+      "fileType" : 4,
+      "shouldRunBless" : 0,
+      "outputStyle" : 3,
+      "useLibsass" : 0
+    },
+    "\/snippets\/classes\/libs\/Validator.php" : {
+      "inputAbbreviatedPath" : "\/snippets\/classes\/libs\/Validator.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 0,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 8192
+    },
+    "\/templates\/js\/plugins-ck.js" : {
+      "syntaxCheckerStyle" : 1,
+      "inputAbbreviatedPath" : "\/templates\/js\/plugins-ck.js",
+      "outputAbbreviatedPath" : "\/templates\/js\/plugins-ck-ck.js",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 1,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 64,
+      "outputStyle" : 1
+    },
+    "\/templates\/js\/vendor\/jquery.tools.custom.min.js" : {
+      "syntaxCheckerStyle" : 1,
+      "inputAbbreviatedPath" : "\/templates\/js\/vendor\/jquery.tools.custom.min.js",
+      "outputAbbreviatedPath" : "\/templates\/js\/vendor\/jquery.tools.custom.min-ck.js",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 1,
+      "ignoreWasSetByUser" : 1,
+      "fileType" : 64,
+      "outputStyle" : 1
+    },
+    "\/templates\/css\/bourbon\/bourbon\/bourbon\/functions\/_deprecated-webkit-gradient.scss" : {
+      "inputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/bourbon\/functions\/_deprecated-webkit-gradient.scss",
+      "outputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/bourbon\/_deprecated-webkit-gradient.css",
+      "outputPathIsSetByUser" : 0,
+      "shouldRunAutoprefixer" : 1,
+      "ignore" : 1,
+      "createSourceMap" : 0,
+      "decimalPrecision" : 2,
+      "ignoreWasSetByUser" : 0,
+      "debugStyle" : 0,
+      "fileType" : 4,
+      "shouldRunBless" : 0,
+      "outputStyle" : 3,
+      "useLibsass" : 0
+    },
+    "\/templates\/css\/bourbon\/bourbon\/css3\/_border-radius.scss" : {
+      "inputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/css3\/_border-radius.scss",
+      "outputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/_border-radius.css",
+      "outputPathIsSetByUser" : 0,
+      "shouldRunAutoprefixer" : 1,
+      "ignore" : 1,
+      "createSourceMap" : 0,
+      "decimalPrecision" : 2,
+      "ignoreWasSetByUser" : 0,
+      "debugStyle" : 0,
+      "fileType" : 4,
+      "shouldRunBless" : 0,
+      "outputStyle" : 3,
+      "useLibsass" : 0
+    },
+    "\/templates\/css\/bourbon\/bourbon\/bourbon\/css3\/_font-face.scss" : {
+      "inputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/bourbon\/css3\/_font-face.scss",
+      "outputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/bourbon\/_font-face.css",
+      "outputPathIsSetByUser" : 0,
+      "shouldRunAutoprefixer" : 1,
+      "ignore" : 1,
+      "createSourceMap" : 0,
+      "decimalPrecision" : 2,
+      "ignoreWasSetByUser" : 0,
+      "debugStyle" : 0,
+      "fileType" : 4,
+      "shouldRunBless" : 0,
+      "outputStyle" : 3,
+      "useLibsass" : 0
+    },
+    "\/templates\/css\/bourbon\/bourbon\/bourbon\/addons\/_clearfix.scss" : {
+      "inputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/bourbon\/addons\/_clearfix.scss",
+      "outputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/bourbon\/_clearfix.css",
+      "outputPathIsSetByUser" : 0,
+      "shouldRunAutoprefixer" : 1,
+      "ignore" : 1,
+      "createSourceMap" : 0,
+      "decimalPrecision" : 2,
+      "ignoreWasSetByUser" : 0,
+      "debugStyle" : 0,
+      "fileType" : 4,
+      "shouldRunBless" : 0,
+      "outputStyle" : 3,
+      "useLibsass" : 0
+    },
+    "\/templates\/apple-touch-icon-72x72-precomposed.png" : {
+      "inputAbbreviatedPath" : "\/templates\/apple-touch-icon-72x72-precomposed.png",
+      "outputAbbreviatedPath" : "\/Applications\/XAMPP\/xamppfiles\/htdocs\/Registro_de_Invitados\/templates\/apple-touch-icon-72x72-precomposed.png",
+      "outputPathIsSetByUser" : 0,
+      "processed" : 0,
+      "ignore" : 0,
+      "initialSize" : 1351,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 32768
+    },
+    "\/templates\/css\/bourbon\/bourbon\/functions\/_radial-gradient.scss" : {
+      "inputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/functions\/_radial-gradient.scss",
+      "outputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/_radial-gradient.css",
+      "outputPathIsSetByUser" : 0,
+      "shouldRunAutoprefixer" : 1,
+      "ignore" : 1,
+      "createSourceMap" : 0,
+      "decimalPrecision" : 2,
+      "ignoreWasSetByUser" : 0,
+      "debugStyle" : 0,
+      "fileType" : 4,
+      "shouldRunBless" : 0,
+      "outputStyle" : 3,
+      "useLibsass" : 0
+    },
+    "\/templates\/apple-touch-icon-114x114-precomposed.png" : {
+      "inputAbbreviatedPath" : "\/templates\/apple-touch-icon-114x114-precomposed.png",
+      "outputAbbreviatedPath" : "\/Applications\/XAMPP\/xamppfiles\/htdocs\/Registro_de_Invitados\/templates\/apple-touch-icon-114x114-precomposed.png",
+      "outputPathIsSetByUser" : 0,
+      "processed" : 0,
+      "ignore" : 0,
+      "initialSize" : 2042,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 32768
+    },
+    "\/templates\/css\/bourbon\/bourbon\/css3\/_animation.scss" : {
+      "inputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/css3\/_animation.scss",
+      "outputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/_animation.css",
+      "outputPathIsSetByUser" : 0,
+      "shouldRunAutoprefixer" : 1,
+      "ignore" : 1,
+      "createSourceMap" : 0,
+      "decimalPrecision" : 2,
+      "ignoreWasSetByUser" : 0,
+      "debugStyle" : 0,
+      "fileType" : 4,
+      "shouldRunBless" : 0,
+      "outputStyle" : 3,
+      "useLibsass" : 0
+    },
+    "\/templates\/css\/bourbon\/bourbon\/functions\/_deprecated-webkit-gradient.scss" : {
+      "inputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/functions\/_deprecated-webkit-gradient.scss",
+      "outputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/_deprecated-webkit-gradient.css",
+      "outputPathIsSetByUser" : 0,
+      "shouldRunAutoprefixer" : 1,
+      "ignore" : 1,
+      "createSourceMap" : 0,
+      "decimalPrecision" : 2,
+      "ignoreWasSetByUser" : 0,
+      "debugStyle" : 0,
+      "fileType" : 4,
+      "shouldRunBless" : 0,
+      "outputStyle" : 3,
+      "useLibsass" : 0
+    },
+    "\/templates\/js\/vendor\/jquery.form.js" : {
+      "syntaxCheckerStyle" : 1,
+      "inputAbbreviatedPath" : "\/templates\/js\/vendor\/jquery.form.js",
+      "outputAbbreviatedPath" : "\/templates\/js\/vendor\/jquery.form-ck.js",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 1,
+      "ignoreWasSetByUser" : 1,
+      "fileType" : 64,
+      "outputStyle" : 1
+    },
+    "\/templates\/css\/bourbon\/bourbon\/css3\/_linear-gradient.scss" : {
+      "inputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/css3\/_linear-gradient.scss",
+      "outputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/_linear-gradient.css",
+      "outputPathIsSetByUser" : 0,
+      "shouldRunAutoprefixer" : 1,
+      "ignore" : 1,
+      "createSourceMap" : 0,
+      "decimalPrecision" : 2,
+      "ignoreWasSetByUser" : 0,
+      "debugStyle" : 0,
+      "fileType" : 4,
+      "shouldRunBless" : 0,
+      "outputStyle" : 3,
+      "useLibsass" : 0
+    },
+    "\/templates\/css\/bourbon\/bourbon\/bourbon\/css3\/_box-sizing.scss" : {
+      "inputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/bourbon\/css3\/_box-sizing.scss",
+      "outputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/bourbon\/_box-sizing.css",
+      "outputPathIsSetByUser" : 0,
+      "shouldRunAutoprefixer" : 1,
+      "ignore" : 1,
+      "createSourceMap" : 0,
+      "decimalPrecision" : 2,
+      "ignoreWasSetByUser" : 0,
+      "debugStyle" : 0,
+      "fileType" : 4,
+      "shouldRunBless" : 0,
+      "outputStyle" : 3,
+      "useLibsass" : 0
+    },
+    "\/templates\/css\/bourbon\/bourbon\/bourbon\/functions\/_radial-gradient.scss" : {
+      "inputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/bourbon\/functions\/_radial-gradient.scss",
+      "outputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/bourbon\/_radial-gradient.css",
+      "outputPathIsSetByUser" : 0,
+      "shouldRunAutoprefixer" : 1,
+      "ignore" : 1,
+      "createSourceMap" : 0,
+      "decimalPrecision" : 2,
+      "ignoreWasSetByUser" : 0,
+      "debugStyle" : 0,
+      "fileType" : 4,
+      "shouldRunBless" : 0,
+      "outputStyle" : 3,
+      "useLibsass" : 0
+    },
+    "\/templates\/css\/bourbon\/bourbon\/functions\/_linear-gradient.scss" : {
+      "inputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/functions\/_linear-gradient.scss",
+      "outputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/_linear-gradient.css",
+      "outputPathIsSetByUser" : 0,
+      "shouldRunAutoprefixer" : 1,
+      "ignore" : 1,
+      "createSourceMap" : 0,
+      "decimalPrecision" : 2,
+      "ignoreWasSetByUser" : 0,
+      "debugStyle" : 0,
+      "fileType" : 4,
+      "shouldRunBless" : 0,
+      "outputStyle" : 3,
+      "useLibsass" : 0
+    },
+    "\/templates\/css\/bourbon\/bourbon\/functions\/_flex-grid.scss" : {
+      "inputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/functions\/_flex-grid.scss",
+      "outputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/_flex-grid.css",
+      "outputPathIsSetByUser" : 0,
+      "shouldRunAutoprefixer" : 1,
+      "ignore" : 1,
+      "createSourceMap" : 0,
+      "decimalPrecision" : 2,
+      "ignoreWasSetByUser" : 0,
+      "debugStyle" : 0,
+      "fileType" : 4,
+      "shouldRunBless" : 0,
+      "outputStyle" : 3,
+      "useLibsass" : 0
+    },
+    "\/templates\/js\/vendor\/additional-methods.min.js" : {
+      "syntaxCheckerStyle" : 1,
+      "inputAbbreviatedPath" : "\/templates\/js\/vendor\/additional-methods.min.js",
+      "outputAbbreviatedPath" : "\/templates\/js\/vendor\/additional-methods.min-ck.js",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 1,
+      "ignoreWasSetByUser" : 1,
+      "fileType" : 64,
+      "outputStyle" : 1
+    },
+    "\/templates\/css\/bourbon\/bourbon\/bourbon\/addons\/_position.scss" : {
+      "inputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/bourbon\/addons\/_position.scss",
+      "outputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/bourbon\/_position.css",
+      "outputPathIsSetByUser" : 0,
+      "shouldRunAutoprefixer" : 1,
+      "ignore" : 1,
+      "createSourceMap" : 0,
+      "decimalPrecision" : 2,
+      "ignoreWasSetByUser" : 0,
+      "debugStyle" : 0,
+      "fileType" : 4,
+      "shouldRunBless" : 0,
+      "outputStyle" : 3,
+      "useLibsass" : 0
+    },
+    "\/templates\/css\/bourbon\/bourbon\/bourbon\/functions\/_modular-scale.scss" : {
+      "inputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/bourbon\/functions\/_modular-scale.scss",
+      "outputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/bourbon\/_modular-scale.css",
+      "outputPathIsSetByUser" : 0,
+      "shouldRunAutoprefixer" : 1,
+      "ignore" : 1,
+      "createSourceMap" : 0,
+      "decimalPrecision" : 2,
+      "ignoreWasSetByUser" : 0,
+      "debugStyle" : 0,
+      "fileType" : 4,
+      "shouldRunBless" : 0,
+      "outputStyle" : 3,
+      "useLibsass" : 0
+    },
+    "\/templates\/css\/bourbon\/bourbon\/css3\/_border-image.scss" : {
+      "inputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/css3\/_border-image.scss",
+      "outputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/_border-image.css",
+      "outputPathIsSetByUser" : 0,
+      "shouldRunAutoprefixer" : 1,
+      "ignore" : 1,
+      "createSourceMap" : 0,
+      "decimalPrecision" : 2,
+      "ignoreWasSetByUser" : 0,
+      "debugStyle" : 0,
+      "fileType" : 4,
+      "shouldRunBless" : 0,
+      "outputStyle" : 3,
+      "useLibsass" : 0
+    },
+    "\/templates\/css\/bourbon\/bourbon\/css3\/_flex-box.scss" : {
+      "inputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/css3\/_flex-box.scss",
+      "outputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/_flex-box.css",
+      "outputPathIsSetByUser" : 0,
+      "shouldRunAutoprefixer" : 1,
+      "ignore" : 1,
+      "createSourceMap" : 0,
+      "decimalPrecision" : 2,
+      "ignoreWasSetByUser" : 0,
+      "debugStyle" : 0,
+      "fileType" : 4,
+      "shouldRunBless" : 0,
+      "outputStyle" : 3,
+      "useLibsass" : 0
+    },
+    "\/templates\/css\/bourbon\/bourbon\/functions\/_transition-property-name.scss" : {
+      "inputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/functions\/_transition-property-name.scss",
+      "outputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/_transition-property-name.css",
+      "outputPathIsSetByUser" : 0,
+      "shouldRunAutoprefixer" : 1,
+      "ignore" : 1,
+      "createSourceMap" : 0,
+      "decimalPrecision" : 2,
+      "ignoreWasSetByUser" : 0,
+      "debugStyle" : 0,
+      "fileType" : 4,
+      "shouldRunBless" : 0,
+      "outputStyle" : 3,
+      "useLibsass" : 0
+    },
+    "\/templates\/css\/bourbon\/bourbon\/functions\/_render-gradients.scss" : {
+      "inputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/functions\/_render-gradients.scss",
+      "outputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/_render-gradients.css",
+      "outputPathIsSetByUser" : 0,
+      "shouldRunAutoprefixer" : 1,
+      "ignore" : 1,
+      "createSourceMap" : 0,
+      "decimalPrecision" : 2,
+      "ignoreWasSetByUser" : 0,
+      "debugStyle" : 0,
+      "fileType" : 4,
+      "shouldRunBless" : 0,
+      "outputStyle" : 3,
+      "useLibsass" : 0
+    },
+    "\/templates\/css\/bourbon\/bourbon\/bourbon\/css3\/_columns.scss" : {
+      "inputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/bourbon\/css3\/_columns.scss",
+      "outputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/bourbon\/_columns.css",
+      "outputPathIsSetByUser" : 0,
+      "shouldRunAutoprefixer" : 1,
+      "ignore" : 1,
+      "createSourceMap" : 0,
+      "decimalPrecision" : 2,
+      "ignoreWasSetByUser" : 0,
+      "debugStyle" : 0,
+      "fileType" : 4,
+      "shouldRunBless" : 0,
+      "outputStyle" : 3,
+      "useLibsass" : 0
+    },
+    "\/templates\/css\/sass\/main.scss" : {
+      "inputAbbreviatedPath" : "\/templates\/css\/sass\/main.scss",
+      "outputAbbreviatedPath" : "\/templates\/css\/main.css",
+      "outputPathIsSetByUser" : 0,
+      "shouldRunAutoprefixer" : 1,
+      "ignore" : 0,
+      "createSourceMap" : 0,
+      "decimalPrecision" : 2,
+      "ignoreWasSetByUser" : 0,
+      "debugStyle" : 0,
+      "fileType" : 4,
+      "shouldRunBless" : 0,
+      "outputStyle" : 3,
+      "useLibsass" : 0
+    },
+    "\/templates\/404.html" : {
+      "inputAbbreviatedPath" : "\/templates\/404.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 0,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 8192
+    },
+    "\/templates\/css\/bourbon\/bourbon\/css3\/_user-select.scss" : {
+      "inputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/css3\/_user-select.scss",
+      "outputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/_user-select.css",
+      "outputPathIsSetByUser" : 0,
+      "shouldRunAutoprefixer" : 1,
+      "ignore" : 1,
+      "createSourceMap" : 0,
+      "decimalPrecision" : 2,
+      "ignoreWasSetByUser" : 0,
+      "debugStyle" : 0,
+      "fileType" : 4,
+      "shouldRunBless" : 0,
+      "outputStyle" : 3,
+      "useLibsass" : 0
+    },
+    "\/templates\/css\/bourbon\/bourbon\/bourbon\/functions\/_compact.scss" : {
+      "inputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/bourbon\/functions\/_compact.scss",
+      "outputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/bourbon\/_compact.css",
+      "outputPathIsSetByUser" : 0,
+      "shouldRunAutoprefixer" : 1,
+      "ignore" : 1,
+      "createSourceMap" : 0,
+      "decimalPrecision" : 2,
+      "ignoreWasSetByUser" : 0,
+      "debugStyle" : 0,
+      "fileType" : 4,
+      "shouldRunBless" : 0,
+      "outputStyle" : 3,
+      "useLibsass" : 0
+    },
+    "\/templates\/css\/bourbon\/bourbon\/css3\/_transform.scss" : {
+      "inputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/css3\/_transform.scss",
+      "outputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/_transform.css",
+      "outputPathIsSetByUser" : 0,
+      "shouldRunAutoprefixer" : 1,
+      "ignore" : 1,
+      "createSourceMap" : 0,
+      "decimalPrecision" : 2,
+      "ignoreWasSetByUser" : 0,
+      "debugStyle" : 0,
+      "fileType" : 4,
+      "shouldRunBless" : 0,
+      "outputStyle" : 3,
+      "useLibsass" : 0
+    },
+    "\/templates\/css\/bourbon\/bourbon\/css3\/_box-sizing.scss" : {
+      "inputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/css3\/_box-sizing.scss",
+      "outputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/_box-sizing.css",
+      "outputPathIsSetByUser" : 0,
+      "shouldRunAutoprefixer" : 1,
+      "ignore" : 1,
+      "createSourceMap" : 0,
+      "decimalPrecision" : 2,
+      "ignoreWasSetByUser" : 0,
+      "debugStyle" : 0,
+      "fileType" : 4,
+      "shouldRunBless" : 0,
+      "outputStyle" : 3,
+      "useLibsass" : 0
+    },
+    "\/templates\/css\/bourbon\/bourbon\/addons\/_clearfix.scss" : {
+      "inputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/addons\/_clearfix.scss",
+      "outputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/_clearfix.css",
+      "outputPathIsSetByUser" : 0,
+      "shouldRunAutoprefixer" : 1,
+      "ignore" : 1,
+      "createSourceMap" : 0,
+      "decimalPrecision" : 2,
+      "ignoreWasSetByUser" : 0,
+      "debugStyle" : 0,
+      "fileType" : 4,
+      "shouldRunBless" : 0,
+      "outputStyle" : 3,
+      "useLibsass" : 0
+    },
+    "\/templates\/css\/bourbon\/bourbon\/_bourbon-deprecated-upcoming.scss" : {
+      "inputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/_bourbon-deprecated-upcoming.scss",
+      "outputAbbreviatedPath" : "\/templates\/css\/bourbon\/_bourbon-deprecated-upcoming.css",
+      "outputPathIsSetByUser" : 0,
+      "shouldRunAutoprefixer" : 1,
+      "ignore" : 1,
+      "createSourceMap" : 0,
+      "decimalPrecision" : 2,
+      "ignoreWasSetByUser" : 0,
+      "debugStyle" : 0,
+      "fileType" : 4,
+      "shouldRunBless" : 0,
+      "outputStyle" : 3,
+      "useLibsass" : 0
+    },
+    "\/snippets\/db\/connection.php" : {
+      "inputAbbreviatedPath" : "\/snippets\/db\/connection.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 0,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 8192
+    },
+    "\/templates\/js\/vendor\/prefixfree.min.js" : {
+      "syntaxCheckerStyle" : 1,
+      "inputAbbreviatedPath" : "\/templates\/js\/vendor\/prefixfree.min.js",
+      "outputAbbreviatedPath" : "\/templates\/js\/vendor\/prefixfree.min-ck.js",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 1,
+      "ignoreWasSetByUser" : 1,
+      "fileType" : 64,
+      "outputStyle" : 1
+    },
+    "\/templates\/login.html" : {
+      "inputAbbreviatedPath" : "\/templates\/login.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 0,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 8192
+    },
+    "\/templates\/css\/bourbon\/bourbon\/bourbon\/css3\/_appearance.scss" : {
+      "inputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/bourbon\/css3\/_appearance.scss",
+      "outputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/bourbon\/_appearance.css",
+      "outputPathIsSetByUser" : 0,
+      "shouldRunAutoprefixer" : 1,
+      "ignore" : 1,
+      "createSourceMap" : 0,
+      "decimalPrecision" : 2,
+      "ignoreWasSetByUser" : 0,
+      "debugStyle" : 0,
+      "fileType" : 4,
+      "shouldRunBless" : 0,
+      "outputStyle" : 3,
+      "useLibsass" : 0
+    },
+    "\/templates\/css\/bourbon\/bourbon\/addons\/_hide-text.scss" : {
+      "inputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/addons\/_hide-text.scss",
+      "outputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/_hide-text.css",
+      "outputPathIsSetByUser" : 0,
+      "shouldRunAutoprefixer" : 1,
+      "ignore" : 1,
+      "createSourceMap" : 0,
+      "decimalPrecision" : 2,
+      "ignoreWasSetByUser" : 0,
+      "debugStyle" : 0,
+      "fileType" : 4,
+      "shouldRunBless" : 0,
+      "outputStyle" : 3,
+      "useLibsass" : 0
+    },
+    "\/templates\/css\/main.css" : {
+      "inputAbbreviatedPath" : "\/templates\/css\/main.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 1,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 16
+    },
+    "\/templates\/css\/bourbon\/bourbon\/css3\/_background-image.scss" : {
+      "inputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/css3\/_background-image.scss",
+      "outputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/_background-image.css",
+      "outputPathIsSetByUser" : 0,
+      "shouldRunAutoprefixer" : 1,
+      "ignore" : 1,
+      "createSourceMap" : 0,
+      "decimalPrecision" : 2,
+      "ignoreWasSetByUser" : 0,
+      "debugStyle" : 0,
+      "fileType" : 4,
+      "shouldRunBless" : 0,
+      "outputStyle" : 3,
+      "useLibsass" : 0
+    },
+    "\/templates\/css\/bourbon\/bourbon\/bourbon\/functions\/_tint-shade.scss" : {
+      "inputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/bourbon\/functions\/_tint-shade.scss",
+      "outputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/bourbon\/_tint-shade.css",
+      "outputPathIsSetByUser" : 0,
+      "shouldRunAutoprefixer" : 1,
+      "ignore" : 1,
+      "createSourceMap" : 0,
+      "decimalPrecision" : 2,
+      "ignoreWasSetByUser" : 0,
+      "debugStyle" : 0,
+      "fileType" : 4,
+      "shouldRunBless" : 0,
+      "outputStyle" : 3,
+      "useLibsass" : 0
+    },
+    "\/templates\/css\/bourbon\/bourbon\/bourbon\/css3\/_background-size.scss" : {
+      "inputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/bourbon\/css3\/_background-size.scss",
+      "outputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/bourbon\/_background-size.css",
+      "outputPathIsSetByUser" : 0,
+      "shouldRunAutoprefixer" : 1,
+      "ignore" : 1,
+      "createSourceMap" : 0,
+      "decimalPrecision" : 2,
+      "ignoreWasSetByUser" : 0,
+      "debugStyle" : 0,
+      "fileType" : 4,
+      "shouldRunBless" : 0,
+      "outputStyle" : 3,
+      "useLibsass" : 0
+    },
+    "\/templates\/css\/bourbon\/bourbon\/functions\/_grid-width.scss" : {
+      "inputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/functions\/_grid-width.scss",
+      "outputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/_grid-width.css",
+      "outputPathIsSetByUser" : 0,
+      "shouldRunAutoprefixer" : 1,
+      "ignore" : 1,
+      "createSourceMap" : 0,
+      "decimalPrecision" : 2,
+      "ignoreWasSetByUser" : 0,
+      "debugStyle" : 0,
+      "fileType" : 4,
+      "shouldRunBless" : 0,
+      "outputStyle" : 3,
+      "useLibsass" : 0
+    },
+    "\/templates\/css\/bourbon\/bourbon\/css3\/_transition.scss" : {
+      "inputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/css3\/_transition.scss",
+      "outputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/_transition.css",
+      "outputPathIsSetByUser" : 0,
+      "shouldRunAutoprefixer" : 1,
+      "ignore" : 1,
+      "createSourceMap" : 0,
+      "decimalPrecision" : 2,
+      "ignoreWasSetByUser" : 0,
+      "debugStyle" : 0,
+      "fileType" : 4,
+      "shouldRunBless" : 0,
+      "outputStyle" : 3,
+      "useLibsass" : 0
+    },
+    "\/templates\/css\/bourbon\/bourbon\/css3\/_radial-gradient.scss" : {
+      "inputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/css3\/_radial-gradient.scss",
+      "outputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/_radial-gradient.css",
+      "outputPathIsSetByUser" : 0,
+      "shouldRunAutoprefixer" : 1,
+      "ignore" : 1,
+      "createSourceMap" : 0,
+      "decimalPrecision" : 2,
+      "ignoreWasSetByUser" : 0,
+      "debugStyle" : 0,
+      "fileType" : 4,
+      "shouldRunBless" : 0,
+      "outputStyle" : 3,
+      "useLibsass" : 0
+    },
+    "\/templates\/js\/vendor\/modernizr-2.6.2.min.js" : {
+      "syntaxCheckerStyle" : 1,
+      "inputAbbreviatedPath" : "\/templates\/js\/vendor\/modernizr-2.6.2.min.js",
+      "outputAbbreviatedPath" : "\/templates\/js\/vendor\/modernizr-2.6.2.min-ck.js",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 1,
+      "ignoreWasSetByUser" : 1,
+      "fileType" : 64,
+      "outputStyle" : 1
+    },
+    "\/templates\/js\/vendor\/jquery-1.8.3.min.js" : {
+      "syntaxCheckerStyle" : 1,
+      "inputAbbreviatedPath" : "\/templates\/js\/vendor\/jquery-1.8.3.min.js",
+      "outputAbbreviatedPath" : "\/templates\/js\/vendor\/jquery-1.8.3.min-ck.js",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 1,
+      "ignoreWasSetByUser" : 1,
+      "fileType" : 64,
+      "outputStyle" : 1
+    },
+    "\/templates\/css\/bourbon\/bourbon\/bourbon\/functions\/_flex-grid.scss" : {
+      "inputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/bourbon\/functions\/_flex-grid.scss",
+      "outputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/bourbon\/_flex-grid.css",
+      "outputPathIsSetByUser" : 0,
+      "shouldRunAutoprefixer" : 1,
+      "ignore" : 1,
+      "createSourceMap" : 0,
+      "decimalPrecision" : 2,
+      "ignoreWasSetByUser" : 0,
+      "debugStyle" : 0,
+      "fileType" : 4,
+      "shouldRunBless" : 0,
+      "outputStyle" : 3,
+      "useLibsass" : 0
+    },
+    "\/templates\/css\/bourbon\/bourbon\/bourbon\/addons\/_hide-text.scss" : {
+      "inputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/bourbon\/addons\/_hide-text.scss",
+      "outputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/bourbon\/_hide-text.css",
+      "outputPathIsSetByUser" : 0,
+      "shouldRunAutoprefixer" : 1,
+      "ignore" : 1,
+      "createSourceMap" : 0,
+      "decimalPrecision" : 2,
+      "ignoreWasSetByUser" : 0,
+      "debugStyle" : 0,
+      "fileType" : 4,
+      "shouldRunBless" : 0,
+      "outputStyle" : 3,
+      "useLibsass" : 0
+    },
+    "\/templates\/css\/bourbon\/bourbon\/bourbon\/css3\/_border-image.scss" : {
+      "inputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/bourbon\/css3\/_border-image.scss",
+      "outputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/bourbon\/_border-image.css",
+      "outputPathIsSetByUser" : 0,
+      "shouldRunAutoprefixer" : 1,
+      "ignore" : 1,
+      "createSourceMap" : 0,
+      "decimalPrecision" : 2,
+      "ignoreWasSetByUser" : 0,
+      "debugStyle" : 0,
+      "fileType" : 4,
+      "shouldRunBless" : 0,
+      "outputStyle" : 3,
+      "useLibsass" : 0
+    },
+    "\/templates\/css\/bourbon\/bourbon\/css3\/_background-size.scss" : {
+      "inputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/css3\/_background-size.scss",
+      "outputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/_background-size.css",
+      "outputPathIsSetByUser" : 0,
+      "shouldRunAutoprefixer" : 1,
+      "ignore" : 1,
+      "createSourceMap" : 0,
+      "decimalPrecision" : 2,
+      "ignoreWasSetByUser" : 0,
+      "debugStyle" : 0,
+      "fileType" : 4,
+      "shouldRunBless" : 0,
+      "outputStyle" : 3,
+      "useLibsass" : 0
+    },
+    "\/templates\/css\/bourbon\/bourbon\/bourbon\/css3\/_radial-gradient.scss" : {
+      "inputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/bourbon\/css3\/_radial-gradient.scss",
+      "outputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/bourbon\/_radial-gradient.css",
+      "outputPathIsSetByUser" : 0,
+      "shouldRunAutoprefixer" : 1,
+      "ignore" : 1,
+      "createSourceMap" : 0,
+      "decimalPrecision" : 2,
+      "ignoreWasSetByUser" : 0,
+      "debugStyle" : 0,
+      "fileType" : 4,
+      "shouldRunBless" : 0,
+      "outputStyle" : 3,
+      "useLibsass" : 0
+    },
+    "\/templates\/css\/bourbon\/bourbon\/bourbon\/css3\/_box-shadow.scss" : {
+      "inputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/bourbon\/css3\/_box-shadow.scss",
+      "outputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/bourbon\/_box-shadow.css",
+      "outputPathIsSetByUser" : 0,
+      "shouldRunAutoprefixer" : 1,
+      "ignore" : 1,
+      "createSourceMap" : 0,
+      "decimalPrecision" : 2,
+      "ignoreWasSetByUser" : 0,
+      "debugStyle" : 0,
+      "fileType" : 4,
+      "shouldRunBless" : 0,
+      "outputStyle" : 3,
+      "useLibsass" : 0
+    },
+    "\/templates\/apple-touch-icon-144x144-precomposed.png" : {
+      "inputAbbreviatedPath" : "\/templates\/apple-touch-icon-144x144-precomposed.png",
+      "outputAbbreviatedPath" : "\/Applications\/XAMPP\/xamppfiles\/htdocs\/Registro_de_Invitados\/templates\/apple-touch-icon-144x144-precomposed.png",
+      "outputPathIsSetByUser" : 0,
+      "processed" : 0,
+      "ignore" : 0,
+      "initialSize" : 1795,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 32768
+    },
+    "\/chunks\/create_user.html" : {
+      "inputAbbreviatedPath" : "\/chunks\/create_user.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 0,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 8192
+    },
+    "\/templates\/css\/bourbon\/bourbon\/bourbon\/addons\/_html5-input-types.scss" : {
+      "inputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/bourbon\/addons\/_html5-input-types.scss",
+      "outputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/bourbon\/_html5-input-types.css",
+      "outputPathIsSetByUser" : 0,
+      "shouldRunAutoprefixer" : 1,
+      "ignore" : 1,
+      "createSourceMap" : 0,
+      "decimalPrecision" : 2,
+      "ignoreWasSetByUser" : 0,
+      "debugStyle" : 0,
+      "fileType" : 4,
+      "shouldRunBless" : 0,
+      "outputStyle" : 3,
+      "useLibsass" : 0
+    },
+    "\/snippets\/lib\/dbConnect.php" : {
+      "inputAbbreviatedPath" : "\/snippets\/lib\/dbConnect.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 0,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 8192
+    },
+    "\/templates\/edit.php" : {
+      "inputAbbreviatedPath" : "\/templates\/edit.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 0,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 8192
+    },
+    "\/templates\/css\/bourbon\/bourbon\/bourbon\/css3\/_linear-gradient.scss" : {
+      "inputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/bourbon\/css3\/_linear-gradient.scss",
+      "outputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/bourbon\/_linear-gradient.css",
+      "outputPathIsSetByUser" : 0,
+      "shouldRunAutoprefixer" : 1,
+      "ignore" : 1,
+      "createSourceMap" : 0,
+      "decimalPrecision" : 2,
+      "ignoreWasSetByUser" : 0,
+      "debugStyle" : 0,
+      "fileType" : 4,
+      "shouldRunBless" : 0,
+      "outputStyle" : 3,
+      "useLibsass" : 0
+    },
+    "\/snippets\/classes\/libs\/View.php" : {
+      "inputAbbreviatedPath" : "\/snippets\/classes\/libs\/View.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 0,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 8192
+    },
+    "\/templates\/css\/bourbon\/bourbon\/bourbon\/css3\/_perspective.scss" : {
+      "inputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/bourbon\/css3\/_perspective.scss",
+      "outputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/bourbon\/_perspective.css",
+      "outputPathIsSetByUser" : 0,
+      "shouldRunAutoprefixer" : 1,
+      "ignore" : 1,
+      "createSourceMap" : 0,
+      "decimalPrecision" : 2,
+      "ignoreWasSetByUser" : 0,
+      "debugStyle" : 0,
+      "fileType" : 4,
+      "shouldRunBless" : 0,
+      "outputStyle" : 3,
+      "useLibsass" : 0
+    },
+    "\/templates\/css\/bourbon\/bourbon\/bourbon\/css3\/_transform.scss" : {
+      "inputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/bourbon\/css3\/_transform.scss",
+      "outputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/bourbon\/_transform.css",
+      "outputPathIsSetByUser" : 0,
+      "shouldRunAutoprefixer" : 1,
+      "ignore" : 1,
+      "createSourceMap" : 0,
+      "decimalPrecision" : 2,
+      "ignoreWasSetByUser" : 0,
+      "debugStyle" : 0,
+      "fileType" : 4,
+      "shouldRunBless" : 0,
+      "outputStyle" : 3,
+      "useLibsass" : 0
+    },
+    "\/templates\/css\/bourbon\/bourbon\/css3\/_image-rendering.scss" : {
+      "inputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/css3\/_image-rendering.scss",
+      "outputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/_image-rendering.css",
+      "outputPathIsSetByUser" : 0,
+      "shouldRunAutoprefixer" : 1,
+      "ignore" : 1,
+      "createSourceMap" : 0,
+      "decimalPrecision" : 2,
+      "ignoreWasSetByUser" : 0,
+      "debugStyle" : 0,
+      "fileType" : 4,
+      "shouldRunBless" : 0,
+      "outputStyle" : 3,
+      "useLibsass" : 0
+    },
+    "\/templates\/css\/bourbon\/bourbon\/css3\/_inline-block.scss" : {
+      "inputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/css3\/_inline-block.scss",
+      "outputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/_inline-block.css",
+      "outputPathIsSetByUser" : 0,
+      "shouldRunAutoprefixer" : 1,
+      "ignore" : 1,
+      "createSourceMap" : 0,
+      "decimalPrecision" : 2,
+      "ignoreWasSetByUser" : 0,
+      "debugStyle" : 0,
+      "fileType" : 4,
+      "shouldRunBless" : 0,
+      "outputStyle" : 3,
+      "useLibsass" : 0
+    },
+    "\/templates\/js\/vendor\/jquery.validate.min.js" : {
+      "syntaxCheckerStyle" : 1,
+      "inputAbbreviatedPath" : "\/templates\/js\/vendor\/jquery.validate.min.js",
+      "outputAbbreviatedPath" : "\/templates\/js\/vendor\/jquery.validate.min-ck.js",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 1,
+      "ignoreWasSetByUser" : 1,
+      "fileType" : 64,
+      "outputStyle" : 1
+    },
+    "\/templates\/css\/bourbon\/bourbon\/bourbon\/css3\/_transition.scss" : {
+      "inputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/bourbon\/css3\/_transition.scss",
+      "outputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/bourbon\/_transition.css",
+      "outputPathIsSetByUser" : 0,
+      "shouldRunAutoprefixer" : 1,
+      "ignore" : 1,
+      "createSourceMap" : 0,
+      "decimalPrecision" : 2,
+      "ignoreWasSetByUser" : 0,
+      "debugStyle" : 0,
+      "fileType" : 4,
+      "shouldRunBless" : 0,
+      "outputStyle" : 3,
+      "useLibsass" : 0
+    },
+    "\/templates\/apple-touch-icon-57x57-precomposed.png" : {
+      "inputAbbreviatedPath" : "\/templates\/apple-touch-icon-57x57-precomposed.png",
+      "outputAbbreviatedPath" : "\/Applications\/XAMPP\/xamppfiles\/htdocs\/Registro_de_Invitados\/templates\/apple-touch-icon-57x57-precomposed.png",
+      "outputPathIsSetByUser" : 0,
+      "processed" : 0,
+      "ignore" : 0,
+      "initialSize" : 1144,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 32768
+    },
+    "\/templates\/js\/vendor\/additional-methods.js" : {
+      "syntaxCheckerStyle" : 1,
+      "inputAbbreviatedPath" : "\/templates\/js\/vendor\/additional-methods.js",
+      "outputAbbreviatedPath" : "\/templates\/js\/vendor\/additional-methods-ck.js",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 1,
+      "ignoreWasSetByUser" : 1,
+      "fileType" : 64,
+      "outputStyle" : 1
+    },
+    "\/templates\/css\/bourbon\/bourbon\/bourbon\/_bourbon-deprecated-upcoming.scss" : {
+      "inputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/bourbon\/_bourbon-deprecated-upcoming.scss",
+      "outputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/_bourbon-deprecated-upcoming.css",
+      "outputPathIsSetByUser" : 0,
+      "shouldRunAutoprefixer" : 1,
+      "ignore" : 1,
+      "createSourceMap" : 0,
+      "decimalPrecision" : 2,
+      "ignoreWasSetByUser" : 0,
+      "debugStyle" : 0,
+      "fileType" : 4,
+      "shouldRunBless" : 0,
+      "outputStyle" : 3,
+      "useLibsass" : 0
+    },
+    "\/snippets\/controller.php" : {
+      "inputAbbreviatedPath" : "\/snippets\/controller.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 0,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 8192
+    },
+    "\/templates\/css\/normalize.css" : {
+      "inputAbbreviatedPath" : "\/templates\/css\/normalize.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 0,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 16
+    },
+    "\/templates\/css\/bourbon\/bourbon\/bourbon\/css3\/_hidpi-media-query.scss" : {
+      "inputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/bourbon\/css3\/_hidpi-media-query.scss",
+      "outputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/bourbon\/_hidpi-media-query.css",
+      "outputPathIsSetByUser" : 0,
+      "shouldRunAutoprefixer" : 1,
+      "ignore" : 1,
+      "createSourceMap" : 0,
+      "decimalPrecision" : 2,
+      "ignoreWasSetByUser" : 0,
+      "debugStyle" : 0,
+      "fileType" : 4,
+      "shouldRunBless" : 0,
+      "outputStyle" : 3,
+      "useLibsass" : 0
+    },
+    "\/templates\/css\/bourbon\/bourbon\/functions\/_tint-shade.scss" : {
+      "inputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/functions\/_tint-shade.scss",
+      "outputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/_tint-shade.css",
+      "outputPathIsSetByUser" : 0,
+      "shouldRunAutoprefixer" : 1,
+      "ignore" : 1,
+      "createSourceMap" : 0,
+      "decimalPrecision" : 2,
+      "ignoreWasSetByUser" : 0,
+      "debugStyle" : 0,
+      "fileType" : 4,
+      "shouldRunBless" : 0,
+      "outputStyle" : 3,
+      "useLibsass" : 0
+    },
+    "\/templates\/css\/bourbon\/bourbon\/bourbon\/addons\/_timing-functions.scss" : {
+      "inputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/bourbon\/addons\/_timing-functions.scss",
+      "outputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/bourbon\/_timing-functions.css",
+      "outputPathIsSetByUser" : 0,
+      "shouldRunAutoprefixer" : 1,
+      "ignore" : 1,
+      "createSourceMap" : 0,
+      "decimalPrecision" : 2,
+      "ignoreWasSetByUser" : 0,
+      "debugStyle" : 0,
+      "fileType" : 4,
+      "shouldRunBless" : 0,
+      "outputStyle" : 3,
+      "useLibsass" : 0
+    },
+    "\/snippets\/classes\/libs\/Usuarios.php" : {
+      "inputAbbreviatedPath" : "\/snippets\/classes\/libs\/Usuarios.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 0,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 8192
+    },
+    "\/templates\/css\/bourbon\/bourbon\/css3\/_columns.scss" : {
+      "inputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/css3\/_columns.scss",
+      "outputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/_columns.css",
+      "outputPathIsSetByUser" : 0,
+      "shouldRunAutoprefixer" : 1,
+      "ignore" : 1,
+      "createSourceMap" : 0,
+      "decimalPrecision" : 2,
+      "ignoreWasSetByUser" : 0,
+      "debugStyle" : 0,
+      "fileType" : 4,
+      "shouldRunBless" : 0,
+      "outputStyle" : 3,
+      "useLibsass" : 0
+    },
+    "\/templates\/js\/vendor\/jquery.dataTables.min.js" : {
+      "syntaxCheckerStyle" : 1,
+      "inputAbbreviatedPath" : "\/templates\/js\/vendor\/jquery.dataTables.min.js",
+      "outputAbbreviatedPath" : "\/templates\/js\/vendor\/jquery.dataTables.min-ck.js",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 1,
+      "ignoreWasSetByUser" : 1,
+      "fileType" : 64,
+      "outputStyle" : 1
+    },
+    "\/chunks\/edit_user.html" : {
+      "inputAbbreviatedPath" : "\/chunks\/edit_user.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 0,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 8192
+    },
+    "\/templates\/js\/main.js" : {
+      "syntaxCheckerStyle" : 1,
+      "inputAbbreviatedPath" : "\/templates\/js\/main.js",
+      "outputAbbreviatedPath" : "\/templates\/js\/main-ck.js",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 0,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 64,
+      "outputStyle" : 1
+    },
+    "\/templates\/js\/main-ck.js" : {
+      "syntaxCheckerStyle" : 1,
+      "inputAbbreviatedPath" : "\/templates\/js\/main-ck.js",
+      "outputAbbreviatedPath" : "\/templates\/js\/main-ck-ck.js",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 1,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 64,
+      "outputStyle" : 1
+    },
+    "\/templates\/css\/bourbon\/bourbon\/bourbon\/css3\/_background.scss" : {
+      "inputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/bourbon\/css3\/_background.scss",
+      "outputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/bourbon\/_background.css",
+      "outputPathIsSetByUser" : 0,
+      "shouldRunAutoprefixer" : 1,
+      "ignore" : 1,
+      "createSourceMap" : 0,
+      "decimalPrecision" : 2,
+      "ignoreWasSetByUser" : 0,
+      "debugStyle" : 0,
+      "fileType" : 4,
+      "shouldRunBless" : 0,
+      "outputStyle" : 3,
+      "useLibsass" : 0
+    },
+    "\/templates\/README.md" : {
+      "expandTabs" : 1,
+      "inputAbbreviatedPath" : "\/templates\/README.md",
+      "outputAbbreviatedPath" : "\/Applications\/XAMPP\/xamppfiles\/htdocs\/Registro_de_Invitados\/templates\/README.html",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 0,
+      "enableFootnoteSupport" : 0,
+      "enableSmartyPants" : 1,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 4096
+    },
+    "\/templates\/css\/bourbon\/bourbon\/bourbon\/functions\/_linear-gradient.scss" : {
+      "inputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/bourbon\/functions\/_linear-gradient.scss",
+      "outputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/bourbon\/_linear-gradient.css",
+      "outputPathIsSetByUser" : 0,
+      "shouldRunAutoprefixer" : 1,
+      "ignore" : 1,
+      "createSourceMap" : 0,
+      "decimalPrecision" : 2,
+      "ignoreWasSetByUser" : 0,
+      "debugStyle" : 0,
+      "fileType" : 4,
+      "shouldRunBless" : 0,
+      "outputStyle" : 3,
+      "useLibsass" : 0
+    },
+    "\/templates\/css\/bourbon\/bourbon\/bourbon\/addons\/_button.scss" : {
+      "inputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/bourbon\/addons\/_button.scss",
+      "outputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/bourbon\/_button.css",
+      "outputPathIsSetByUser" : 0,
+      "shouldRunAutoprefixer" : 1,
+      "ignore" : 1,
+      "createSourceMap" : 0,
+      "decimalPrecision" : 2,
+      "ignoreWasSetByUser" : 0,
+      "debugStyle" : 0,
+      "fileType" : 4,
+      "shouldRunBless" : 0,
+      "outputStyle" : 3,
+      "useLibsass" : 0
+    },
+    "\/templates\/css\/bourbon\/bourbon\/addons\/_html5-input-types.scss" : {
+      "inputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/addons\/_html5-input-types.scss",
+      "outputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/_html5-input-types.css",
+      "outputPathIsSetByUser" : 0,
+      "shouldRunAutoprefixer" : 1,
+      "ignore" : 1,
+      "createSourceMap" : 0,
+      "decimalPrecision" : 2,
+      "ignoreWasSetByUser" : 0,
+      "debugStyle" : 0,
+      "fileType" : 4,
+      "shouldRunBless" : 0,
+      "outputStyle" : 3,
+      "useLibsass" : 0
+    },
+    "\/templates\/css\/bourbon\/bourbon\/addons\/_position.scss" : {
+      "inputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/addons\/_position.scss",
+      "outputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/_position.css",
+      "outputPathIsSetByUser" : 0,
+      "shouldRunAutoprefixer" : 1,
+      "ignore" : 1,
+      "createSourceMap" : 0,
+      "decimalPrecision" : 2,
+      "ignoreWasSetByUser" : 0,
+      "debugStyle" : 0,
+      "fileType" : 4,
+      "shouldRunBless" : 0,
+      "outputStyle" : 3,
+      "useLibsass" : 0
+    },
+    "\/snippets\/classes\/libs\/Upload.php" : {
+      "inputAbbreviatedPath" : "\/snippets\/classes\/libs\/Upload.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 0,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 8192
+    },
+    "\/templates\/js\/vendor\/jquery.validate.js" : {
+      "syntaxCheckerStyle" : 1,
+      "inputAbbreviatedPath" : "\/templates\/js\/vendor\/jquery.validate.js",
+      "outputAbbreviatedPath" : "\/templates\/js\/vendor\/jquery.validate-ck.js",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 1,
+      "ignoreWasSetByUser" : 1,
+      "fileType" : 64,
+      "outputStyle" : 1
+    },
+    "\/templates\/css\/bourbon\/bourbon\/_bourbon.scss" : {
+      "inputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/_bourbon.scss",
+      "outputAbbreviatedPath" : "\/templates\/css\/bourbon\/_bourbon.css",
+      "outputPathIsSetByUser" : 0,
+      "shouldRunAutoprefixer" : 1,
+      "ignore" : 1,
+      "createSourceMap" : 0,
+      "decimalPrecision" : 2,
+      "ignoreWasSetByUser" : 0,
+      "debugStyle" : 0,
+      "fileType" : 4,
+      "shouldRunBless" : 0,
+      "outputStyle" : 3,
+      "useLibsass" : 0
+    },
+    "\/templates\/search.html" : {
+      "inputAbbreviatedPath" : "\/templates\/search.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 0,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 8192
+    },
+    "\/templates\/css\/bourbon\/bourbon\/css3\/_perspective.scss" : {
+      "inputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/css3\/_perspective.scss",
+      "outputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/_perspective.css",
+      "outputPathIsSetByUser" : 0,
+      "shouldRunAutoprefixer" : 1,
+      "ignore" : 1,
+      "createSourceMap" : 0,
+      "decimalPrecision" : 2,
+      "ignoreWasSetByUser" : 0,
+      "debugStyle" : 0,
+      "fileType" : 4,
+      "shouldRunBless" : 0,
+      "outputStyle" : 3,
+      "useLibsass" : 0
+    },
+    "\/templates\/css\/bourbon\/bourbon\/addons\/_timing-functions.scss" : {
+      "inputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/addons\/_timing-functions.scss",
+      "outputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/_timing-functions.css",
+      "outputPathIsSetByUser" : 0,
+      "shouldRunAutoprefixer" : 1,
+      "ignore" : 1,
+      "createSourceMap" : 0,
+      "decimalPrecision" : 2,
+      "ignoreWasSetByUser" : 0,
+      "debugStyle" : 0,
+      "fileType" : 4,
+      "shouldRunBless" : 0,
+      "outputStyle" : 3,
+      "useLibsass" : 0
+    },
+    "\/snippets\/lib\/DBQueries.php" : {
+      "inputAbbreviatedPath" : "\/snippets\/lib\/DBQueries.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 0,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 8192
+    },
+    "\/templates\/css\/bourbon\/bourbon\/bourbon\/_bourbon.scss" : {
+      "inputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/bourbon\/_bourbon.scss",
+      "outputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/_bourbon.css",
+      "outputPathIsSetByUser" : 0,
+      "shouldRunAutoprefixer" : 1,
+      "ignore" : 1,
+      "createSourceMap" : 0,
+      "decimalPrecision" : 2,
+      "ignoreWasSetByUser" : 0,
+      "debugStyle" : 0,
+      "fileType" : 4,
+      "shouldRunBless" : 0,
+      "outputStyle" : 3,
+      "useLibsass" : 0
+    },
+    "\/templates\/css\/bourbon\/bourbon\/functions\/_compact.scss" : {
+      "inputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/functions\/_compact.scss",
+      "outputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/_compact.css",
+      "outputPathIsSetByUser" : 0,
+      "shouldRunAutoprefixer" : 1,
+      "ignore" : 1,
+      "createSourceMap" : 0,
+      "decimalPrecision" : 2,
+      "ignoreWasSetByUser" : 0,
+      "debugStyle" : 0,
+      "fileType" : 4,
+      "shouldRunBless" : 0,
+      "outputStyle" : 3,
+      "useLibsass" : 0
+    },
+    "\/snippets\/classes\/libs\/Model.php" : {
+      "inputAbbreviatedPath" : "\/snippets\/classes\/libs\/Model.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 0,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 8192
+    },
+    "\/templates\/css\/bourbon\/bourbon\/css3\/_font-face.scss" : {
+      "inputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/css3\/_font-face.scss",
+      "outputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/_font-face.css",
+      "outputPathIsSetByUser" : 0,
+      "shouldRunAutoprefixer" : 1,
+      "ignore" : 1,
+      "createSourceMap" : 0,
+      "decimalPrecision" : 2,
+      "ignoreWasSetByUser" : 0,
+      "debugStyle" : 0,
+      "fileType" : 4,
+      "shouldRunBless" : 0,
+      "outputStyle" : 3,
+      "useLibsass" : 0
+    },
+    "\/templates\/js\/vendor\/jquery-1.8.2.min.js" : {
+      "syntaxCheckerStyle" : 1,
+      "inputAbbreviatedPath" : "\/templates\/js\/vendor\/jquery-1.8.2.min.js",
+      "outputAbbreviatedPath" : "\/templates\/js\/vendor\/jquery-1.8.2.min-ck.js",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 1,
+      "ignoreWasSetByUser" : 1,
+      "fileType" : 64,
+      "outputStyle" : 1
+    },
+    "\/snippets\/classes\/libs\/Connection.php" : {
+      "inputAbbreviatedPath" : "\/snippets\/classes\/libs\/Connection.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 0,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 8192
+    },
+    "\/templates\/css\/bourbon\/bourbon\/bourbon\/functions\/_transition-property-name.scss" : {
+      "inputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/bourbon\/functions\/_transition-property-name.scss",
+      "outputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/bourbon\/_transition-property-name.css",
+      "outputPathIsSetByUser" : 0,
+      "shouldRunAutoprefixer" : 1,
+      "ignore" : 1,
+      "createSourceMap" : 0,
+      "decimalPrecision" : 2,
+      "ignoreWasSetByUser" : 0,
+      "debugStyle" : 0,
+      "fileType" : 4,
+      "shouldRunBless" : 0,
+      "outputStyle" : 3,
+      "useLibsass" : 0
+    },
+    "\/templates\/css\/bourbon\/bourbon\/bourbon\/functions\/_render-gradients.scss" : {
+      "inputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/bourbon\/functions\/_render-gradients.scss",
+      "outputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/bourbon\/_render-gradients.css",
+      "outputPathIsSetByUser" : 0,
+      "shouldRunAutoprefixer" : 1,
+      "ignore" : 1,
+      "createSourceMap" : 0,
+      "decimalPrecision" : 2,
+      "ignoreWasSetByUser" : 0,
+      "debugStyle" : 0,
+      "fileType" : 4,
+      "shouldRunBless" : 0,
+      "outputStyle" : 3,
+      "useLibsass" : 0
+    },
+    "\/templates\/css\/bourbon\/bourbon\/css3\/_box-shadow.scss" : {
+      "inputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/css3\/_box-shadow.scss",
+      "outputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/_box-shadow.css",
+      "outputPathIsSetByUser" : 0,
+      "shouldRunAutoprefixer" : 1,
+      "ignore" : 1,
+      "createSourceMap" : 0,
+      "decimalPrecision" : 2,
+      "ignoreWasSetByUser" : 0,
+      "debugStyle" : 0,
+      "fileType" : 4,
+      "shouldRunBless" : 0,
+      "outputStyle" : 3,
+      "useLibsass" : 0
+    },
+    "\/templates\/css\/bourbon\/bourbon\/bourbon\/css3\/_flex-box.scss" : {
+      "inputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/bourbon\/css3\/_flex-box.scss",
+      "outputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/bourbon\/_flex-box.css",
+      "outputPathIsSetByUser" : 0,
+      "shouldRunAutoprefixer" : 1,
+      "ignore" : 1,
+      "createSourceMap" : 0,
+      "decimalPrecision" : 2,
+      "ignoreWasSetByUser" : 0,
+      "debugStyle" : 0,
+      "fileType" : 4,
+      "shouldRunBless" : 0,
+      "outputStyle" : 3,
+      "useLibsass" : 0
+    },
+    "\/templates\/css\/bourbon\/bourbon\/bourbon\/functions\/_grid-width.scss" : {
+      "inputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/bourbon\/functions\/_grid-width.scss",
+      "outputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/bourbon\/_grid-width.css",
+      "outputPathIsSetByUser" : 0,
+      "shouldRunAutoprefixer" : 1,
+      "ignore" : 1,
+      "createSourceMap" : 0,
+      "decimalPrecision" : 2,
+      "ignoreWasSetByUser" : 0,
+      "debugStyle" : 0,
+      "fileType" : 4,
+      "shouldRunBless" : 0,
+      "outputStyle" : 3,
+      "useLibsass" : 0
+    },
+    "\/templates\/css\/bourbon\/bourbon\/addons\/_button.scss" : {
+      "inputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/addons\/_button.scss",
+      "outputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/_button.css",
+      "outputPathIsSetByUser" : 0,
+      "shouldRunAutoprefixer" : 1,
+      "ignore" : 1,
+      "createSourceMap" : 0,
+      "decimalPrecision" : 2,
+      "ignoreWasSetByUser" : 0,
+      "debugStyle" : 0,
+      "fileType" : 4,
+      "shouldRunBless" : 0,
+      "outputStyle" : 3,
+      "useLibsass" : 0
+    },
+    "\/templates\/css\/bourbon\/bourbon\/bourbon\/addons\/_font-family.scss" : {
+      "inputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/bourbon\/addons\/_font-family.scss",
+      "outputAbbreviatedPath" : "\/templates\/css\/bourbon\/bourbon\/bourbon\/_font-family.css",
+      "outputPathIsSetByUser" : 0,
+      "shouldRunAutoprefixer" : 1,
+      "ignore" : 1,
+      "createSourceMap" : 0,
+      "decimalPrecision" : 2,
+      "ignoreWasSetByUser" : 0,
+      "debugStyle" : 0,
+      "fileType" : 4,
+      "shouldRunBless" : 0,
+      "outputStyle" : 3,
+      "useLibsass" : 0
+    }
+  }
+}
