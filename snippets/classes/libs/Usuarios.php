@@ -78,7 +78,7 @@ class Usuarios extends Model{
      * actualizar los datos del usuario.
      * @method saveUser
      * @access public
-     * @param mixed $data contiene la informacion basica necesaria: contraseña anterior, contraseña nueva y CAPTCHA
+     * @param mixed $data contiene la informacion basica necesaria
      * @return string 
      */
     public function saveUser ( $data, $action ) {
