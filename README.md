@@ -1,4 +1,4 @@
-* LEEME *
+# LEEME
 Para cambiar la configuración de la aplicación debes ir a los siguientes archivos y cambiar los setting para la conexión de la DB de tu máquina.
 
 1. snippets/config/config.php .- Aquí debes cambiar la constante SITE_URL por la URL donde vas a copiar la aplicación.
