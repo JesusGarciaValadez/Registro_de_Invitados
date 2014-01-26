@@ -28,19 +28,20 @@
         </style>
         <![endif]-->
     </head>
-    <body id="create">
+    <body id="edit">
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
         <![endif]-->
-        
         <section>
             <div id="edit_user" class="wrapper">
                 <div class="container">
-                    <form action="../snippets/controller.php?action=save&id={id}" method="post" accept-charset="utf-8" id="edit_user_form">
+                    <form action="../snippets/controller.php?action=edit" method="post" accept-charset="utf-8" id="edit_user_form">
                         <fieldset class="left"><!-- Formulario -->
                             <legend>Registro de Invitados</legend>
                             <div class="edit_input"><!-- Correo -->
-                                <p>{main}</p>
+                                <p>{mail}</p>
+                                <input id="uset_edit_mail" type="hidden" name="uset_edit_mail" value="{mail}">
+                                <input id="uset_edit_id" type="hidden" name="uset_edit_id" value="{id}">
                             </div><!-- Correo -->
                             <div class="edit_input"><!-- Apellido Paterno -->
                                 <label for="user_edit_first_name">Apellido Paterno:</label>
@@ -85,20 +86,14 @@
                                 <select id="user_edit_title" name="user_edit_title">
                                     <option value="">-</option>
                                     {titulo}
-                                    <option value="Ing.">Ing</option>
-                                    <option value="Lic.">Lic.</option>
-                                    <option value="Dr.">Dr.</option>
-                                    <option value="Dra.">Dra.</option>
-                                    <option value="Mtro.">Mtro.</option>
-                                    <option value="Mtra.">Mtra.</option>
-                                    <option value="CP.">CP.</option>
                                 </select>
                             </div><!-- Título -->
                         </fieldset>
                         <fieldset class="right">
                             <div class="edit_input"><!-- Estado -->
-                                <label for="user_edit_estate">Estado:</label>
-                                <select name="user_edit_estate" id="user_edit_estate">
+                                <label for="user_edit_state">Estado:</label>
+                                <select name="user_edit_state" id="user_edit_state">
+                                    <option value="">-</option>
                                     {estado}
                                 </select>
                             </div><!-- Estado -->

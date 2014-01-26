@@ -5,12 +5,11 @@ session_start( );
 header( "Cache-Control: no-cache, must-revalidate" ); // HTTP/1.1
 header( "Expires: Mon, 26 Jul 1997 05:00:00 GMT" ); // Date in the past
 
-if ( file_exists( 'snippets/config/config.php' ) ) {
-    define( 'CURRENT_PATH',dirname ( __FILE__ ) );
-    require_once 'snippets/config/config.php';
+if ( file_exists( '../snippets/config/config.php' ) ) {
+    define( 'CURRENT_PATH', dirname ( __FILE__ ) );
+    require_once CURRENT_PATH . '/../snippets/config/config.php';
     require_once SNIPPETS_PATH . '/db/connection.php';
-}
-else {
+} else {
     exit( 'no fue posible localizar el archivo de configuración.' );
 }
 
@@ -18,70 +17,54 @@ function __autoload( $className ) {
     require_once LIBS_PATH . "/{$className}.php";
 }
 
-$usuario = new Usuarios( $dbh );
-$vendedores = new VistaVendedores( $dbh );
+$usuario        = new Usuarios( $dbh );
+$vistaUsuario   = new VistaUsuarios( $dbh );
 
-$site_url = SITE_URL . 'login.html?msg=la_sesi&oacute;n_no_es_v&aacute;lida';
+$site_url = SITE_URL . 'search.html';
 
-if ( $usuario->isValidSession( ) ) {
+if ( $usuario->isValidSession() ) {
+        
+    $indice = 1;
+    $distritosHTML  = '';
     
-    if ( isset( $_SESSION[ 'user' ][ 'id' ] ) ) {
+    View::setViewFilesRepository( CHUNKS_PATH );
     
-        $indice = 1;
-        $distritosHTML  = '';
+    $vista = new View( 'edit_user.html' );
     
-        View::setViewFilesRepository( CHUNKS_PATH );
-
-        $vista = new View( 'edit_user.html' );
-
-        $infoUsers = $vendedores->getInfoUser( $_GET['id'] );
-
-        foreach ( $infoUsers as $key => $value ) {
-            foreach ( $value as $empleado => $valor ) {
-
-                $$empleado  = $valor;
-                $indice++;
-            }
+    $infoUsers = $vistaUsuario->getInfoUser( $_SESSION['mailComparer'] );
+    
+    foreach ( $infoUsers as $key => $value ) {
+        
+        foreach ( $value as $user => $valor ) {
+            
+            $$user  = $valor;
+            $indice++;
         }
-        
-        $distritos          = $vendedores->getDistrito( );
-        $generos            = $vendedores->getGenero( );
-        $estados            = $vendedores->getEstados( );
-        $eleccion           = $vendedores->getEleccion( );
-        $comisiones         = $vendedores->getComisiones( );
-        $cargos             = $vendedores->getCargos( );
-        $comisionesCargos   = $vendedores->getUserComissions( $_GET['id'] );
-        
-        $vista->setVars( array(
-            'full_name' => $_SESSION[ 'user' ][ 'nombre' ]
-            ,'id' => $ID_User
-            ,'nombre' => $User_Name
-            ,'apellido_paterno' => $First_Name
-            ,'apellido_materno' => $Last_Name
-            ,'email' => $Email
-            ,'genero' => $generos
-            ,'edad' => $Edad
-            ,'distritos' => $distritos
-            ,'estado' => $estados
-            ,'eleccion' => $eleccion
-            ,'ocupacion' => $Ocupacion
-            ,'escolaridad' => $Escolaridad
-            ,'suplente' => $Suplente
-            ,'area' => $Area
-            ,'foto' => $Foto
-            ,'comisiones' => $comisiones
-            ,'cargos' => $cargos
-            ,'comisionesCargos' => $comisionesCargos
-        ));
-    
-        $page = $vista->render( );
-        
-        echo $page;
-
-    } else {
-        header( "location:{$site_url}" );
     }
     
+    $States            = $vistaUsuario->getStates( );
+    $Title             = $vistaUsuario->getTitle( );
+    
+    $vista->setVars( array(
+        'id'                => $ID
+        ,'mail'             => $Mail
+        ,'first_name'       => $First_Name
+        ,'last_name'        => $Last_Name
+        ,'name'             => $User_Name
+        ,'job'              => $Job
+        ,'where_are'        => $WhereFrom
+        ,'lada'             => $Lada
+        ,'phone'            => $Phone
+        ,'ext'              => $Ext
+        ,'dependency'       => $Dependency
+        ,'titulo'           => $Title
+        ,'estado'           => $States
+        ,'city'             => $City
+    ));
+    
+    $page = $vista->render( );
+    
+    echo $page;
 } else {
     header( "location:{$site_url}" );
 }

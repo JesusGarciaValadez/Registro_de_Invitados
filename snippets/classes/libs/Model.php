@@ -266,8 +266,9 @@ abstract class Model{
         $where = ( isset( $conditions['where'] ) ) ? " WHERE {$conditions['where']}" : '';
         $order = ( isset( $conditions['order'] ) ) ? " ORDER BY {$conditions['order']} {$conditions['orderSense']}" : '';
         $limit = ( isset( $conditions['limit'] ) ) ? " LIMIT {$conditions['limit']}" : '';
+        
         $this->setSqlQuery( "SELECT {$fields} FROM {$this->_tableName}{$where}{$order}{$limit};" )->execQuery();
-
+        
         return $this->getResultSet();
     }
     
@@ -278,8 +279,9 @@ abstract class Model{
         $lastInsertId = 0;
         
         $fields = implode( ', ', array_keys($data) );
-        $values = implode( ', ', $data );        
-        $this->setSqlQuery("INSERT INTO {$this->_tableName} ({$fields}) VALUES( $values );")->execQuery();
+        $values = implode( ', ', $data );
+        
+        $this->setSqlQuery("INSERT INTO {$this->_tableName} ({$fields}) VALUES ( $values );")->execQuery();
         $lastInsertId = ( $this->getNumRows() )? $this->_PDOmySQLConn->lastInsertId() : 0;
            
         return $lastInsertId;
@@ -296,8 +298,11 @@ abstract class Model{
     
     public function update ( array $data , $where   = '' ) {
         self::prepareDataToSave( $data );
-
-        $id     = ( int ) $data[ $this->_primaryKey ];
+        
+        if ( isset( $this->_primarykey ) && empty( $where ) ) {
+            
+            $id     = ( int ) $data[ $this->_primaryKey ];
+        }
         $where  = ( !empty ( $where ) ) ? ( string ) $where : "{$this->_primaryKey}={$id}";
         $fields = array( );
         
@@ -308,6 +313,7 @@ abstract class Model{
         }
         
         $fields = implode( ', ', $fields );
+        
         return ( $this->setSqlQuery( "UPDATE {$this->_tableName} SET {$fields} WHERE {$where};" )->execQuery( ) ) ? true : false;
     }
     

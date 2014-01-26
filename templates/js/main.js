@@ -50,7 +50,69 @@
          *
          */
         //  !Validación del formulario de contacto.
-        validateForm:    function ( rule, messages, beforeSubmitFunc ) {
+        validateFormWOAjax:    function ( rule, messages ) {
+            
+            var _rule               = ( typeof( rule ) == 'object' ) ? rule : {};
+            var _message            = ( typeof( messages ) == 'object' ) ? messages : {};
+            var _beforeSubmitFunc   = ( typeof( beforeSubmitFunc ) == undefined && typeof( beforeSubmitFunc ) == 'undefined' && typeof( beforeSubmitFunc ) == 'null' ) ?  $.noop : ( ( typeof( beforeSubmitFunc ) == 'function' ) ? beforeSubmitFunc : $.noop );
+            
+            var formActive = $( 'form' ).validate( { 
+                onfocusout: false,
+                onclick: true, 
+                onkeyup: false,
+                onsubmit: true, 
+                focusCleanup: true, 
+                focusInvalid: false, 
+                errorClass: "error", 
+                validClass: "valid", 
+                errorElement: "label", 
+                ignore: "", 
+                /*showErrors: function( errorMap, errorList ) {
+                    $('#message').empty().removeClass();
+                    $("#message").html('<p>Error al ingresar la información.</p><p>Verifique que sus datos están correctos o que no falte ningún dato.</p><p>Por favor, vuelvalo a intentar.</p>');
+                    $('#message').addClass('wrong').show('fast', function(){
+                        $('#message').show('fast');
+                    });
+                    this.defaultShowErrors();
+                },*/
+                errorPlacement: function(error, element) {
+                    error.appendTo( element.parent() );
+                },
+                //debug:true, 
+                rules: _rule,
+                messages: _message, 
+                ignore: 'textarea', 
+                highlight: function( element, errorClass, validClass ) {
+                    $( element ).parent().addClass( 'error_wrapper' );
+                },
+                unhighlight: function( element, errorClass ) {
+                    $( element ).parent().removeClass( 'error_wrapper' );
+                }, 
+                invalidHandler: function(form, validator) {
+                    var errors = validator.numberOfInvalids();
+                    if (errors) {
+                        var message = errors == 1 ? 'You missed 1 field. It has been highlighted' : 'You missed ' + errors + ' fields. They have been highlighted';
+                        $("div#summary").html(message);
+                        $("div#summary").show();
+                    } else {
+                        $("div#summary").hide();
+                    }
+                }
+            } ); 
+        }, 
+        //  Validación del formulario de contacto.
+        /**
+         *
+         *  @function:  !validateForm
+         *  @description:   Makes the validation of the contact form
+         *  @see:   http://bassistance.de/jquery-plugins/jquery-plugin-validation/ || 
+         *          http://docs.jquery.com/Plugins/Validation
+                    http://jqueryvalidation.org/documentation/
+         *  @author: @_Chucho_
+         *
+         */
+        //  !Validación del formulario de contacto.
+        validateFormAjax:    function ( rule, messages ) {
             
             var _rule               = ( typeof( rule ) == 'object' ) ? rule : {};
             var _message            = ( typeof( messages ) == 'object' ) ? messages : {};
@@ -104,9 +166,10 @@
                             
                             if( responseText && ( responseText.success == 'true' || responseText.success == true ) ) {
                                 
-                                
+                                alert( responseText.message );
                             } else {
                                 
+                                alert( responseText.message );
                             }
                         }, 
                         resetForm: false, 
@@ -119,7 +182,7 @@
                         cache: false
                     } );
                 }, 
-                /*invalidHandler: function(form, validator) {
+                invalidHandler: function(form, validator) {
                     var errors = validator.numberOfInvalids();
                     if (errors) {
                         var message = errors == 1 ? 'You missed 1 field. It has been highlighted' : 'You missed ' + errors + ' fields. They have been highlighted';
@@ -128,7 +191,7 @@
                     } else {
                         $("div#summary").hide();
                     }
-                }*/
+                }
             } ); 
         }, 
         /**
@@ -245,38 +308,26 @@
                     digits      :   "Escriba solo números"
                 };
             
-            Registry.validateForm( rules, messages, function () {
-                
-                if ( $( '#mail' ).val( 'hola@gmail.com' ) ) {
-                    
-                    return false;
-                }
-            } );
+            Registry.validateFormWOAjax( rules, messages );
         }
         
-        if ( $( '#create' ).exists() ) {
+        if ( $( '#create' ).exists() || $( '#edit' ).exists() ) {
             
-            Registry.toggleValue( $( '#mail' ), "hola@gmail.com" );
+            if ( $( '#user_edit_mail' ).exists( ) )
+                Registry.toggleValue( $( '#user_edit_mail' ), "Correo" );
             
-            #user_edit_mail Correo
-            #user_edit_first_name Apellido Materno
-            #user_edit_last_name Apellido Paterno
-            #user_edit_name Nombre
-            #user_edit_job Cargo
-            #user_edit_where Institución y/o Empresa
-            #user_edit_lada Lada
-            #user_edit_phone Teléfono
-            #user_edit_ext Extensión
-            #user_edit_dependency Dependencia
-            #user_edit_title
-            #user_edit_estate
-            #user_edit_city Ciudad
+            Registry.toggleValue( $( '#user_edit_first_name' ), "Apellido Materno" );
+            Registry.toggleValue( $( '#user_edit_last_name' ), "Apellido Paterno" );
+            Registry.toggleValue( $( '#user_edit_name' ), "Nombre" );
+            Registry.toggleValue( $( '#user_edit_job' ), "Cargo" );
+            Registry.toggleValue( $( '#user_edit_where' ), "Institución y/o Empresa" );
+            Registry.toggleValue( $( '#user_edit_lada' ), "Lada" );
+            Registry.toggleValue( $( '#user_edit_phone' ), "Teléfono" );
+            Registry.toggleValue( $( '#user_edit_ext' ), "Extensión" );
+            Registry.toggleValue( $( '#user_edit_dependency' ), "Dependencia" );
+            Registry.toggleValue( $( '#user_edit_city ' ), "Ciudad" );
             
             var rules       = { 
-                    user_edit_mail          :   {
-                        required    :   true,
-                        email       :   true
-                    },
                     user_edit_first_name    :   { required  : true },
                     user_edit_last_name     :   { required  : true },
                     user_edit_name          :   { required  : true },
@@ -286,32 +337,62 @@
                         required    : true, 
                         number      : true, 
                         digits      : true, 
-                        mink  
+                        minlength   : 2, 
+                        maxlength   : 3
                     },
-                    user_edit_phone         :   { required  : true },
-                    user_edit_ext           :   { required  : true },
+                    user_edit_phone         :   { 
+                        required  : true, 
+                        number      : true, 
+                        digits      : true, 
+                        minlength   : 5, 
+                        maxlength   : 8
+                    },
+                    user_edit_ext           :   { 
+                        required  : false, 
+                        number      : true, 
+                        digits      : true, 
+                        minlength   : 2, 
+                        maxlength   : 5
+                    },
                     user_edit_dependency    :   { required  : true },
                     user_edit_title         :   { required  : true },
-                    user_edit_estate        :   { required  : true },
+                    user_edit_state         :   { required  : true },
                     user_edit_city          :   { required  : true },
                 };
+                
+            if ( $( '#user_edit_mail' ).exists( ) ) {
+                
+                rules.user_edit_mail        = {
+                        required    :   true,
+                        email       :   true
+                    };
+            }
+            
             var messages    = {
-                    mail        :   "Por favor, introduce una dirección de correo", 
-                    required    :   "Por favor, selecciona una opción", 
-                    minlength   :   "Por favor, haga su respuesta más amplia.", 
-                    maxlength   :   "Por favor, acorte su respuesta", 
-                    email       :   "Escriba un email válido",
-                    number      :   "Escriba solo números", 
-                    digits      :   "Escriba solo números"
+                    user_edit_first_name    :   "Por favor, escribe tu apellido paterno",
+                    user_edit_last_name     :   "Por favor, escribe tu apellido materno",
+                    user_edit_name          :   "Por favor, escribe tu nombre",
+                    user_edit_job           :   "Por favor, escribe tu cargo",
+                    user_edit_where         :   "Por favor, escribe tu que empresa vienes",
+                    user_edit_lada          :   "Por favor, escribe tu lada",
+                    user_edit_phone         :   "Por favor, escribe tu teléfono",
+                    user_edit_ext           :   "Por favor, escribe tu extensión",
+                    user_edit_dependency    :   "Por favor, escribe la dependencia de la que vienes",
+                    user_edit_title         :   "Por favor, escribe un título", 
+                    user_edit_state         :   "Por favor, selecciona un estado",
+                    user_edit_city          :   "Por favor, escribe tu ciudad",
+                    required                :   "Por favor, selecciona una opción", 
+                    minlength               :   "Por favor, haga su respuesta más amplia.", 
+                    maxlength               :   "Por favor, acorte su respuesta", 
+                    email                   :   "Escriba un email válido",
+                    number                  :   "Escriba solo números", 
+                    digits                  :   "Escriba solo números"
                 };
             
-            Registry.validateForm( rules, messages, function () {
-                
-                if ( $( '#mail' ).val( 'hola@gmail.com' ) ) {
-                    
-                    return false;
-                }
-            } );
+            if ( $( '#user_edit_mail' ).exists( ) )
+                messages.user_edit_mail     =   "Por favor, escribe una dirección de correo";
+            
+            Registry.validateFormAjax( rules, messages );
         }
     } );
     

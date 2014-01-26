@@ -1,220 +1,92 @@
-/*CREATE DATABASE `u213243_queryTestIntranet` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;*/
+CREATE DATABASE `registry_guest` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
 
-CREATE TABLE IF NOT EXISTS `queryTestIntranet`.`persona` (
+CREATE TABLE IF NOT EXISTS `registry_guest`.`persona` (
     `id_persona`    INT( 10 ) NOT NULL AUTO_INCREMENT,
-    `nombre`        VARCHAR( 250 ) CHARACTER SET utf8 COLLATE utf8_general_ci NULL ,
-    `apellido_pat`  VARCHAR( 250 ) CHARACTER SET utf8 COLLATE utf8_general_ci NULL ,
-    `apellido_mat`  VARCHAR( 250 ) CHARACTER SET utf8 COLLATE utf8_general_ci NULL ,
-    `edad`          INT( 10 ) NULL ,
-    `escolaridad`   VARCHAR( 250 ) CHARACTER SET utf8 COLLATE utf8_general_ci NULL ,
-    `ocupacion`     VARCHAR( 250 ) CHARACTER SET utf8 COLLATE utf8_general_ci NULL ,
-    `correo`        VARCHAR( 250 ) CHARACTER SET utf8 COLLATE utf8_general_ci NULL ,
-    `distrito`      VARCHAR( 250 ) CHARACTER SET utf8 COLLATE utf8_general_ci NULL ,
-    `semblanza`     VARCHAR( 250 ) CHARACTER SET utf8 COLLATE utf8_general_ci NULL ,
-    `foto`          VARCHAR( 250 ) CHARACTER SET utf8 COLLATE utf8_general_ci NULL ,
-    `id_metadata`   INT( 10 ) NOT NULL ,
-    `id_cargo`      INT( 10 ) NOT NULL ,
-    `id_eleccion`   INT( 10 ) NOT NULL ,
-    `id_circu`      INT( 10 ) NOT NULL ,
-    `id_estado`     INT( 10 ) NOT NULL ,
-    `id_comision`   INT( 10 ) NOT NULL ,
-    `id_area`       INT( 10 ) NOT NULL ,
+    `mail`          VARCHAR( 250 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL ,
+    `first_name`    VARCHAR( 250 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL ,
+    `last_name`     VARCHAR( 250 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL ,
+    `user_name`          VARCHAR( 250 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL ,
+    `job`           VARCHAR( 250 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL ,
+    `where_from`         VARCHAR( 250 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL ,
+    `lada`          VARCHAR( 250 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL ,
+    `phone`         VARCHAR( 250 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL ,
+    `ext`           VARCHAR( 250 ) CHARACTER SET utf8 COLLATE utf8_general_ci NULL ,
+    `dependency`    VARCHAR( 250 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL ,
+    `id_title`      INT( 10 ) NOT NULL ,
+    `id_state`      INT( 10 ) NOT NULL ,
+    `city`          VARCHAR( 250 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL ,
     PRIMARY KEY ( `id_persona` )) ENGINE = InnoDB CHARACTER SET utf8 COLLATE utf8_general_ci;
 
-CREATE TABLE IF NOT EXISTS `queryTestIntranet`.`metadata` (
-    `id_metadata`   INT( 10 ) NOT NULL AUTO_INCREMENT PRIMARY KEY ,
-    `genero`        VARCHAR( 250 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL ,
-    `tipo_vendedor` VARCHAR( 250 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL
+CREATE TABLE IF NOT EXISTS `registry_guest`.`title` (
+    `id_title`  INT( 10 ) NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+    `title`     VARCHAR( 250 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL
 ) ENGINE = InnoDB CHARACTER SET utf8 COLLATE utf8_general_ci;
 
-CREATE TABLE IF NOT EXISTS `queryTestIntranet`.`cargo` (
-    `id_cargo`      INT( 10 ) NOT NULL AUTO_INCREMENT PRIMARY KEY ,
-    `cargo`         VARCHAR( 250 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL
+CREATE TABLE IF NOT EXISTS `registry_guest`.`state` (
+    `id_state`  INT( 10 ) NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+    `state`     VARCHAR( 250 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL
 ) ENGINE = InnoDB CHARACTER SET utf8 COLLATE utf8_general_ci;
 
-CREATE TABLE IF NOT EXISTS `queryTestIntranet`.`eleccion` (
-    `id_eleccion`   INT( 10 ) NOT NULL AUTO_INCREMENT PRIMARY KEY ,
-    `eleccion`      VARCHAR( 250 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL
-) ENGINE = InnoDB CHARACTER SET utf8 COLLATE utf8_general_ci;
+INSERT INTO `registry_guest`.`persona` (
+    `mail`, 
+    `first_name`, 
+    `last_name`, 
+    `user_name`, 
+    `job`, 
+    `where_from`, 
+    `lada`, 
+    `phone`, 
+    `ext`,
+    `dependency`, 
+    `id_title`, 
+    `id_state`, 
+    `city`
+) VALUES 
+( 'correo@correo1.com' , 'apellido1' , 'apellido2' , 'persona1' , "job1" , 'escuela1' , 'lada1' , 'telefono1' , 'extension1' , 'dependencia1' , 1 , 1 , "ciudad1" ), 
+( 'correo@correo2.com' , 'apellido3' , 'apellido4' , 'persona2' , "job2" , 'escuela2' , 'lada2' , 'telefono2' , 'extension2' , 'dependencia2' , 2 , 3 , "ciudad2" ), 
+( 'correo@correo3.com' , 'apellido5' , 'apellido6' , 'persona3' , "job3" , 'escuela3' , 'lada3' , 'telefono3' , 'extension3' , 'dependencia3' , 1 , 5 , "ciudad3" ), 
+( 'correo@correo4.com' , 'apellido7' , 'apellido8' , 'persona4' , "job4" , 'escuela4' , 'lada4' , 'telefono4' , 'extension4' , 'dependencia4' , 1 , 7 , "ciudad4" ), 
+( 'correo@correo5.com' , 'apellido9' , 'apellido0' , 'persona5' , "job5" , 'escuela5' , 'lada5' , 'telefono5' , 'extension5' , 'dependencia5' , 1 , 9 , "ciudad5" );
 
-CREATE TABLE IF NOT EXISTS `queryTestIntranet`.`circu` (
-    `id_circu`      INT( 10 ) NOT NULL AUTO_INCREMENT PRIMARY KEY ,
-    `circu`         VARCHAR( 250 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL
-) ENGINE = InnoDB CHARACTER SET utf8 COLLATE utf8_general_ci;
+INSERT INTO `registry_guest`.`title` ( `title` ) VALUES 
+( 'Ing.' ), 
+( 'Dr.' ), 
+( 'Dra.' ), 
+( 'Mtro.' ), 
+( 'Mtra.' ), 
+( 'CP.' ), 
+( 'Lic.' );
 
-CREATE TABLE IF NOT EXISTS `queryTestIntranet`.`estado` (
-    `id_estado`     INT( 10 ) NOT NULL AUTO_INCREMENT PRIMARY KEY ,
-    `estado`        VARCHAR( 250 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL
-) ENGINE = InnoDB CHARACTER SET utf8 COLLATE utf8_general_ci;
-
-CREATE TABLE IF NOT EXISTS `queryTestIntranet`.`comision` (
-    `id_comision`   INT( 10 ) NOT NULL AUTO_INCREMENT PRIMARY KEY ,
-    `comision`      VARCHAR( 250 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL
-) ENGINE = InnoDB CHARACTER SET utf8 COLLATE utf8_general_ci;
-
-CREATE TABLE IF NOT EXISTS `queryTestIntranet`.`area` (
-    `id_area`       INT( 10 ) NOT NULL AUTO_INCREMENT PRIMARY KEY ,
-    `area`          VARCHAR( 250 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL
-) ENGINE = InnoDB CHARACTER SET utf8 COLLATE utf8_general_ci;
-
-INSERT INTO `queryTestIntranet`.`persona` (
-    `id_persona` ,
-    `nombre` , 
-    `apellido_pat` , 
-    `apellido_mat` , 
-    `edad` ,
-    `escolaridad` ,
-    `ocupacion` ,
-    `correo` ,
-    `distrito` ,
-    `semblanza` ,
-    `foto` , 
-    `id_metadata` ,
-    `id_cargo` ,
-    `id_eleccion` ,
-    `id_circu` ,
-    `id_estado` ,
-    `id_comision` ,
-    `id_area` 
-)
-VALUES (
-    NULL , 'persona1' , 'apellido1' , 'apellido2' , 10 , 'escolaridad1' , 'ocupación1' , 'correo@correo1.com' , 'distrito1' , 'semblanza1' , '/foto1.png' , 1 , 1 , 1 , 1 , 1 , 1 , 1 
-), (
-    NULL , 'persona2' , 'apellido3' , 'apellido4' , 20 , 'escolaridad2' , 'ocupación2' , 'correo@correo2.com' , 'distrito2' , 'semblanza2' , '/foto2.png' , 2 , 1 , 2 , 1 , 2 , 1 , 2 
-), (
-    NULL , 'persona3' , 'apellido5' , 'apellido6' , 30 , 'escolaridad3' , 'ocupación3' , 'correo@correo3.com' , 'distrito3' , 'semblanza3' , '/foto3.png' , 1 , 2 , 1 , 2 , 1 , 2 , 1 
-), (
-    NULL , 'persona4' , 'apellido7' , 'apellido8' , 40 , 'escolaridad4' , 'ocupación4' , 'correo@correo4.com' , 'distrito4' , 'semblanza4' , '/foto4.png' , 1 , 2 , 3 , 4 , 5 , 4 , 3 
-), (
-    NULL , 'persona5' , 'apellido9' , 'apellido0' , 50 , 'escolaridad5' , 'ocupación5' , 'correo@correo5.com' , 'distrito5' , 'semblanza5' , '/foto5.png' , 1 , 2 , 3 , 4 , 3 , 2 , 1
-);
-
-INSERT INTO `queryTestIntranet`.`metadata` (
-    `id_metadata` ,
-    `genero` , 
-    `tipo_vendedor` 
-)
-VALUES (
-    NULL , 'metadata1' , 'vendedor1' 
-), (
-    NULL , 'metadata2' , 'vendedor2' 
-), (
-    NULL , 'metadata3' , 'vendedor3' 
-), (
-    NULL , 'metadata4' , 'vendedor4' 
-), (
-    NULL , 'metadata5' , 'vendedor5' 
-);
-
-INSERT INTO `queryTestIntranet`.`cargo` (
-    `id_cargo` ,
-    `cargo`
-)
-VALUES (
-    NULL , 'Mesa Directiva'
-), (
-    NULL , 'Integrante'
-);
-
-INSERT INTO `queryTestIntranet`.`eleccion` (
-    `id_eleccion` ,
-    `eleccion`
-)
-VALUES (
-    NULL , 'eleccion1'
-), (
-    NULL , 'eleccion2'
-), (
-    NULL , 'eleccion3'
-), (
-    NULL , 'eleccion4'
-), (
-    NULL , 'eleccion5'
-);
-
-INSERT INTO `queryTestIntranet`.`circu` (
-    `id_circu` ,
-    `circu`
-)
-VALUES (
-    NULL , 'circunscripcion1'
-), (
-    NULL , 'circunscripcion2'
-), (
-    NULL , 'circunscripcion3'
-), (
-    NULL , 'circunscripcion4'
-), (
-    NULL , 'circunscripcion5'
-);
-
-INSERT INTO `queryTestIntranet`.`estado` (
-    `id_estado` ,
-    `estado`
-)
-VALUES 
-( NULL , 'Aguascalientes' ), 
-( NULL , 'Baja California Norte' ), 
-( NULL , 'Baja California Sur' ), 
-( NULL , 'Campeche' ), 
-( NULL , 'Chiapas' ), 
-( NULL , 'Chihuahua' ), 
-( NULL , 'Coahuila' ), 
-( NULL , 'Colima' ), 
-( NULL , 'Distrito Federal' ), 
-( NULL , 'Durango' ), 
-( NULL , 'Guanajuato' ), 
-( NULL , 'Guerrero' ), 
-( NULL , 'Hidalgo' ), 
-( NULL , 'Jalisco' ), 
-( NULL , 'Mexico' ), 
-( NULL , 'Michoacan' ), 
-( NULL , 'Morelos' ), 
-( NULL , 'Nayarit' ), 
-( NULL , 'Nuevo Leon' ), 
-( NULL , 'Oaxaca' ), 
-( NULL , 'Puebla' ), 
-( NULL , 'Queretaro' ), 
-( NULL , 'Quintana Roo' ), 
-( NULL , 'San Luis Potosi' ), 
-( NULL , 'Sinaloa' ), 
-( NULL , 'Sonora' ), 
-( NULL , 'Tabasco' ), 
-( NULL , 'Tamaulipas' ), 
-( NULL , 'Tlaxcala' ), 
-( NULL , 'Veracruz' ), 
-( NULL , 'Yucatan' ), 
-( NULL , 'Zacatecas' );
-
-INSERT INTO `queryTestIntranet`.`comision` (
-    `id_comision` ,
-    `comision`
-)
-VALUES (
-    NULL , 'Comisión 1'
-), (
-    NULL , 'Comisión 2'
-), ( 
-    NULL , 'Comisión 3'
-), ( 
-    NULL , 'Comisión 4' 
-), ( 
-    NULL , 'Comisión 5' 
-);
-
-
-INSERT INTO `queryTestIntranet`.`area` (
-    `id_area` ,
-    `area`
-)
-VALUES (
-    NULL , 'Area_1'
-), (
-    NULL , 'Area_2'
-), (
-    NULL , 'Area_3'
-), (
-    NULL , 'Area_4'
-), (
-    NULL , 'Area_5'
-);
+INSERT INTO `registry_guest`.`state` ( `state` ) VALUES 
+( 'Aguascalientes' ), 
+( 'Baja California Norte' ), 
+( 'Baja California Sur' ), 
+( 'Campeche' ), 
+( 'Chiapas' ), 
+( 'Chihuahua' ), 
+( 'Coahuila' ), 
+( 'Colima' ), 
+( 'Distrito Federal' ), 
+( 'Durango' ), 
+( 'Guanajuato' ), 
+( 'Guerrero' ), 
+( 'Hidalgo' ), 
+( 'Jalisco' ), 
+( 'Mexico' ), 
+( 'Michoaáan' ), 
+( 'Morelos' ), 
+( 'Nayarit' ), 
+( 'Nuevo Leon' ), 
+( 'Oaxaca' ), 
+( 'Puebla' ), 
+( 'Querétaro' ), 
+( 'Quintana Roo' ), 
+( 'San Luis Potosi' ), 
+( 'Sinaloa' ), 
+( 'Sonora' ), 
+( 'Tabasco' ), 
+( 'Tamaulipas' ), 
+( 'Tlaxcala' ), 
+( 'Veracruz' ), 
+( 'Yucatan' ), 
+( 'Zacatecas' );

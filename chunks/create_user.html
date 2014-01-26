@@ -36,12 +36,12 @@
         <section>
             <div id="create_user" class="wrapper">
                 <div class="container">
-                    <form action="../snippets/controller.php?action=save&id={id}" method="post" accept-charset="utf-8" id="edit_user_form">
+                    <form action="../snippets/controller.php?action=create" method="post" accept-charset="utf-8" id="edit_user_form">
                         <fieldset class="left"><!-- Formulario -->
                             <legend>Registro de Invitados</legend>
                             <div class="edit_input"><!-- Correo -->
-                                <label for="user_edit_mail">Correo:</label>
-                                <input id="user_edit_mail" type="text" name="user_edit_mail" value="" placeholder="Correo" autocomplete="off" />
+                                <label for="uset_edit_mail">Correo:</label>
+                                <input id="uset_edit_mail" type="text" name="uset_edit_mail" value="{mail}" placeholder="Correo" autocomplete="off" />
                             </div><!-- Correo -->
                             <div class="edit_input"><!-- Apellido Paterno -->
                                 <label for="user_edit_first_name">Apellido Paterno:</label>
@@ -86,20 +86,14 @@
                                 <select id="user_edit_title" name="user_edit_title">
                                     <option value="">-</option>
                                     {titulo}
-                                    <option value="Ing.">Ing</option>
-                                    <option value="Lic.">Lic.</option>
-                                    <option value="Dr.">Dr.</option>
-                                    <option value="Dra.">Dra.</option>
-                                    <option value="Mtro.">Mtro.</option>
-                                    <option value="Mtra.">Mtra.</option>
-                                    <option value="CP.">CP.</option>
                                 </select>
                             </div><!-- Título -->
                         </fieldset>
                         <fieldset class="right">
                             <div class="edit_input"><!-- Estado -->
-                                <label for="user_edit_estate">Estado:</label>
-                                <select name="user_edit_estate" id="user_edit_estate">
+                                <label for="user_edit_state">Estado:</label>
+                                <select name="user_edit_state" id="user_edit_state">
+                                    <option value="">-</option>
                                     {estado}
                                 </select>
                             </div><!-- Estado -->

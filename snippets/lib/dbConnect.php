@@ -9,10 +9,10 @@ class dbConnect {
     private $_link;
 
     public function __construct( 
-		$host		= 'localhost', 
-		$user		= 'alfabrad',
-		$password	= '_Asukal01_',
-		$dbname		= 'registry_guess'
+        $host       = 'localhost', 
+        $user       = 'username',
+        $password   = 'password',
+        $dbname     = 'db'
     ) {
           $this->_host      = $host;
           $this->_user      = $user;
@@ -50,25 +50,25 @@ class dbConnect {
         } else {
             if ( is_resource( $result ) ) {
 
-		$arrayResultSet = array();
-		
-		if( mysql_num_rows( $result ) > 0 ) {
+        $arrayResultSet = array();
+        
+        if( mysql_num_rows( $result ) > 0 ) {
 
-			while ( $row = mysql_fetch_assoc( $result ) ) {
+            while ( $row = mysql_fetch_assoc( $result ) ) {
 
-    			while( list ($key,$value) = each($row) ){
+                while( list ($key,$value) = each($row) ){
                     $data [utf8_encode($key)] = utf8_encode($value);
                 }
                               
                 array_push( $arrayResultSet, $data );
             }
 
-		}
+        }
 
                 return (array) $arrayResultSet;
 
             } else {                
-            	return (bool) $result;    
+                return (bool) $result;    
             }
         }
     }
