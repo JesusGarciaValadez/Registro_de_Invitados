@@ -151,9 +151,9 @@ class Usuarios extends Model{
                     $success    = $this->getNumRows( );
                     
                     $this->_PDOConn->commit();
-                    $response = array ( "success" =>'true',"message"=>utf8_encode('La informacion del usuario ha sido guardada exitosamente.'));
+                    $response = array ( "success" =>'true',"message"=>utf8_encode('La informacion del usuario ha sido guardada exitosamente.¿Quieres volver a la pagina de busqueda?'));
                 }catch( PDOException $e ) {
-
+                    
                     $this->_PDOConn->rollBack( );
                     $response = array ( "success" =>'false', "message"    =>'el servicio no esta disponible');
                 }
