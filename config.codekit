@@ -61,14 +61,6 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsSetByUser": 0
 		},
-	"\/snippets\/classes\/libs\/Usuarios.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/snippets\/classes\/libs\/Usuarios.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsSetByUser": 0
-		},
 	"\/snippets\/classes\/libs\/Validator.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -1485,26 +1477,6 @@
 		"inputAbbreviatedPath": "\/templates\/edit.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsSetByUser": 0
-		},
-	"\/templates\/js\/main-ck.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/templates\/js\/main-ck.js",
-		"outputAbbreviatedPath": "\/templates\/js\/main-ck-ck.js",
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 2,
-		"syntaxCheckerStyle": 1
-		},
-	"\/templates\/js\/main.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/templates\/js\/main.js",
-		"outputAbbreviatedPath": "\/templates\/js\/main-ck.js",
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 2,
-		"syntaxCheckerStyle": 1
 		},
 	"\/templates\/js\/plugins-ck.js": {
 		"fileType": 64,
