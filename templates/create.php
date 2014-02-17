@@ -23,7 +23,23 @@ $vistaUsuario   = new VistaUsuarios( $dbh );
 $site_url = SITE_URL . 'search.html';
 
 if ( $usuario->isValidSession() ) {
+    
+    $infoUsers = $vistaUsuario->getInfoUser( $_SESSION['mailComparer'] );
+    
+    foreach ( $infoUsers as $key => $value ) {
         
+        foreach ( $value as $user => $valor ) {
+            
+            $$user  = $valor;
+            
+            if ( $user == 'Completed' && ( $valor == '1' || $valor == 1 ) ) {
+                
+                header( "location:{$site_url}" );
+            }
+            $indice++;
+        }
+    }
+    
     $indice = 1;
     $distritosHTML  = '';
     

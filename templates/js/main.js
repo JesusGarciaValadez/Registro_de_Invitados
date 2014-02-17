@@ -149,7 +149,7 @@
                 },
                 unhighlight: function( element, errorClass ) {
                     $( element ).parent().removeClass( 'error_wrapper' );
-                }, 
+                },
                 submitHandler: function( form ) {
                     // Form submit
                     $( form ).ajaxSubmit( {
@@ -166,8 +166,12 @@
                             
                             if( responseText && ( responseText.success == 'true' || responseText.success == true ) ) {
                                 
-                                var confirmation    = confirm( responseText.message );
-                                console.log( confirmation );
+                                var regularExp      = new RegExp( '(Â|Ê|Î|Ô|Û)|(â|ê|î|ô|û)', 'gim' );
+                                var response        = String( responseText.message ).replace( regularExp, ' ' );
+                                var confirmation    = confirm( response );
+                                
+                                $( '#user_edit_submit' ).attr( 'disabled', 'disable' );
+                                
                                 if ( confirmation ) {
                                     
                                     window.location = "search.html";
@@ -176,29 +180,30 @@
                                 
                                 alert( responseText.message );
                             }
-                        }, 
-                        resetForm: false, 
-                        clearForm: false, 
+                        },
+                        resetForm: false,
+                        clearForm: false,
                         //   If something is wrong
                         error: function( jqXHR, textStatus, errorThrown ) {
                             //console.log(textStatus);
                             //console.log(errorThrown);
-                        }, 
+                        },
                         cache: false
                     } );
-                }, 
-                invalidHandler: function(form, validator) {
-                    var errors = validator.numberOfInvalids();
-                    if (errors) {
+                },
+                invalidHandler: function( form, validator ) {
+                    
+                    var errors  = validator.numberOfInvalids();
+                    if ( errors ) {
                         var message = errors == 1 ? 'You missed 1 field. It has been highlighted' : 'You missed ' + errors + ' fields. They have been highlighted';
-                        $("div#summary").html(message);
-                        $("div#summary").show();
+                        $( "div#summary" ).html( message );
+                        $( "div#summary" ).show();
                     } else {
-                        $("div#summary").hide();
+                        $( "div#summary" ).hide();
                     }
                 }
-            } ); 
-        }, 
+            } );
+        },
         /**
          *
          *  @function:  !toggleValue

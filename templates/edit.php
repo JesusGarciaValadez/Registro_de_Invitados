@@ -38,6 +38,11 @@ if ( $usuario->isValidSession() ) {
         foreach ( $value as $user => $valor ) {
             
             $$user  = $valor;
+            
+            if ( $user == 'Completed' && ( $valor == '1' || $valor == 1 ) ) {
+                
+                header( "location:{$site_url}" );
+            }
             $indice++;
         }
     }

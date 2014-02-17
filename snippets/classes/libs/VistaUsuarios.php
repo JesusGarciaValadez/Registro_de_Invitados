@@ -37,6 +37,7 @@ class VistaUsuarios extends Model{
             ,'( SELECT c.title FROM `title` AS c WHERE c.`id_title` = a.`id_title` ) AS Title'
             ,'( SELECT b.state FROM `state` AS b WHERE b.`id_state` = a.`id_state` ) AS State'
             ,'a.`city` AS City'
+            ,'a.`is_completed` AS Completed'
         );
         $conditions = array(
             'where' => "a.`mail` = '{$obtain}' GROUP BY ID"

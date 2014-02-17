@@ -13,7 +13,7 @@ class Connection{
     protected $_resource = null;
 
 
-    public function __construct( $host = 'localhost' , $user = 'alfabrad', $password = '_Asukal01_', $name = 'registry_guest' ) {
+    public function __construct( $host = 'localhost' , $user = 'user', $password = 'password', $name = 'registry_guest' ) {
         $this->_dbHost = $host;
         $this->_dbUser = $user;
         $this->_dbPassword = $password;
@@ -22,7 +22,7 @@ class Connection{
     }
     
     private function _connect(){
-        $dbh = new PDO('mysql:host=localhost;dbname=registry_guest', 'alfabrad', '_Asukal01_');
+        $dbh = new PDO('mysql:host=localhost;dbname=registry_guest', 'user', 'password');
         $dbh->exec("SET CHARACTER SET utf8");
     }
 

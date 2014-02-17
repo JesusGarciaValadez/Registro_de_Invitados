@@ -61,6 +61,14 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsSetByUser": 0
 		},
+	"\/snippets\/classes\/libs\/Usuarios.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/snippets\/classes\/libs\/Usuarios.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
 	"\/snippets\/classes\/libs\/Validator.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -1478,6 +1486,26 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsSetByUser": 0
 		},
+	"\/templates\/js\/main-ck.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/templates\/js\/main-ck.js",
+		"outputAbbreviatedPath": "\/templates\/js\/main-ck-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 1
+		},
+	"\/templates\/js\/main.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/templates\/js\/main.js",
+		"outputAbbreviatedPath": "\/templates\/js\/main-ck.js",
+		"outputPathIsSetByUser": 1,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 1
+		},
 	"\/templates\/js\/plugins-ck.js": {
 		"fileType": 64,
 		"ignore": 1,
@@ -1494,13 +1522,13 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/templates\/js\/plugins.js",
 		"outputAbbreviatedPath": "\/templates\/js\/plugins-ck.js",
-		"outputPathIsSetByUser": 0,
+		"outputPathIsSetByUser": 1,
 		"outputStyle": 2,
 		"syntaxCheckerStyle": 1
 		},
 	"\/templates\/js\/vendor\/additional-methods.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/templates\/js\/vendor\/additional-methods.js",
 		"outputAbbreviatedPath": "\/templates\/js\/vendor\/additional-methods-ck.js",
@@ -1550,7 +1578,7 @@
 		},
 	"\/templates\/js\/vendor\/jquery.form.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/templates\/js\/vendor\/jquery.form.js",
 		"outputAbbreviatedPath": "\/templates\/js\/vendor\/jquery.form-ck.js",
@@ -1570,7 +1598,7 @@
 		},
 	"\/templates\/js\/vendor\/jquery.validate.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/templates\/js\/vendor\/jquery.validate.js",
 		"outputAbbreviatedPath": "\/templates\/js\/vendor\/jquery.validate-ck.js",
@@ -1632,6 +1660,26 @@
 	],
 "lastSavedByUser": "Jesús Antonio García Valadez",
 "manualImportLinks": {
+	"\/templates\/js\/plugins.js": [
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/templates\/js\/vendor\/jquery.form.js",
+			"position": 0,
+			"type": 1
+			},
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/templates\/js\/vendor\/jquery.validate.js",
+			"position": 1,
+			"type": 1
+			},
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/templates\/js\/vendor\/additional-methods.js",
+			"position": 2,
+			"type": 1
+			}
+		]
 	},
 "projectAttributes": {
 	"bowerAbbreviatedPath": "",
