@@ -166,7 +166,12 @@
                             
                             if( responseText && ( responseText.success == 'true' || responseText.success == true ) ) {
                                 
-                                alert( responseText.message );
+                                var confirmation    = confirm( responseText.message );
+                                console.log( confirmation );
+                                if ( confirmation ) {
+                                    
+                                    window.location = "search.html";
+                                }
                             } else {
                                 
                                 alert( responseText.message );

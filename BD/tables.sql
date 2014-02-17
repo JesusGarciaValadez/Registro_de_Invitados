@@ -15,6 +15,7 @@ CREATE TABLE IF NOT EXISTS `registry_guest`.`persona` (
     `id_title`      INT( 10 ) NOT NULL ,
     `id_state`      INT( 10 ) NOT NULL ,
     `city`          VARCHAR( 250 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL ,
+    `is_completed`  BOOLEAN NOT NULL, 
     PRIMARY KEY ( `id_persona` )) ENGINE = InnoDB CHARACTER SET utf8 COLLATE utf8_general_ci;
 
 CREATE TABLE IF NOT EXISTS `registry_guest`.`title` (
@@ -40,13 +41,14 @@ INSERT INTO `registry_guest`.`persona` (
     `dependency`, 
     `id_title`, 
     `id_state`, 
-    `city`
+    `city`, 
+    `is_completed`
 ) VALUES 
-( 'correo@correo1.com' , 'apellido1' , 'apellido2' , 'persona1' , "job1" , 'escuela1' , 'lada1' , 'telefono1' , 'extension1' , 'dependencia1' , 1 , 1 , "ciudad1" ), 
-( 'correo@correo2.com' , 'apellido3' , 'apellido4' , 'persona2' , "job2" , 'escuela2' , 'lada2' , 'telefono2' , 'extension2' , 'dependencia2' , 2 , 3 , "ciudad2" ), 
-( 'correo@correo3.com' , 'apellido5' , 'apellido6' , 'persona3' , "job3" , 'escuela3' , 'lada3' , 'telefono3' , 'extension3' , 'dependencia3' , 1 , 5 , "ciudad3" ), 
-( 'correo@correo4.com' , 'apellido7' , 'apellido8' , 'persona4' , "job4" , 'escuela4' , 'lada4' , 'telefono4' , 'extension4' , 'dependencia4' , 1 , 7 , "ciudad4" ), 
-( 'correo@correo5.com' , 'apellido9' , 'apellido0' , 'persona5' , "job5" , 'escuela5' , 'lada5' , 'telefono5' , 'extension5' , 'dependencia5' , 1 , 9 , "ciudad5" );
+( 'correo@correo1.com' , 'apellido1' , 'apellido2' , 'persona1' , "job1" , 'escuela1' , 'lada1' , 'telefono1' , 'extension1' , 'dependencia1' , 1 , 1 , "ciudad1", FALSE ), 
+( 'correo@correo2.com' , 'apellido3' , 'apellido4' , 'persona2' , "job2" , 'escuela2' , 'lada2' , 'telefono2' , 'extension2' , 'dependencia2' , 2 , 3 , "ciudad2", FALSE ), 
+( 'correo@correo3.com' , 'apellido5' , 'apellido6' , 'persona3' , "job3" , 'escuela3' , 'lada3' , 'telefono3' , 'extension3' , 'dependencia3' , 1 , 5 , "ciudad3", FALSE ), 
+( 'correo@correo4.com' , 'apellido7' , 'apellido8' , 'persona4' , "job4" , 'escuela4' , 'lada4' , 'telefono4' , 'extension4' , 'dependencia4' , 1 , 7 , "ciudad4", FALSE ), 
+( 'correo@correo5.com' , 'apellido9' , 'apellido0' , 'persona5' , "job5" , 'escuela5' , 'lada5' , 'telefono5' , 'extension5' , 'dependencia5' , 1 , 9 , "ciudad5", FALSE );
 
 INSERT INTO `registry_guest`.`title` ( `title` ) VALUES 
 ( 'Ing.' ), 

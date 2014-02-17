@@ -46,7 +46,8 @@ class Usuarios extends Model{
             $response = array( 'success' => 'false', 'message'=> $form->getMessage( ) );
         } else {
             //  !The form is valid
-            $conditions['where'] = "`mail`='{$data['mail']}'";
+            $parameters.push        = array( '`is_completed`' );
+            $conditions['where']    = "`mail`='{$data['mail']}' AND `is_completed`='0'";
             
             try {
                 $this->_PDOConn->beginTransaction( );
@@ -56,10 +57,14 @@ class Usuarios extends Model{
                 
                 if ( count( $resultSet ) > 0 ) {
                     
-                    if ( $encode == $_SESSION[ 'mail' ] ) {
+                    $site_url = var_dump( $resultSet );
+                    /*if ( true ) {
                         
-                        $site_url = SITE_URL . "edit.php?m={$encode}";
-                    }
+                        if ( $encode == $_SESSION[ 'mail' ] ) {
+                            
+                            $site_url = SITE_URL . "edit.php?m={$encode}";
+                        }
+                    }*/
                     
                     $this->_PDOConn->commit();
                 } else {
@@ -151,9 +156,9 @@ class Usuarios extends Model{
                     $success    = $this->getNumRows( );
                     
                     $this->_PDOConn->commit();
-                    $response = array ( "success" =>'true',"message"=>utf8_encode('La informacion del usuario ha sido guardada exitosamente.'));
+                    $response = array ( "success" =>'true',"message"=>utf8_encode('La informacion del usuario ha sido guardada exitosamente.¿Quieres volver a la pagina de busqueda?'));
                 }catch( PDOException $e ) {
-
+                    
                     $this->_PDOConn->rollBack( );
                     $response = array ( "success" =>'false', "message"    =>'el servicio no esta disponible');
                 }
