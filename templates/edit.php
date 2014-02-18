@@ -41,7 +41,7 @@ if ( $usuario->isValidSession() ) {
             
             if ( $user == 'Completed' && ( $valor == '1' || $valor == 1 ) ) {
                 
-                header( "location:{$site_url}" );
+                header( "location:{$site_url}?response=no-editable" );
             }
             $indice++;
         }

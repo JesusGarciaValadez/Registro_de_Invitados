@@ -319,6 +319,37 @@
                 };
             
             Registry.validateFormWOAjax( rules, messages );
+            
+            /**
+             *  Function to detect the id of document by param and set current element on menu
+             *
+             */ 
+            var Url = String( location.href );
+            if ( Url.search( /search.html/i ) ) {
+                
+                Url         = Url.replace( /.*\?(.*?)/, "$1" );
+                Variables   = Url.split ("&");
+                for ( i = 0; i < Variables.length; i++ ) {
+                    
+                    Separ   = Variables[ i ].split( "=" );
+                        
+                    if ( Separ[ 1 ] != undefined && Separ[ 1 ] != null ) {
+                        
+                        eval ( 'var ' + Separ[ 0 ] + '="' + Separ[ 1 ] + '"' );
+                    }
+                }
+            }
+            
+            if ( response ) {
+                
+                switch( String( response ) ) {
+                    
+                    case 'no-editable': alert( 'El usuario no puede ser editado' );
+                        break:
+                    default:
+                        break;
+                }
+            }
         }
         
         if ( $( '#create' ).exists() || $( '#edit' ).exists() ) {

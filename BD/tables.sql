@@ -16,6 +16,7 @@ CREATE TABLE IF NOT EXISTS `registry_guest`.`persona` (
     `id_state`      INT( 10 ) NOT NULL ,
     `city`          VARCHAR( 250 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL ,
     `is_completed`  BOOLEAN NOT NULL, 
+    `date_registry` VARCHAR( 250 ) CHARACTER SET utf8 COLLATE utf8_general_ci NULL ,
     PRIMARY KEY ( `id_persona` )) ENGINE = InnoDB CHARACTER SET utf8 COLLATE utf8_general_ci;
 
 CREATE TABLE IF NOT EXISTS `registry_guest`.`title` (

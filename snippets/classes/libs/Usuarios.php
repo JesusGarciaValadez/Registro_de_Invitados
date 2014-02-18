@@ -91,7 +91,7 @@ class Usuarios extends Model{
      * actualizar los datos del usuario.
      * @method saveUser
      * @access public
-     * @param mixed $data contiene la informacion basica necesaria: contraseña anterior, contraseña nueva y CAPTCHA
+     * @param mixed $data contiene la informacion basica necesaria
      * @return string 
      */
     public function saveUser ( $data, $action ) {
@@ -149,6 +149,7 @@ class Usuarios extends Model{
                         ,'id_state'     =>  $data[ 'user_edit_state' ]
                         ,'city'         =>  $data[ 'user_edit_city' ]
                         ,'is_completed' =>  1
+                        ,'date_registry'=>  date( 'd m Y H:i:s' )
                     );
                     
                     if ( $action == 'edit' ) {
