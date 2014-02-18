@@ -149,6 +149,7 @@ class Usuarios extends Model{
                         ,'id_state'     =>  $data[ 'user_edit_state' ]
                         ,'city'         =>  $data[ 'user_edit_city' ]
                         ,'is_completed' =>  1
+                        ,'date_registry'=>  date( 'd m Y H:i:s' )
                     );
                     
                     if ( $action == 'edit' ) {
