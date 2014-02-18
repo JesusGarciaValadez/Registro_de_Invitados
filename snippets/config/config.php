@@ -4,7 +4,7 @@ error_reporting(E_ALL);
 ini_set('display_errors','On');
 date_default_timezone_set('America/Mexico_City');
 define('BASE_PATH',dirname(dirname((dirname(__FILE__)))) . DIRECTORY_SEPARATOR);    //  Imprime /Applications/XAMPP/xamppfiles/htdocs/lukajobs/registro_de_invitados/
-define('SITE_URL', ''); // Ej. http://localhost/lukajobs/registro_de_invitados/templates/
+define('SITE_URL', 'http://localhost/lukajobs/registro_de_invitados/templates/'); // Ej. http://localhost/lukajobs/registro_de_invitados/templates/
 define('CODE_PATH', BASE_PATH );
 define('SNIPPETS_PATH', CODE_PATH . 'snippets' . DIRECTORY_SEPARATOR);
 define('CLASSES_PATH', SNIPPETS_PATH . 'classes'. DIRECTORY_SEPARATOR);
