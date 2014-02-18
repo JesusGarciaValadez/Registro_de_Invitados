@@ -345,7 +345,7 @@
                 switch( String( response ) ) {
                     
                     case 'no-editable': alert( 'El usuario no puede ser editado' );
-                        break:
+                        break;
                     default:
                         break;
                 }

@@ -12,8 +12,9 @@ class Usuarios extends Model{
     protected $_logs = null;
     protected $_template = null;
     private $_PDOConn = null;
-
+    
     public function __construct($conn) {
+        
         $this->_tableName = '`persona`';
         $this->_primaryKey = '`id`';
         $this->setMysqlConn($conn);
@@ -66,7 +67,7 @@ class Usuarios extends Model{
                         }
                     } else {
                         
-                        $site_url = SITE_URL . "search.html";
+                        $site_url = SITE_URL . "search.html?response=no-editable";
                     }
                     
                     $this->_PDOConn->commit();
