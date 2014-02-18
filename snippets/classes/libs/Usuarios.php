@@ -46,7 +46,8 @@ class Usuarios extends Model{
             $response = array( 'success' => 'false', 'message'=> $form->getMessage( ) );
         } else {
             //  !The form is valid
-            $conditions['where'] = "`mail`='{$data['mail']}'";
+            array_push( $fields, '`is_completed`' );
+            $conditions['where']    = "`mail`='{$data['mail']}'";
             
             try {
                 $this->_PDOConn->beginTransaction( );
@@ -56,14 +57,26 @@ class Usuarios extends Model{
                 
                 if ( count( $resultSet ) > 0 ) {
                     
-                    if ( $encode == $_SESSION[ 'mail' ] ) {
+                    if ( $resultSet[0]['is_completed'] == '0' ) {
                         
-                        $site_url = SITE_URL . "edit.php?m={$encode}";
+                        $_SESSION[ 'is_completed' ]   = false;
+                        if ( $encode == $_SESSION[ 'mail' ] ) {
+                            
+                            $site_url = SITE_URL . "edit.php?m={$encode}";
+                        }
+                    } else {
+                        
+                        $site_url = SITE_URL . "search.html";
                     }
                     
                     $this->_PDOConn->commit();
                 } else {
-                    $site_url = SITE_URL . "create.php?m={$encode}";
+                    
+                    $_SESSION[ 'is_completed' ]   = false;
+                    if ( $encode == $_SESSION[ 'mail' ] ) {
+                        
+                        $site_url = SITE_URL . "create.php?m={$encode}";
+                    }
                 }
                 
                 return $site_url;
@@ -135,6 +148,7 @@ class Usuarios extends Model{
                         ,'id_title'     =>  $data[ 'user_edit_title' ]
                         ,'id_state'     =>  $data[ 'user_edit_state' ]
                         ,'city'         =>  $data[ 'user_edit_city' ]
+                        ,'is_completed' =>  1
                     );
                     
                     if ( $action == 'edit' ) {
@@ -151,9 +165,9 @@ class Usuarios extends Model{
                     $success    = $this->getNumRows( );
                     
                     $this->_PDOConn->commit();
-                    $response = array ( "success" =>'true',"message"=>utf8_encode('La informacion del usuario ha sido guardada exitosamente.'));
+                    $response = array ( "success" =>'true',"message"=>utf8_encode('La informacion del usuario ha sido guardada exitosamente.¿Quieres volver a la pagina de busqueda?'));
                 }catch( PDOException $e ) {
-
+                    
                     $this->_PDOConn->rollBack( );
                     $response = array ( "success" =>'false', "message"    =>'el servicio no esta disponible');
                 }
@@ -175,7 +189,9 @@ class Usuarios extends Model{
      */
     public function isValidSession ( ) {
         
-        $mail  = ( isset( $_GET[ 'm' ] ) && !empty( 'm' ) ) ? $_GET[ 'm' ] : ( isset( $_SESSION[ 'mail' ] ) && !empty( $_SESSION[ 'mail' ]) ) ? $_SESSION[ 'mail' ] : false;
+        $mail   = ( isset( $_GET[ 'm' ] ) && !empty( 'm' ) ) ? $_GET[ 'm' ] : ( isset( $_SESSION[ 'mail' ] ) && !empty( $_SESSION[ 'mail' ]) ) ? $_SESSION[ 'mail' ] : false;
+        
+        $mail   = ( isset( $_SESSION[ 'is_completed' ] ) && $_SESSION[ 'is_completed' ] == false && $mail === true ) ? true : $mail;
         
         return ( $mail ) ? true : false;
     }

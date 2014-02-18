@@ -51,3 +51,4 @@ jQuery.fn.centerHeight  = function(){
     this.css( 'top', elemTop + 'px' );
 }
 
+//  @codekit-append "jquery.form.js", "jquery.validate.js", "additional-methods.js";
