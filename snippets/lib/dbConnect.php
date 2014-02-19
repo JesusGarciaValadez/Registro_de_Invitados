@@ -7,9 +7,9 @@ class dbConnect {
     private $_password;
     private $_dbname;
     private $_link;
-
-    public function __construct( 
-        $host       = 'localhost', 
+    
+    public function __construct(
+        $host       = 'localhost',
         $user       = 'alfabrad',
         $password   = '_Asukal01_',
         $dbname     = 'registry_guest'
@@ -19,7 +19,7 @@ class dbConnect {
           $this->_password  = $password;
           $this->_dbname    = $dbname;
     }
-
+    
     public function connect(){
          $this->_link = mysql_connect($this->_host, $this->_user, $this->_password) ;
          if(!$this->_link ) {
